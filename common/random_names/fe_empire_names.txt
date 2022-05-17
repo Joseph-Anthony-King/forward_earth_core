@@ -13,9 +13,10 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	format = "format.dem_gen.1"
-	noun = "[This.Capital.System.GetName]"
-	prefix_format = "[This.Capital.System.GetName] <democratic_gen>"
+	lookups = "<democratic_gen> [This.Capital.System.GetName]"
+	format = format.dem_gen.1 # <democratic_gen> of [This.Capital.System.GetName]
+	noun = format.home_system # [This.Capital.System.GetName]
+	prefix_format = format_prefix.dem_gen.1 # [This.Capital.System.GetName] <democratic_gen>
 	# Empire of Sol
 }
 
@@ -32,9 +33,10 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	format = "format.dem_gen.2"
-	noun = "[This.Capital.GetName]"
-	prefix_format = "[This.Capital.GetName] <democratic_gen>"
+	lookups = "<democratic_gen> [This.Capital.GetName]"
+	format = format.dem_gen.2 # <democratic_gen> of [This.Capital.GetName]
+	noun = format.homeworld # [This.Capital.GetName]
+	prefix_format = format_prefix.dem_gen.2 # [This.Capital.GetName] <democratic_gen>
 	# Empire of Earth
 }
 
@@ -51,10 +53,11 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	format = "format.dem_gen.3"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <democratic_gen>"
-	# Human Empire
+	lookups = "[This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>"
+	format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>
+	noun = format.species # [This.GetSpeciesName]
+	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
+	# Human Star Empire
 }
 
 # Democratic Generic 4
@@ -70,9 +73,10 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	format = "format.dem_gen.4"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <democratic_gen>"
+	lookups = "<democratic_gen_desc> [This.GetSpeciesName] <democratic_gen>"
+	format = format.dem_gen.4 # <democratic_gen_desc> [This.GetSpeciesName] <democratic_gen>
+	noun = format.species # [This.GetSpeciesName]
+	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
 	# Great Human Empire
 }
 
@@ -89,8 +93,9 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	format = "format.dem_gen.5"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <democratic_gen>"
+	lookups = "[This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>"
+	format = format.dem_gen.5 # [This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>
+	noun = format.species # [This.GetSpeciesName]
+	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
 	# Human Star Empire
 }
