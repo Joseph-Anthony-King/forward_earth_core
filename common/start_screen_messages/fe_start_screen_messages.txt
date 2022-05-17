@@ -1,0 +1,14 @@
+# Planetary Union
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_REPRESENTATIVE_DEMOCRACY"
+
+	trigger = {
+		has_government = gov_planetary_union
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
