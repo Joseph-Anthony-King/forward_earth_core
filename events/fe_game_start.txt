@@ -29,3 +29,173 @@ event = {
         log = "Binary planet barrycenters renamed..."
     }
 }
+
+### fe.02 - Spawn Trantor
+event = {
+	id = fe.02
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		no_scope = {
+
+            if = {
+                
+                limit = {
+                    galaxy_size = tiny
+                }
+            
+                spawn_system = {
+                    min_distance = 39
+                    max_distance = 39
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = small
+                }
+            
+                spawn_system = {
+                    min_distance = 64
+                    max_distance = 64
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = medium
+                }
+            
+                spawn_system = {
+                    min_distance = 88
+                    max_distance = 88
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = large
+                        galaxy_size = huge
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 100
+                    max_distance = 100
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = gigantic
+                        galaxy_size = immense
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 114
+                    max_distance = 114
+                    initializer = trantor_initializer
+                }
+            }
+		}
+        log = "Trantor spawned..."
+    }
+}
+
+### fe.03 - Spawn Terminus
+event = {
+	id = fe.03
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		no_scope = {
+
+            if = {
+                
+                limit = {
+                    galaxy_size = tiny
+                }
+            
+                spawn_system = {
+                    min_distance = 216
+                    max_distance = 218
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = small
+                }
+            
+                spawn_system = {
+                    min_distance = 316
+                    max_distance = 318
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = medium
+                }
+            
+                spawn_system = {
+                    min_distance = 416
+                    max_distance = 418
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = large
+                        galaxy_size = huge
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 478
+                    max_distance = 480
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = gigantic
+                        galaxy_size = immense
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 518
+                    max_distance = 520
+                    initializer = terminus_initializer
+                }
+            }
+		}
+        log = "Terminus spawned..."
+    }
+}
