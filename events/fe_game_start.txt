@@ -40,8 +40,8 @@ event = {
 
 		no_scope = {
             spawn_system = {
-                min_distance = 0
-                max_distance = 0
+                min_distance = 1
+                max_distance = 1
                 initializer = sagittarius_a_star_initializer
 				hyperlane = no
             }
@@ -51,7 +51,7 @@ event = {
             limit = {
                 has_star_flag = galactic_center             
             }
-            
+
             spawn_natural_wormhole = {
                 bypass_type = wormhole
                 random_pos = no

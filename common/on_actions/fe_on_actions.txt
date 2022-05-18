@@ -8,3 +8,30 @@ on_game_start = {
 		fe.04 ### fe.04 - Spawn Terminus
 	}
 }
+
+on_terraforming_complete = {
+	events = {
+		fe.20 ### fe.20 - Venus terraforming event
+		fe.22 ### fe.22 - Earth terraforming event
+		fe.25 ### fe.25 - Mars terraforming event
+	}
+}
+
+on_press_begin = {
+	events = {
+		fe.22 ### fe.22 - Earth on press begin event
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		fe.21 ### fe.21 - Venus yearly pulse event
+		fe.23 ### fe.23 - Earth yearly pulse event
+	}
+}
+
+on_megastructure_upgraded = {
+	events = {
+		fe.24 ### fe.24 - Earth megastructure completed event
+	}
+}
