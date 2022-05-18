@@ -45,7 +45,7 @@ humans1_1 = {
 	empire_flag = {
 		icon= {
 			category = "human"
-			file = "flag_human_9.dds"
+			file = "flag_human_une.dds"
 		}
 		background= {
 			category = "backgrounds"

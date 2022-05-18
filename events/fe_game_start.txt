@@ -30,9 +30,51 @@ event = {
     }
 }
 
-### fe.02 - Spawn Trantor
+### fe.02 - Spawn Sagittarius A*
 event = {
 	id = fe.02
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		no_scope = {
+            spawn_system = {
+                min_distance = 0
+                max_distance = 0
+                initializer = sagittarius_a_star_initializer
+				hyperlane = no
+            }
+		}
+                    
+        random_system = {
+            limit = {
+                has_star_flag = galactic_center             
+            }
+            
+            spawn_natural_wormhole = {
+                bypass_type = wormhole
+                random_pos = no
+                orbit_angle = 360
+            }
+                    
+            random_system = {
+                spawn_natural_wormhole = {
+                    bypass_type = wormhole
+                    random_pos = no
+                    orbit_angle = 360
+                }
+                link_wormholes = prev
+            }
+        }
+
+        log = "Sagittarius A* spawned..."
+    }
+}
+
+### fe.03 - Spawn Trantor
+event = {
+	id = fe.03
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -47,8 +89,8 @@ event = {
                 }
             
                 spawn_system = {
-                    min_distance = 39
-                    max_distance = 39
+                    min_distance = 20
+                    max_distance = 20
                     initializer = trantor_initializer
                 }
             }
@@ -60,8 +102,8 @@ event = {
                 }
             
                 spawn_system = {
-                    min_distance = 64
-                    max_distance = 64
+                    min_distance = 44
+                    max_distance = 44
                     initializer = trantor_initializer
                 }
             }
@@ -73,8 +115,8 @@ event = {
                 }
             
                 spawn_system = {
-                    min_distance = 88
-                    max_distance = 88
+                    min_distance = 60
+                    max_distance = 60
                     initializer = trantor_initializer
                 }
             }
@@ -89,8 +131,8 @@ event = {
                 }
             
                 spawn_system = {
-                    min_distance = 100
-                    max_distance = 100
+                    min_distance = 70
+                    max_distance = 70
                     initializer = trantor_initializer
                 }
             }
@@ -105,8 +147,8 @@ event = {
                 }
             
                 spawn_system = {
-                    min_distance = 114
-                    max_distance = 114
+                    min_distance = 80
+                    max_distance = 80
                     initializer = trantor_initializer
                 }
             }
@@ -115,9 +157,9 @@ event = {
     }
 }
 
-### fe.03 - Spawn Terminus
+### fe.04 - Spawn Terminus
 event = {
-	id = fe.03
+	id = fe.04
 	hide_window = yes
 	is_triggered_only = yes
 
