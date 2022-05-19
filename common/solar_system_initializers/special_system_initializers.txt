@@ -131,6 +131,7 @@ special_init_03 = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		entity = "barren_planet_mercury_entity"
 	}
 
 	planet = {
@@ -139,6 +140,8 @@ special_init_03 = {
 		orbit_angle = 125
 		size = 17
 		has_ring = no
+		entity = "toxic_planet_venus_entity"
+		flags = { planet_venus }
 	}
 
 	planet = {
@@ -479,6 +482,30 @@ special_init_03 = {
 				days = -1
 			}
 		}
+		
+		flags = { planet_mars }
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
+		}
 	}
 
 	planet = {
@@ -528,6 +555,7 @@ special_init_03 = {
 			orbit_distance = 10
 			orbit_angle = 110
 			has_ring = no
+			entity = "moon_jup_io_entity"
 		}
 		moon = {
 			class = "pc_frozen"
@@ -535,6 +563,7 @@ special_init_03 = {
 			orbit_distance = 2.5
 			orbit_angle = 10
 			has_ring = no
+			entity = "moon_jup_europa_entity"
 		}
 		moon = {
 			class = "pc_frozen"
@@ -542,6 +571,7 @@ special_init_03 = {
 			orbit_distance = 2.5
 			orbit_angle = 80
 			has_ring = no
+			entity = "moon_jup_ganymede_entity"
 		}
 		moon = {
 			class = "pc_frozen"
@@ -549,6 +579,7 @@ special_init_03 = {
 			orbit_distance = 2.5
 			orbit_angle = -155
 			has_ring = no
+			entity = "moon_jup_callisto_entity"
 		}
 	}
 
@@ -558,7 +589,7 @@ special_init_03 = {
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
-		entity = "gas_giant_05_entity"
+		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
 
 		moon = {
@@ -567,6 +598,7 @@ special_init_03 = {
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			entity = "moon_sat_titan_entity"
 		}
 	}
 
@@ -576,7 +608,24 @@ special_init_03 = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_03_entity"
+		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "titania_entity"
+		}		
+		moon = {
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "oberon_entity"
+		}
 	}
 
 	planet = {
@@ -585,7 +634,7 @@ special_init_03 = {
 		orbit_angle = -195
 		size = 20
 		has_ring = no
-		entity = "gas_giant_02_entity"
+		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
 
 		moon = {
@@ -594,6 +643,7 @@ special_init_03 = {
 			orbit_distance = 7
 			orbit_angle = 115
 			has_ring = no
+			entity = "triton_entity"
 		}
 	}
 
@@ -627,6 +677,29 @@ special_init_03 = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies = 0 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_no_guaranteed_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_3"
 	}
 }
 
@@ -679,6 +752,7 @@ special_init_04 = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		entity = "barren_planet_mercury_entity"
 	}
 
 	planet = {
@@ -687,6 +761,8 @@ special_init_04 = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
+		entity = "toxic_planet_venus_entity"
+		flags = { planet_venus }
 	}
 
 	planet = {
@@ -695,6 +771,7 @@ special_init_04 = {
 		orbit_angle = 120
 		size = 18
 		has_ring = no
+		entity = "met_nuked"
 		anomaly = "sol_wasteland_category"
 		flags = { nuked_earth }
 
@@ -733,6 +810,30 @@ special_init_04 = {
 				modifier = "terraforming_candidate"
 				days = -1
 			}
+		}
+		
+		flags = { planet_mars }
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
 		}
 	}
 
@@ -783,6 +884,7 @@ special_init_04 = {
 			orbit_distance = 10
 			orbit_angle = 110
 			has_ring = no
+			entity = "moon_jup_io_entity"
 		}
 		moon = {
 			class = "pc_frozen"
@@ -790,6 +892,7 @@ special_init_04 = {
 			orbit_distance = 2.5
 			orbit_angle = 10
 			has_ring = no
+			entity = "moon_jup_europa_entity"
 		}
 		moon = {
 			class = "pc_frozen"
@@ -797,6 +900,7 @@ special_init_04 = {
 			orbit_distance = 2.5
 			orbit_angle = 80
 			has_ring = no
+			entity = "moon_jup_ganymede_entity"
 		}
 		moon = {
 			class = "pc_frozen"
@@ -804,6 +908,7 @@ special_init_04 = {
 			orbit_distance = 2.5
 			orbit_angle = -155
 			has_ring = no
+			entity = "moon_jup_callisto_entity"
 		}
 	}
 
@@ -813,7 +918,7 @@ special_init_04 = {
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
-		entity = "gas_giant_05_entity"
+		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
 
 		moon = {
@@ -822,6 +927,7 @@ special_init_04 = {
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			entity = "moon_sat_titan_entity"
 		}
 	}
 
@@ -831,7 +937,26 @@ special_init_04 = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_03_entity"
+		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			name = "NAME_Titania"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "titania_entity"
+		}		
+		moon = {
+			name = "NAME_Oberon"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "oberon_entity"
+		}
 	}
 
 	planet = {
@@ -840,7 +965,7 @@ special_init_04 = {
 		orbit_angle = -195
 		size = 20
 		has_ring = no
-		entity = "gas_giant_02_entity"
+		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
 
 		moon = {
@@ -849,6 +974,7 @@ special_init_04 = {
 			orbit_distance = 7
 			orbit_angle = 115
 			has_ring = no
+			entity = "triton_entity"
 		}
 	}
 
@@ -882,6 +1008,29 @@ special_init_04 = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies = 0 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_no_guaranteed_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_3"
 	}
 }
 

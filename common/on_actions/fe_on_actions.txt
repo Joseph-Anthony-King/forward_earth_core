@@ -6,6 +6,9 @@ on_game_start = {
 		fe.02 ### fe.02 - Spawn Sagittarius A*
 		fe.03 ### fe.03 - Spawn Trantor
 		fe.04 ### fe.04 - Spawn Terminus
+		fe.05 ### fe.05 - Spawn Sol
+		fe.06 ### fe.06 - Instantiate LHC for UNE
+		fe.07 ### fe.07 - Set Forward Earth planet modifiers
 	}
 }
 

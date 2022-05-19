@@ -2726,6 +2726,7 @@ sol_system_void_dweller_system = {
 			orbit_distance = 10
 			orbit_angle = 110
 			has_ring = no
+			entity = "moon_jup_io_entity"
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -2734,6 +2735,7 @@ sol_system_void_dweller_system = {
 			orbit_distance = 2.5
 			orbit_angle = 10
 			has_ring = no
+			entity = "moon_jup_europa_entity"
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -2742,6 +2744,7 @@ sol_system_void_dweller_system = {
 			orbit_distance = 2.5
 			orbit_angle = 80
 			has_ring = no
+			entity = "moon_jup_ganymede_entity"
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -2750,6 +2753,7 @@ sol_system_void_dweller_system = {
 			orbit_distance = 2.5
 			orbit_angle = -155
 			has_ring = no
+			entity = "moon_jup_callisto_entity"
 		}
 	}
 
@@ -2886,10 +2890,6 @@ sol_system_void_dweller_system = {
 	}
 
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1"
-	}
-	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t1_first_colony"
@@ -2898,5 +2898,17 @@ sol_system_void_dweller_system = {
 		trigger = { num_guaranteed_colonies = 0 }
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t1_no_guaranteed_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_3"
 	}
 }

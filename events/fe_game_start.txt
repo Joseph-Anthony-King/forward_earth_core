@@ -241,3 +241,188 @@ event = {
         log = "Terminus spawned..."
     }
 }
+
+### fe.05 - Instantiate Earth if not done so yet
+event = {
+	id = fe.05
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		if = {
+			# If there are no Sols
+			limit = {
+				NOT = {
+					any_system = {
+						has_star_flag = sol_system
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "special_init_03" }
+					}
+				}
+				25 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "special_init_04" }
+					}
+				}
+			}
+            log = "Sol spawned..."
+		}
+        else = {
+            log = "Sol already spawned..."
+        }
+    }
+}
+
+### fe.06 - Instantiate LHC for UNE
+event = {
+	id = fe.06
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {		
+
+        if = {
+            random_country = {
+                limit = {
+                    AND = {
+                        has_country_flag = human_1
+                        num_ai_empires_setting > 1
+                    }
+                }
+
+                random_country = {
+                    limit = { has_country_flag = human_1 }
+                    owner_species = { save_event_target_as = human_species }
+                }
+
+                random_galaxy_planet = {
+                    limit = {
+                        AND = {
+                            not = { any_country = { has_country_flag = custodian_faction } }
+                            not = { any_country = { has_country_flag = icarus_faction } }
+                            any_country = { has_country_flag = human_1 }
+                            has_planet_flag = 40_eridani_a_two
+                        }                
+                    }
+
+                    create_country = {
+                        name = "NAME_League_of_Human_Colonies"
+                        name_list = HUMAN1              
+                        ship_prefix = "LHCS"
+                        
+                        authority = auth_oligarchic
+                        
+                        origin = "origin_lost_colony"
+
+                        species = event_target:human_species
+                        ethos = {
+                            ethic = ethic_authoritarian
+                            ethic = ethic_fanatic_militarist
+                        }
+                        civics = {
+                            civic = civic_cutthroat_politics
+                            civic = civic_warrior_culture
+                        }
+                        flag = {
+                            icon = {
+                                category="spherical"
+                                file="flag_spherical_8.dds"
+                            }
+                            background = {
+                                category="backgrounds"
+                                file="vertical.dds"
+                            }
+                            colors = {
+                                "dark_green"
+                                "yellow"
+                                "null"
+                                "null"
+                            }
+                        }
+                        type = default
+                                
+                        effect = {
+                            save_global_event_target_as = npc_LHC
+                            add_resource = {
+                                minerals = 0
+                                energy = 0
+                                food = 0
+                                alloys = 0
+                                consumer_goods = 0
+                                influence = 0
+                            }
+                        }
+                    }
+
+                    event_target:npc_LHC = {
+                        set_country_flag = human_3
+                        set_country_flag = human_faction
+                        save_global_event_target_as = npc_LHC
+                    }
+                    
+                    set_owner = event_target:npc_LHC
+
+                    while = {
+                        count = 14
+                        create_pop = {
+                            species = event_target:human_species
+                        }
+                    }
+
+                    set_owner = last_created_country
+                    set_capital = yes
+                    add_district = district_farming
+                    add_district = district_farming
+                    add_district = district_mining
+                    add_district = district_generator
+                    add_building = building_capital
+
+                    last_created_country = {
+                        capital_scope = { set_name = "40 Eridani A II" }
+                        set_graphical_culture = mammalian_01
+                    }
+
+                    log = "LHC instantiated..."
+                }
+            }
+        }
+        else = {
+            log = "UNE not instantiated..."
+        }
+    }
+}
+
+### fe.07 - Set Forward Earth planet modifiers
+event = {
+	id = fe.07
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        every_galaxy_planet = {
+
+            limit = { has_planet_flag = 40_eridani_a_two }
+            add_modifier = {
+                modifier = "high_gravity"
+                days = -1
+            }
+            add_modifier = {
+                modifier = "strong_magnetic_field"
+                days = -1
+            }
+            change_pc = pc_desert
+            set_planet_entity = { entity = "desert_planet_02_entity" }
+        }
+
+        log = "Forward Earth planeta modified..."
+    }
+}
