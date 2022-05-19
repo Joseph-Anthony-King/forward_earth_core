@@ -28,6 +28,8 @@ sol_system_initializer = {
 			}
 		}
 		generate_home_system_resources = yes
+		
+		log = "sol_system_initializer loaded..."
 	}
 
 	planet = {
@@ -346,7 +348,7 @@ sol_system_initializer = {
 	}
 }
 
-# Neighbor Tier 1 First Colony
+# Neighbor Tier 1 First Colony - Alpha Centauri
 sol_neighbor_t1_first_colony = {
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
@@ -523,7 +525,7 @@ sol_neighbor_t1_first_colony = {
 	}
 }
 
-# Neighbor Tier 1 No Guaranteed Colony
+# Neighbor Tier 1 No Guaranteed Colony - Alpha Centauri
 sol_neighbor_t1_no_guaranteed_colony = {
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
@@ -696,7 +698,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 	}
 }
 
-# Sol Neighbor Tier 1
+# Sol Neighbor Tier 1 - Barnard's Star
 sol_neighbor_t1 = {
 	name = "NAME_Barnard's_Star"
 	class = sc_m
@@ -758,7 +760,7 @@ sol_neighbor_t1 = {
 	}
 }
 
-# Sol Neighbor Tier 1.2
+# Sol Neighbor Tier 1.2 - Wolf 359
 sol_neighbor_t1_2 = {
 	name = "Wolf 359"
 	class = sc_m
@@ -796,7 +798,7 @@ sol_neighbor_t1_2 = {
 	}
 }
 
-# Sol Neighbor Tier 1.3
+# Sol Neighbor Tier 1.3 - Luyten's Star
 sol_neighbor_t1_3 = {
 	name = "Luyten's Star"
 	class = sc_m
@@ -844,7 +846,7 @@ sol_neighbor_t1_3 = {
 	}
 }
 
-# Sol Neighbor Tier 2
+# Sol Neighbor Tier 2 - Procyon
 sol_neighbor_t2 = {
 	name = "NAME_Procyon"
 	class = sc_binary_9
@@ -988,7 +990,7 @@ sol_neighbor_t2 = {
 	}
 }
 
-# Sol Neighbor Tier 2.2
+# Sol Neighbor Tier 2.2 - Tau Ceti
 sol_neighbor_t2_2 = {
 	name = "Tau Ceti"
 	class = sc_g
@@ -1066,292 +1068,20 @@ sol_neighbor_t2_2 = {
 			entity = "ocean_planet_01_entity"
 			
 			init_effect = {
-				set_planet_flag = planet_tau_ceti_4
+				set_planet_flag = planet_tau_ceti_3a
 			}
 			
 			init_effect = {
-				if = {
-					random_list = {
-						20 = {
-							create_species = {
-								name = random
-								class = random
-								portrait = random
-								homeworld = THIS
-								traits = random
-							}
-							create_country = {
-								name = random
-								authority = auth_imperial
-								civics = {
-									civic = civic_landed_nobility
-									civic = civic_flat_world_theory
-								}
-								species = last_created
-								ethos = { 
-									ethic = "ethic_xenophobe"
-									ethic = "ethic_spiritualist"
-									ethic = "ethic_authoritarian"
-								}
-								flag = {
-									icon = {
-										category = "special"
-										file = "primitive.dds"
-									}
-									background = {
-										category = "backgrounds"
-										file = "diagonal.dds"
-									}
-									colors = {
-										"purple"
-										"dark_teal"
-										"null"
-										"null"
-									}
-								}
-								day_zero_contact = no
-								type = primitive
-							}
-							last_created_country = {
-								set_graphical_culture = preindustrial_01
-								set_country_flag = late_medieval_age
-								set_primitive_age = late_medieval_age
-							}
-							
-							set_owner = last_created_country
-
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
-							
-							last_created_country = {
-								capital_scope = { set_name = "Tau Ceti IVa" }
-							}
-						}
-						20 = {
-							create_species = {
-								name = random
-								class = random
-								portrait = random
-								homeworld = THIS
-								traits = random
-							}
-							create_country = {
-								name = random
-								authority = auth_imperial
-								civics = {
-									civic = civic_landed_nobility
-									civic = civic_flat_world_theory
-								}
-								species = last_created
-								ethos = { 
-									ethic = "ethic_xenophobe"
-									ethic = "ethic_spiritualist"
-									ethic = "ethic_authoritarian"
-								}
-								flag = {
-									icon = {
-										category = "special"
-										file = "primitive.dds"
-									}
-									background = {
-										category = "backgrounds"
-										file = "diagonal.dds"
-									}
-									colors = {
-										"purple"
-										"dark_teal"
-										"null"
-										"null"
-									}
-								}
-								day_zero_contact = no
-								type = primitive
-							}
-							last_created_country = {
-								set_graphical_culture = preindustrial_01
-								set_country_flag = renaissance_age
-								set_primitive_age = renaissance_age
-							}
-							
-							set_owner = last_created_country
-
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
-							
-							last_created_country = {
-								capital_scope = { set_name = "Tau Ceti IVa" }
-							}
-						}
-						20 = {
-							create_species = {
-								name = random
-								class = random
-								portrait = random
-								homeworld = THIS
-								traits = random
-							}
-							create_country = {
-								name = random
-								authority = auth_imperial
-								civics = {
-									civic = civic_landed_nobility
-									civic = civic_flat_world_theory
-								}
-								species = last_created
-								ethos = { 
-									ethic = "ethic_xenophobe"
-									ethic = "ethic_spiritualist"
-									ethic = "ethic_authoritarian"
-								}
-								flag = {
-									icon = {
-										category = "special"
-										file = "primitive.dds"
-									}
-									background = {
-										category = "backgrounds"
-										file = "diagonal.dds"
-									}
-									colors = {
-										"purple"
-										"dark_teal"
-										"null"
-										"null"
-									}
-								}
-								day_zero_contact = no
-								type = primitive
-							}
-							last_created_country = {
-								set_graphical_culture = preindustrial_01
-								set_country_flag = steam_age
-								set_primitive_age = steam_age
-							}
-							
-							set_owner = last_created_country
-
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
-							
-							last_created_country = {
-								capital_scope = { set_name = "Tau Ceti IVa" }
-							}
-						}
-						20 = {
-							create_species = {
-								name = random
-								class = random
-								portrait = random
-								homeworld = THIS
-								traits = random
-							}
-							create_country = {
-								name = random
-								authority = auth_imperial
-								civics = {
-									civic = civic_increasing_urbanization
-									civic = civic_atmospheric_pollution
-								}
-								species = last_created
-								ethos = { 
-									ethic = "ethic_xenophobe"
-									ethic = "ethic_spiritualist"
-									ethic = "ethic_authoritarian"
-								}
-								flag = {
-									icon = {
-										category = "special"
-										file = "primitive.dds"
-									}
-									background = {
-										category = "backgrounds"
-										file = "diagonal.dds"
-									}
-									colors = {
-										"purple"
-										"dark_teal"
-										"null"
-										"null"
-									}
-								}
-								day_zero_contact = no
-								type = primitive
-							}
-							last_created_country = {
-								set_graphical_culture = industrial_01
-								set_country_flag = industrial_age
-								set_primitive_age = industrial_age
-							}
-							
-							set_owner = last_created_country
-
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
-							
-							last_created_country = {
-								capital_scope = { set_name = "Tau Ceti IVa" }
-							}
-						}
-						20 = {
-							create_species = {
-								name = random
-								class = random
-								portrait = random
-								homeworld = THIS
-								traits = random
-							}
-							create_country = {
-								name = random
-								authority = random
-								civics = {
-									civic = civic_increasing_urbanization
-									civic = civic_atmospheric_pollution
-								}
-								species = last_created
-								ethos = { 
-									ethic = "ethic_xenophobe"
-									ethic = "ethic_spiritualist"
-									ethic = "ethic_authoritarian"
-								}
-								flag = {
-									icon = {
-										category = "special"
-										file = "primitive.dds"
-									}
-									background = {
-										category = "backgrounds"
-										file = "diagonal.dds"
-									}
-									colors = {
-										"purple"
-										"dark_teal"
-										"null"
-										"null"
-									}
-								}
-								day_zero_contact = no
-								type = primitive
-							}
-							last_created_country = {
-								set_graphical_culture = industrial_01
-								set_country_flag = machine_age
-								set_primitive_age = machine_age
-							}
-							
-							set_owner = last_created_country
-
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
-							
-							last_created_country = {
-								capital_scope = { set_name = "Tau Ceti IVa" }
-							}
-						}
+				prevent_anomaly = yes
+				random_list = {
+					35 = {
+						generate_very_early_primitives_on_planet = yes
+					}
+					35 = {
+						generate_early_primitives_on_planet = yes
+					}
+					30 = {
+						generate_late_primitives_on_planet = yes
 					}
 				}
 			}
@@ -1367,7 +1097,7 @@ sol_neighbor_t2_2 = {
 			entity = "continental_planet_03_entity"
 		
 			init_effect = {
-				set_planet_flag = planet_tau_ceti_4b
+				set_planet_flag = planet_tau_ceti_3b
 			}
 		}
     }
@@ -1501,9 +1231,19 @@ sol_neighbor_t2_2 = {
 		size = 5
 		has_ring = no
 	}
+
+	neighbor_system = {
+		trigger = {
+			any_system = {
+				not = { has_star_flag = eta_cassiopeiae_system }
+			}
+		}
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_3_1"
+	}
 }
 
-# Sol Neighbor Tier 2.3
+# Sol Neighbor Tier 2.3 - 40 Eridani: League of Human Colonies
 sol_neighbor_t2_3 = {
 	name = "40 Eridani"
 	class = sc_trinary_4
@@ -1710,9 +1450,9 @@ sol_neighbor_t2_3 = {
 	}
 }
 
-# Sol Neighbor Tier 2 Second Colony
+# Sol Neighbor Tier 2 Second Colony - 67 Cygni
 sol_neighbor_t2_second_colony = {
-	name = "Cygni"
+	name = "67 Cygni"
 	class = sc_binary_6
 
 	asteroid_belt = {
@@ -1730,7 +1470,7 @@ sol_neighbor_t2_second_colony = {
 	}
 
 	planet = {
-		name = "Cygni A"
+		name = "67 Cygni A"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 0
@@ -1740,7 +1480,7 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		name = "Cygni A I"
+		name = "67 Cygni A I"
 		class = "pc_barren"
 		orbit_distance = 40
 		orbit_angle = 15
@@ -1749,7 +1489,7 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		name = "Cygni A II"
+		name = "67 Cygni A II"
 		class = "pc_continental"
 		orbit_distance = 15
 		orbit_angle = 90
@@ -1758,7 +1498,7 @@ sol_neighbor_t2_second_colony = {
     	entity = "continental_planet_04_entity"
 		
 		moon = {
-			name = "Cygni A IIa"
+			name = "67 Cygni A IIa"
 			class = "pc_barren_cold"
 			size = 3
 			orbit_distance = 5
@@ -1768,7 +1508,7 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		name = "Cygni A III"
+		name = "67 Cygni A III"
 		class = "pc_barren_cold"
 		orbit_distance = 20
 		orbit_angle = 180
@@ -1809,7 +1549,7 @@ sol_neighbor_t2_second_colony = {
 	}
 
 	planet = {
-		name = "Cygni B"
+		name = "67 Cygni B"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 155
@@ -1818,7 +1558,7 @@ sol_neighbor_t2_second_colony = {
 		has_ring = no
 	
 		planet = {
-			name = "Cygni B I"
+			name = "67 Cygni B I"
 			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
@@ -1827,7 +1567,7 @@ sol_neighbor_t2_second_colony = {
 		}
 	
 		planet = {
-			name = "Cygni B II"
+			name = "67 Cygni B II"
 			class = "pc_arctic"
 			orbit_distance = 20
 			orbit_angle = 175
@@ -1836,7 +1576,7 @@ sol_neighbor_t2_second_colony = {
 		}
 	
 		planet = {
-			name = "Cygni B III"
+			name = "67 Cygni B III"
 			class = "pc_frozen"
 			orbit_distance = 20
 			orbit_angle = 15
@@ -1851,9 +1591,9 @@ sol_neighbor_t2_second_colony = {
 	}
 }
 
-# Sol Neighbor Tier 2 No Guaranteed Colony
+# Sol Neighbor Tier 2 No Guaranteed Colony - 67 Cygni
 sol_neighbor_t2_no_guaranteed_colony = {
-	name = "Cygni"
+	name = "67 Cygni"
 	class = sc_binary_6
 
 	asteroid_belt = {
@@ -1871,7 +1611,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Cygni A"
+		name = "67 Cygni A"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 0
@@ -1881,7 +1621,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 	
 	planet = {
-		name = "Cygni A I"
+		name = "67 Cygni A I"
 		class = "pc_barren"
 		orbit_distance = 40
 		orbit_angle = 15
@@ -1890,7 +1630,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 	
 	planet = {
-		name = "Cygni A II"
+		name = "67 Cygni A II"
 		class = "pc_barren"
 		orbit_distance = 15
 		orbit_angle = 90
@@ -1906,7 +1646,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		}
 		
 		moon = {
-			name = "Cygni A IIa"
+			name = "67 Cygni A IIa"
 			class = "pc_barren_cold"
 			size = 3
 			orbit_distance = 5
@@ -1916,7 +1656,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 	
 	planet = {
-		name = "Cygni A III"
+		name = "67 Cygni A III"
 		class = "pc_barren_cold"
 		orbit_distance = 20
 		orbit_angle = 180
@@ -1957,7 +1697,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Cygni B"
+		name = "67 Cygni B"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 155
@@ -1966,7 +1706,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		has_ring = no
 	
 		planet = {
-			name = "Cygni B I"
+			name = "67 Cygni B I"
 			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
@@ -1975,7 +1715,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		}
 	
 		planet = {
-			name = "Cygni B II"
+			name = "67 Cygni B II"
 			class = "pc_barren_cold"
 			orbit_distance = 20
 			orbit_angle = 175
@@ -1984,7 +1724,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		}
 	
 		planet = {
-			name = "Cygni B III"
+			name = "67 Cygni B III"
 			class = "pc_frozen"
 			orbit_distance = 20
 			orbit_angle = 15
@@ -1999,7 +1739,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 }
 
-# Sol Neighbor Tier 2 Third Colony
+# Sol Neighbor Tier 2 Third Colony - Trappist-1
 sol_neighbor_t2_third_colony = {
 	name = "Trappist-1"
 	class = sc_m
@@ -2085,7 +1825,7 @@ sol_neighbor_t2_third_colony = {
 	}
 }
 
-# Sol Neighbor Tier 3
+# Sol Neighbor Tier 3 - Sirius
 sol_neighbor_t3 = {
 	name = "NAME_Sirius"
 	class = sc_binary_9
@@ -2137,6 +1877,293 @@ sol_neighbor_t3 = {
 	}
 }
 
+# Sol Neighbor Tier 3.1 - Eta Cassiopeiae: Commonwealth of Aurora
+sol_neighbor_t1_3_1 = {
+	name = "NAME_Eta_Cassiopeiae"
+	class = sc_binary_8
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 290
+	}
+	
+	flags = { empire_home_system eta_cassiopeiae_system }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	planet = {
+		name = "NAME_Eta_Cassiopeiae_A"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Inferno"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 45
+		size = 8
+		has_ring = no
+		entity = "molten_planet_06_entity"
+		flags = { planet_inferno }
+	}
+	
+	planet = {
+		name = "NAME_Astraeus"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+		flags = { planet_astraeus }
+		
+		moon = {
+			name = "NAME_Notus"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_notus }
+		}
+		moon = {
+			name = "NAME_Eurus"
+			class = pc_toxic
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			flags = { planet_eurus }
+		}		
+	}
+
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 20
+		orbit_angle = 120
+		size = 0
+		flags = { planetary_barrycenter }
+	
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		planet = {
+			name = "NAME_Aurora"
+			class = "pc_continental"
+			orbit_distance = 10
+			orbit_angle = -90
+			size = 18
+			has_ring = no
+			modifiers = none
+			starting_planet = yes
+			entity = "continental_planet_01_entity"
+			flags = { planet_aurora coa_home }
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+
+		planet = {
+			name = "NAME_Tithonus"
+			class = "pc_savannah"
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 15
+			has_ring = no
+			modifiers = none
+			entity = "savannah_planet_11_entity"
+			flags = { planet_tithonus }
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_Anemoi"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 35
+		has_ring = yes
+		entity = "gas_giant_11_entity"
+		flags = { planet_anemoi }
+		
+		moon = {
+			name = "NAME_Boreas"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 25
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_boreas }
+		}
+		moon = {
+			name = "NAME_Zephyrus"
+			class = pc_frozen
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			modifiers = none
+			flags = { planet_zephyrus }
+		}		
+	}
+	
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Hyperion"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 0
+		size = 25
+		has_ring = yes
+		entity = "gas_giant_07_entity"
+		flags = { planet_hyperion }
+		
+		moon = {
+			name = "NAME_Selene"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 18
+			orbit_angle = 14
+			has_ring = no
+			flags = { planet_selene }
+		}
+	}
+	
+	planet = {
+		name = "NAME_Eta_Cassiopeiae_B"
+		class = pc_k_star
+		orbit_distance = 70
+		orbit_angle = 135
+		size = 25
+		has_ring = no
+		
+		planet = {
+			name = "NAME_Jackson's_Planet"
+			class = "pc_tundra"
+			orbit_distance = 25
+			orbit_angle = 312
+			size = 8
+			has_ring = no
+			flags = { planet_jackson_s_planet }
+		}
+		planet = {
+			name = "NAME_Olympus"
+			class = pc_gas_giant
+			orbit_distance = 20
+			orbit_angle = 4
+			size = 20
+			has_ring = yes
+			entity = "gas_giant_09_entity"
+			flags = { planet_olympus }
+
+			moon = {
+				name = "NAME_Horae"
+				class = pc_frozen
+				orbit_distance = 14
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				entity = "frozen_planet_04_entity"
+				modifiers = none
+				flags = { planet_horae }
+			}
+		}
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 70
+		orbit_angle = -70
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
 # Sol System (Commonwealth of Man SP)
 com_sol_system = {
 	name = "NAME_Sol"
@@ -2150,36 +2177,12 @@ com_sol_system = {
 		type = icy_asteroid_belt
 		radius = 290
 	}
+
 	flags = { sol_system com_sol sol empire_home_system }
 
-	usage = misc_system_init
-
-	usage_odds = {
-		base = 0
-		modifier = {
-			any_country = {
-				has_country_flag = human_2
-				species_portrait = human
-			}
-			NOR = {
-				any_country = { has_country_flag = human_1 }
-				any_system = { has_star_flag = sol }
-				has_star_flag = empire_cluster
-			}
-			add = 99999
-		}
-	}
-
-	max_instances = 1
-
 	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
+		
+		log = "com_sol_system loaded..."
 	}
 
 	planet = {
@@ -2910,32 +2913,9 @@ lost_colony_sol_system = {
 	}
 	flags = { sol_system lost_colony_sol sol empire_home_system }
 
-	usage = misc_system_init
-
-	usage_odds = {
-		base = 0
-		modifier = {
-			any_country = {
-				species_portrait = human
-				NOT = { has_country_flag = human_2 }
-				has_origin = origin_lost_colony
-			}
-			NOT = { any_system = { has_star_flag = sol } }
-			NOT = { has_star_flag = empire_cluster }
-			add = 99999
-		}
-	}
-
-	max_instances = 1
-
 	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
+		
+		log = "lost_colony_sol_system loaded..."
 	}
 
 	planet = {

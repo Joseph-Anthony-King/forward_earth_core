@@ -1,6 +1,6 @@
-version=".04"
+version="3.4"
 tags={
 	"Galaxy Generation"
 }
 name="Forward Earth - Core"
-supported_version="3.4.2"
+supported_version="3.4.*"

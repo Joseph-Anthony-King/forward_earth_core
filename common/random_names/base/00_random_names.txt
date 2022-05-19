@@ -340,6 +340,8 @@ asteroid_postfix = {
 }
 
 star_names = {
+	"11 Leonis Minoris"
+	"41 Arae"
 	Aada
 	Aargau
 	Abakan
@@ -969,6 +971,7 @@ star_names = {
 	"Beta Eridani"
 	"Beta Eta"
 	"Beta Gamma"
+	"Beta Hydra"
 	"Beta Iota"
 	"Beta Kappa"
 	"Beta Lambda"
@@ -1457,6 +1460,7 @@ star_names = {
 	"Delta Omega"
 	"Delta Omicron"
 	"Delta Orionis"
+	"Delta Pavonis"
 	"Delta Phi"
 	"Delta Pi"
 	"Delta Psi"
@@ -1698,6 +1702,7 @@ star_names = {
 	"Epsilon Zeta"
 	Eptraban
 	Erai
+	"82 Eridani"
 	Erasmadon
 	Erdosca
 	Eregion
@@ -2049,6 +2054,7 @@ star_names = {
 	Grizzly
 	Grokkan
 	Gromen
+	"Groombridge 1830"
 	Grugmora
 	Grumium
 	Grumman
@@ -3445,6 +3451,7 @@ star_names = {
 	Mu
 	"Mu Alpha"
 	"Mu Beta"
+	"Mu Cassiopeiae"
 	"Mu Centauri"
 	"Mu Ceti"
 	"Mu Chi"
@@ -4811,6 +4818,7 @@ star_names = {
 	"Sigma Ceti"
 	"Sigma Chi"
 	"Sigma Delta"
+	"Sigma Draconis"
 	"Sigma Epsilon"
 	"Sigma Eridani"
 	"Sigma Eta"
@@ -5392,6 +5400,7 @@ star_names = {
 	Urrom
 	"Ursa Major"
 	"Ursa Minor"
+	"61 Ursae Majoris"
 	Ursoria
 	Urushiol
 	Ussaldon
@@ -5505,6 +5514,7 @@ star_names = {
 	Viparia
 	Virdamon
 	Virgil
+	"61 Virginis"
 	Viriak
 	Virkon
 	Vishvarupa
@@ -5654,6 +5664,7 @@ star_names = {
 	Xi
 	"Xi Alpha"
 	"Xi Beta"
+	"Xi Boötis"
 	"Xi Centauri"
 	"Xi Ceti"
 	"Xi Chi"

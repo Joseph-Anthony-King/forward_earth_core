@@ -7,8 +7,10 @@ on_game_start = {
 		fe.03 ### fe.03 - Spawn Trantor
 		fe.04 ### fe.04 - Spawn Terminus
 		fe.05 ### fe.05 - Spawn Sol
-		fe.06 ### fe.06 - Instantiate LHC for UNE
+		fe.06 ### fe.06 - Spawn LHC and CoA for UNE
 		fe.07 ### fe.07 - Set Forward Earth planet modifiers
+		fe.08 ### fe.08 - Revert Eta Cassiopeiae to default names if unpopulated
+		fe.09 ### fe.09 - Ensure homeworld for LHC and CoA is set to Earth
 	}
 }
 

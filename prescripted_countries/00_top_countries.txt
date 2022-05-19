@@ -104,10 +104,10 @@ humans2 = {
 
 	flags = { human_2 custom_start_screen }
 	
-	planet_name = "NAME_Unity"
+	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"
-	initializer = "deneb_system"
-	system_name = "NAME_Deneb"
+	initializer = "eta_cassiopeiae_system_initializer"
+	system_name = "NAME_Eta_Cassiopeiae"
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
@@ -115,11 +115,11 @@ humans2 = {
 	empire_flag = {
 		icon= {
 			category = "human"
-			file = "flag_human_4.dds"
+			file = "flag_human_zca.dds"
 		}
 		background= {
 			category = "backgrounds"
-			file = "stripe.dds"
+			file = "circle.dds"
 		}
 		colors={
 			"red"
