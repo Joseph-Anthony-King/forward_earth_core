@@ -3,11 +3,67 @@ gov_planetary_union = {
 	ruler_title = RT_SECRETARY_GENERAL
 	ruler_title_female = RT_SECRETARY_GENERAL
 
+	should_force_rename = yes
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = governor
+			}
+		}
+		modifier = {
+			factor = 0
+			leader_class = scientist
+		}
+	}
+
 	possible = {
 		has_authority = auth_democratic
+		has_ethic = ethic_xenophile
 	}
 
 	weight = {
-		base = 1
+		base = 50
+	}
+}
+
+# Constitutional Monarchy
+gov_constitutional_monarchy = {
+	ruler_title = RT_PRIME_MINISTER
+	ruler_title_female = RT_PRIME_MINISTER_FEMALE
+
+	should_force_rename = no
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = admiral
+				leader_class = general
+				leader_class = governor
+			}
+		}
+		modifier = {
+			factor = 0
+			leader_class = scientist
+		}
+	}
+
+	possible = {
+		has_authority = auth_democratic
+		has_ethic = ethic_xenophile
+	}
+
+	weight = {
+		base = 50
 	}
 }

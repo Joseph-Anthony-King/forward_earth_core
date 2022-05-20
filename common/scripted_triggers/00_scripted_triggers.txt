@@ -584,6 +584,7 @@ has_generic_government = {
 		has_government = gov_plutocratic_oligarchy
 		has_government = gov_representative_democracy
 		has_government = gov_planetary_union
+		has_government = gov_constitutional_monarchy
 	}
 }
 
