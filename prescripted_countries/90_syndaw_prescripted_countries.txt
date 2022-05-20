@@ -122,7 +122,7 @@ custodianship = {
 	civics = { "civic_machine_servitor" "civic_machine_delegated_functions" }
 	origin = "origin_default"
 
-	flags = { custodian_faction human_1 custom_start_screen }
+	flags = { custodian_faction human_1 earth_faction custom_start_screen }
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -196,7 +196,7 @@ icarus = {
 	}
 	origin = "origin_default"
 
-	flags = { icarus_faction custom_start_screen }
+	flags = { icarus_faction earth_faction custom_start_screen }
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"

@@ -30,7 +30,7 @@ humans1_1 = {
 
 	origin = "origin_default"
 
-	flags = { human_1 custom_start_screen }
+	flags = { human_1 earth_faction custom_start_screen }
 	
 	playable = has_humanoids # scripted_triggers
 	
@@ -101,7 +101,7 @@ humans2_1 = {
 
 	origin = "origin_lost_colony"
 
-	flags = { human_2 custom_start_screen }
+	flags = { human_2 earth_faction custom_start_screen }
 
 	playable = has_humanoids # scripted_triggers
 	
