@@ -6,11 +6,15 @@ on_game_start = {
 		fe.02 ### fe.02 - Spawn Sagittarius A*
 		fe.03 ### fe.03 - Spawn Trantor
 		fe.04 ### fe.04 - Spawn Terminus
-		fe.05 ### fe.05 - Spawn Sol
-		fe.06 ### fe.06 - Spawn LHC and CoA for UNE
-		fe.07 ### fe.07 - Set Forward Earth planet modifiers
-		fe.08 ### fe.08 - Revert Eta Cassiopeiae to default names if unpopulated
-		fe.09 ### fe.09 - Ensure homeworld for LHC and CoA is set to Earth
+		fe.05 ### fe.05 - Spawn UNE for CoA
+		fe.06 ### fe.06 - Spawn Sol
+		fe.07 ### fe.07 - Spawn LHC and CoA for UNE
+		fe.08 ### fe.08 - Ensure homeworld for LHC and CoA is set to Earth
+		fe.09 ### fe.09 - Spawn LHC and CoA for Earth Custondianship and ICARUS
+		fe.10 ### fe.10 - Nuke Earth for ICARUS faction
+		fe.11 ### fe.11 - Set Forward Earth planet modifiers
+		fe.12 ### fe.12 - Revert Sol and Eta Cassiopeiae to default names if unpopulated
+		fe.13 ### fe.13 - Populate Tau Ceti with primitives
 	}
 }
 

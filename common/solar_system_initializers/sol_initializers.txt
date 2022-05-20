@@ -49,6 +49,7 @@ sol_system_initializer = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { planet_mercury }
 	}
 
 	planet = {
@@ -89,6 +90,7 @@ sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { planet_luna }
 		}
 	}
 
@@ -118,7 +120,7 @@ sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_phobos }
 		}
 		
 		moon = {
@@ -129,7 +131,7 @@ sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_deimos }
 		}
 	}
 
@@ -140,6 +142,7 @@ sol_system_initializer = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		flags = { planet_ceres }
 	}
 
 	planet = {
@@ -149,6 +152,7 @@ sol_system_initializer = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_pallas }
 	}
 
 	planet = {
@@ -158,6 +162,7 @@ sol_system_initializer = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_juno }
 	}
 
 	planet = {
@@ -167,6 +172,7 @@ sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_vesta }
 	}
 
 	planet = {
@@ -178,6 +184,7 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { planet_jupiter }
 
 		moon = {
 			name = "NAME_Io"
@@ -187,6 +194,7 @@ sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { planet_io }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -196,6 +204,7 @@ sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { planet_europa }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -205,6 +214,7 @@ sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { planet_ganymede }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -214,6 +224,7 @@ sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { planet_callisto }
 		}
 	}
 
@@ -226,6 +237,7 @@ sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { planet_saturn }
 
 		moon = {
 			name = "NAME_Titan"
@@ -235,6 +247,7 @@ sol_system_initializer = {
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 
@@ -246,6 +259,7 @@ sol_system_initializer = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { planet_uranus }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -255,6 +269,7 @@ sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { planet_titania }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -264,6 +279,7 @@ sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { planet_oberon }
 		}
 	}
 
@@ -276,6 +292,7 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { planet_neptune }
 
 		moon = {
 			name = "NAME_Triton"
@@ -285,6 +302,7 @@ sol_system_initializer = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
+			flags = { planet_triton }
 		}
 	}
 
@@ -295,6 +313,7 @@ sol_system_initializer = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		flags = { planet_pluto }
 	}
 
 	planet = {
@@ -304,6 +323,7 @@ sol_system_initializer = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_makemake }
 	}
 
 	planet = {
@@ -313,6 +333,7 @@ sol_system_initializer = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_haumea }
 	}
 
 	planet = {
@@ -322,6 +343,7 @@ sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_varuna }
 	}
 
 	neighbor_system = {
@@ -1073,17 +1095,6 @@ sol_neighbor_t2_2 = {
 			
 			init_effect = {
 				prevent_anomaly = yes
-				random_list = {
-					35 = {
-						generate_very_early_primitives_on_planet = yes
-					}
-					35 = {
-						generate_early_primitives_on_planet = yes
-					}
-					30 = {
-						generate_late_primitives_on_planet = yes
-					}
-				}
 			}
 		}
 
@@ -1234,8 +1245,10 @@ sol_neighbor_t2_2 = {
 
 	neighbor_system = {
 		trigger = {
-			any_system = {
-				not = { has_star_flag = eta_cassiopeiae_system }
+			not = {
+				any_system = {
+					has_star_flag = eta_cassiopeiae_system
+				}
 			}
 		}
 		hyperlane_jumps = { min = 1 max = @jumps }
@@ -1290,7 +1303,7 @@ sol_neighbor_t2_3 = {
 		size = 20
 		has_ring = no
 		modifiers = none
-		flags = { 40_eridani_a_two }
+		flags = { planet_40_eridani_a_two }
 		
 		moon = {
 			name = "40 Eridani A IIa"
@@ -1903,6 +1916,8 @@ sol_neighbor_t1_3_1 = {
 		}
 		
 		generate_home_system_resources = yes
+		
+		log = "sol_neighbor_t1_3_1 loaded..."
 	}
 	
 	planet = {
@@ -2202,6 +2217,7 @@ com_sol_system = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { planet_mercury }
 	}
 
 	planet = {
@@ -2329,6 +2345,7 @@ com_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { planet_luna }
 		}
 	}
 
@@ -2358,7 +2375,7 @@ com_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_phobos }
 		}
 		
 		moon = {
@@ -2369,7 +2386,7 @@ com_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_deimos }
 		}
 	}
 
@@ -2380,6 +2397,7 @@ com_sol_system = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		flags = { planet_ceres }
 	}
 
 	planet = {
@@ -2389,6 +2407,7 @@ com_sol_system = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_pallas }
 	}
 
 	planet = {
@@ -2398,6 +2417,7 @@ com_sol_system = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_juno }
 	}
 
 	planet = {
@@ -2407,6 +2427,7 @@ com_sol_system = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_vesta }
 	}
 
 	planet = {
@@ -2418,6 +2439,7 @@ com_sol_system = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { planet_jupiter }
 
 		moon = {
 			name = "NAME_Io"
@@ -2427,6 +2449,7 @@ com_sol_system = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { planet_io }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -2436,6 +2459,7 @@ com_sol_system = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { planet_europa }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -2445,6 +2469,7 @@ com_sol_system = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { planet_ganymede }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -2454,6 +2479,7 @@ com_sol_system = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { planet_callisto }
 		}
 	}
 
@@ -2466,6 +2492,7 @@ com_sol_system = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { planet_saturn }
 
 		moon = {
 			name = "NAME_Titan"
@@ -2475,6 +2502,7 @@ com_sol_system = {
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 
@@ -2486,6 +2514,7 @@ com_sol_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { planet_uranus }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -2495,6 +2524,7 @@ com_sol_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { planet_titania }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -2504,6 +2534,7 @@ com_sol_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { planet_oberon }
 		}
 	}
 
@@ -2516,6 +2547,7 @@ com_sol_system = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { planet_neptune }
 
 		moon = {
 			name = "NAME_Triton"
@@ -2525,6 +2557,7 @@ com_sol_system = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
+			flags = { planet_triton }
 		}
 	}
 
@@ -2535,6 +2568,7 @@ com_sol_system = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		flags = { planet_pluto }
 	}
 
 	planet = {
@@ -2544,6 +2578,7 @@ com_sol_system = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_makemake }
 	}
 
 	planet = {
@@ -2553,6 +2588,7 @@ com_sol_system = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_haumea }
 	}
 
 	planet = {
@@ -2562,6 +2598,7 @@ com_sol_system = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_varuna }
 	}
 
 	init_effect = {
@@ -2935,6 +2972,7 @@ lost_colony_sol_system = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { planet_mercury }
 	}
 
 	planet = {
@@ -3047,6 +3085,7 @@ lost_colony_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { planet_luna }
 		}
 	}
 
@@ -3076,7 +3115,7 @@ lost_colony_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_phobos }
 		}
 		
 		moon = {
@@ -3087,7 +3126,7 @@ lost_colony_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_deimos }
 		}
 	}
 
@@ -3098,6 +3137,7 @@ lost_colony_sol_system = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		flags = { planet_ceres }
 	}
 
 	planet = {
@@ -3107,6 +3147,7 @@ lost_colony_sol_system = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_pallas }
 	}
 
 	planet = {
@@ -3116,6 +3157,7 @@ lost_colony_sol_system = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_juno }
 	}
 
 	planet = {
@@ -3125,6 +3167,7 @@ lost_colony_sol_system = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_vesta }
 	}
 
 	planet = {
@@ -3136,6 +3179,7 @@ lost_colony_sol_system = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { planet_jupiter }
 
 		moon = {
 			name = "NAME_Io"
@@ -3145,6 +3189,7 @@ lost_colony_sol_system = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { planet_io }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -3154,6 +3199,7 @@ lost_colony_sol_system = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { planet_europa }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -3163,6 +3209,7 @@ lost_colony_sol_system = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { planet_ganymede }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -3172,6 +3219,7 @@ lost_colony_sol_system = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { planet_callisto }
 		}
 	}
 
@@ -3184,6 +3232,7 @@ lost_colony_sol_system = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { planet_saturn }
 
 		moon = {
 			name = "NAME_Titan"
@@ -3193,6 +3242,7 @@ lost_colony_sol_system = {
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 
@@ -3204,6 +3254,7 @@ lost_colony_sol_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { planet_uranus }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -3213,6 +3264,7 @@ lost_colony_sol_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { planet_titania }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -3222,6 +3274,7 @@ lost_colony_sol_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { planet_oberon }
 		}
 	}
 
@@ -3234,6 +3287,7 @@ lost_colony_sol_system = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { planet_neptune }
 
 		moon = {
 			name = "NAME_Triton"
@@ -3243,6 +3297,7 @@ lost_colony_sol_system = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
+			flags = { planet_triton }
 		}
 	}
 
@@ -3253,6 +3308,7 @@ lost_colony_sol_system = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		flags = { planet_pluto }
 	}
 
 	planet = {
@@ -3262,6 +3318,7 @@ lost_colony_sol_system = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_makemake }
 	}
 
 	planet = {
@@ -3271,6 +3328,7 @@ lost_colony_sol_system = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_haumea }
 	}
 
 	planet = {
@@ -3280,6 +3338,7 @@ lost_colony_sol_system = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_varuna }
 	}
 
 	init_effect = {
