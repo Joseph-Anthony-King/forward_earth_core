@@ -368,6 +368,11 @@ sol_system_initializer = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t1_3"
 	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_4"
+	}
 }
 
 # Neighbor Tier 1 First Colony - Alpha Centauri
@@ -538,12 +543,12 @@ sol_neighbor_t1_first_colony = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2"
+		initializer = "sol_neighbor_t2_2"
 	}
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2_2"
+		initializer = "sol_neighbor_t2_3"
 	}
 }
 
@@ -820,13 +825,13 @@ sol_neighbor_t1_2 = {
 	}
 }
 
-# Sol Neighbor Tier 1.3 - Luyten's Star
+# Sol Neighbor Tier 1.3 - Lalande 21185
 sol_neighbor_t1_3 = {
-	name = "Luyten's Star"
+	name = "Lalande 21185"
 	class = sc_m
 
 	planet = {
-		name = "Luyten's Star"
+		name = "Lalande 21185"
 		class = "pc_m_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -835,7 +840,7 @@ sol_neighbor_t1_3 = {
 	}
 	
 	planet = {
-		name = "Luyten's Star I"
+		name = "Lalande 21185 I"
 		class = "pc_molten"
 		orbit_distance = 25
 		orbit_angle = 60
@@ -844,7 +849,7 @@ sol_neighbor_t1_3 = {
 	}
 	
 	planet = {
-		name = "Luyten's Star II"
+		name = "Lalande 21185 II"
 		class = "pc_toxic"
 		orbit_distance = 30
 		orbit_angle = 170
@@ -852,7 +857,7 @@ sol_neighbor_t1_3 = {
 		has_ring = yes
 			
 		moon = {
-			name = "Luyten's Star II A"
+			name = "Lalande 21185 II A"
 			class = "pc_barren"
 			size = 5
 			orbit_distance = 16
@@ -864,12 +869,283 @@ sol_neighbor_t1_3 = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2_3"
+		initializer = "sol_neighbor_t2_4"
+	}
+}
+
+# Sol Neighbor Tier 1.4 - Sirius
+sol_neighbor_t1_4 = {
+	name = "NAME_Sirius"
+	class = sc_binary_9
+
+	planet = {
+		name = "NAME_Sirius_A"
+		count = 1
+		class = pc_a_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Sirius A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 15
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Sirius A II"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 170
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Sirius A III"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_Sirius_B"
+		class = pc_f_star
+		orbit_distance = 60
+		orbit_angle = 120
+		size = 15
+		has_ring = no
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t2"
+	}
+}
+
+# Sol Neighbor Tier 2 - Epsilon Eridani
+sol_neighbor_t2 = {
+	name = "NAME_Epsilon_Eridani"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 260
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Epsilon_Eridani"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = random
+		orbit_distance = 35
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+		modifiers = none
+	}
+	
+	planet = {
+		class = "pc_tundra"
+		orbit_distance = 25
+		orbit_angle = 15
+		size = 17
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 45
+		orbit_angle = 200
+		size = 40
+		has_ring = yes
+		
+		moon = {
+			class = "pc_toxic"
+			size = 16
+			orbit_distance = 25
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 5
+			orbit_angle = 130
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 20
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+
+	neighbor_system = {
+		trigger = {
+			not = {
+				any_system = {
+					has_star_flag = eta_cassiopeiae_system
+				}
+			}
+		}
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_3_1"
 	}
 }
 
 # Sol Neighbor Tier 2 - Procyon
-sol_neighbor_t2 = {
+sol_neighbor_t2_2 = {
 	name = "NAME_Procyon"
 	class = sc_binary_9
 	asteroid_belt = {
@@ -1013,7 +1289,7 @@ sol_neighbor_t2 = {
 }
 
 # Sol Neighbor Tier 2.2 - Tau Ceti
-sol_neighbor_t2_2 = {
+sol_neighbor_t2_3 = {
 	name = "Tau Ceti"
 	class = sc_g
 	asteroid_belt = {
@@ -1242,22 +1518,10 @@ sol_neighbor_t2_2 = {
 		size = 5
 		has_ring = no
 	}
-
-	neighbor_system = {
-		trigger = {
-			not = {
-				any_system = {
-					has_star_flag = eta_cassiopeiae_system
-				}
-			}
-		}
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1_3_1"
-	}
 }
 
 # Sol Neighbor Tier 2.3 - 40 Eridani: League of Human Colonies
-sol_neighbor_t2_3 = {
+sol_neighbor_t2_4 = {
 	name = "40 Eridani"
 	class = sc_trinary_4
 	asteroid_belt = {
@@ -1597,11 +1861,6 @@ sol_neighbor_t2_second_colony = {
 			has_ring = no
 		}
 	}
-
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t3"
-	}
 }
 
 # Sol Neighbor Tier 2 No Guaranteed Colony - 67 Cygni
@@ -1748,7 +2007,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t3"
+		initializer = "sol_neighbor_t1_4"
 	}
 }
 
@@ -1834,58 +2093,6 @@ sol_neighbor_t2_third_colony = {
 		orbit_distance = 16
 		orbit_angle = 245
 		size = 12
-		has_ring = no
-	}
-}
-
-# Sol Neighbor Tier 3 - Sirius
-sol_neighbor_t3 = {
-	name = "NAME_Sirius"
-	class = sc_binary_9
-
-	planet = {
-		name = "NAME_Sirius_A"
-		count = 1
-		class = pc_a_star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 35
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Sirius A I"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 15
-		size = 8
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Sirius A II"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 170
-		size = 12
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Sirius A III"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 120
-		size = 10
-		has_ring = no
-	}
-
-	planet = {
-		name = "NAME_Sirius_B"
-		class = pc_f_star
-		orbit_distance = 60
-		orbit_angle = 120
-		size = 15
 		has_ring = no
 	}
 }
@@ -2749,12 +2956,12 @@ com_sol_neighbor_t1_first_colony = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2"
+		initializer = "sol_neighbor_t2_2"
 	}
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2_2"
+		initializer = "sol_neighbor_t2_3"
 	}
 }
 
@@ -3534,12 +3741,12 @@ lost_colony_sol_neighbor_t1_first_colony = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2"
+		initializer = "sol_neighbor_t2_2"
 	}
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t2_2"
+		initializer = "sol_neighbor_t2_3"
 	}
 }
 

@@ -706,6 +706,11 @@ special_init_03 = {
 		hyperlane_jumps = { min = 1 max = 3 }
 		initializer = "sol_neighbor_t1_3"
 	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_4"
+	}
 }
 
 # Sol System (Nuclear Wasteland)
@@ -1026,6 +1031,11 @@ special_init_04 = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = 3 }
 		initializer = "sol_neighbor_t1_3"
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_4"
 	}
 }
 
