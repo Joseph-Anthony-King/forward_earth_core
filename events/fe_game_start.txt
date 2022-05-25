@@ -3166,9 +3166,15 @@ event = {
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
                     while = {
-                        count = 2
+                        count = 1
                         add_district_and_planet_size_if_needed_effect = {
                             district = district_industrial
+                        }
+                    }
+                    while = {
+                        count = 4
+                        add_district_and_planet_size_if_needed_effect = {
+                            district = district_mining
                         }
                     }
                     #generate_start_pops = yes
@@ -3216,10 +3222,16 @@ event = {
                         }
                     }
 
-                    set_name = "Kahoa"
+                    set_name = "NAME_Kahoa"
 
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
+                    while = {
+                        count = 3
+                        add_district_and_planet_size_if_needed_effect = {
+                            district = district_mining
+                        }
+                    }
                     #generate_start_pops = yes
                     while = {
                         limit = { num_pops < 24 }
