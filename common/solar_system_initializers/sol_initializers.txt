@@ -971,7 +971,7 @@ sol_neighbor_t2 = {
 	}
 	
 	planet = {
-		class = random
+		class = "pc_arid"
 		orbit_distance = 35
 		orbit_angle = 120
 		size = 18
@@ -2191,7 +2191,7 @@ sol_neighbor_t3 = {
 	}
 	
 	planet = {
-		class = random
+		class = "pc_ocean"
 		orbit_distance = 30
 		orbit_angle = 90
 		size = 20
@@ -2430,15 +2430,15 @@ sol_neighbor_t3_2 = {
 			has_ring = no
 		}
 		moon = {
-			class = random
-			size = { min = 8 max = 10}
+			class = "pc_continental"
+			size = { min = 8 max = 12}
 			orbit_distance = 2.5
 			orbit_angle = 87
 			has_ring = no
 		}
 		moon = {
-			class = random
-			size = { min = 8 max = 10}
+			class = "pc_arid"
+			size = { min = 8 max = 12}
 			orbit_distance = 2.5
 			orbit_angle = 120
 			has_ring = no
