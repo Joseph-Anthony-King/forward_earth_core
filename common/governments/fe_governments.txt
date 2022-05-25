@@ -24,11 +24,25 @@ gov_planetary_union = {
 
 	possible = {
 		has_authority = auth_democratic
-		has_ethic = ethic_xenophile
+		OR = {
+			has_ethic = ethic_xenophile
+			has_ethic = ethic_militarist
+		}
 	}
 
 	weight = {
-		base = 50
+		base = 5
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.10
+			OR = {
+				has_valid_civic = civic_idealistic_foundation
+				has_valid_civic = civic_efficient_bureaucracy
+			}
+		}
 	}
 }
 
@@ -60,10 +74,24 @@ gov_constitutional_monarchy = {
 
 	possible = {
 		has_authority = auth_democratic
-		has_ethic = ethic_xenophile
+		OR = {
+			has_ethic = ethic_fanatic_xenophile
+			has_ethic = ethic_militarist
+		}
 	}
 
 	weight = {
-		base = 50
+		base = 5
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.10
+			OR = {
+				has_valid_civic = civic_distinguished_admiralty
+				has_valid_civic = civic_efficient_bureaucracy
+			}
+		}
 	}
 }

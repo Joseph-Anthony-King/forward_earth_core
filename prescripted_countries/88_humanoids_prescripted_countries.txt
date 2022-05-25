@@ -141,7 +141,7 @@ humans2_1 = {
 	}
 }
 
-voor = {
+voOR = {
 	name = "EMPIRE_DESIGN_VOOR"
 	adjective = "PRESCRIPTED_adjective_voor"
 	spawn_enabled = yes # yes / no / always

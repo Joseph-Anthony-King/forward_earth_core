@@ -1866,64 +1866,6 @@ kepler_169_system_initializer = {
     }
 }
 
-kepler_186_system_initializer = {
-    name = "Kepler-186"
-    class = "sc_m"
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-
-    planet = {
-        name = "Kepler-186"
-        class = "pc_m_star"
-        size = 25
-        orbit_distance = 0
-        orbit_angle = 222
-        has_ring = no
-    }
-
-    planet = {
-        name = "Kepler-186 c"
-        size = 17
-        orbit_distance = 20
-        orbit_angle = 310
-        has_ring = no
-        class = "pc_molten"
-    }
-    planet = {
-        name = "Kepler-186 d"
-        size = 20
-        orbit_distance = 15
-        orbit_angle = 207
-        has_ring = no
-        class = "pc_molten"
-    }
-    planet = {
-        name = "Kepler-186 b"
-        size = 16
-        orbit_distance = 15
-        orbit_angle = 253
-        has_ring = no
-        class = "pc_toxic"
-    }
-    planet = {
-        name = "Kepler-186 e"
-        size = 18
-        orbit_distance = 25
-        orbit_angle = 16
-        has_ring = no
-        class = rl_habitable_normal
-    }
-    planet = {
-        name = "Kepler-186 f"
-        size = 17
-        orbit_distance = 40
-        orbit_angle = 82
-        has_ring = no
-        class = "pc_frozen"
-    }
-}
-
 kepler_238_system_initializer = {
     name = "Kepler-238"
     class = "sc_g"

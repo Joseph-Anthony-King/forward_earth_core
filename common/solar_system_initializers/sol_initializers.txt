@@ -1133,7 +1133,7 @@ sol_neighbor_t2 = {
 
 	neighbor_system = {
 		trigger = {
-			not = {
+			NOT = {
 				any_system = {
 					has_star_flag = eta_cassiopeiae_system
 				}
@@ -1286,6 +1286,55 @@ sol_neighbor_t2_2 = {
 			}
 		}
 	}
+
+	# Small and Tiny Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "kepler_186_system_initializer"
+	}
+
+	# Medium, Large, and Huge Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "kepler_186_system_initializer"
+	}
+
+	# All other galaxy sizes Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "kepler_186_system_initializer"
+	}
 }
 
 # Sol Neighbor Tier 2.2 - Tau Ceti
@@ -1294,15 +1343,15 @@ sol_neighbor_t2_3 = {
 	class = sc_g
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 165
+		radius = 170
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 175
+		radius = 180
 	}
 	asteroid_belt = {
 		type = icy_asteroid_belt
-		radius = 185
+		radius = 190
 	}
 	
 	flags = { tau_ceti_system }
@@ -1329,25 +1378,42 @@ sol_neighbor_t2_3 = {
 	planet = {
 		name = "Tau Ceti I"
 		class = "pc_molten"
-		orbit_distance = 25
+		orbit_distance = 20
 		orbit_angle = 15
-		size = 8
+		size = 20
 		has_ring = no
 	}
 
 	planet = {
 		name = "Tau Ceti II"
 		class = "pc_toxic"
-		orbit_distance = 25
+		orbit_distance = 20
 		orbit_angle = 125
-		size = 22
+		size = 18
 		has_ring = no
 	}
 
-    planet = {
+	planet = {
 		name = "Tau Ceti III"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 125
+		size = 24
+		has_ring = no
+
+		moon = {
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+
+    planet = {
+		name = "Tau Ceti IV"
         class = "pc_asteroid"
-		orbit_distance = 30
+		orbit_distance = 25
 		orbit_angle = 60
 		size = 0
         flags = { planetary_barrycenter }
@@ -1357,7 +1423,7 @@ sol_neighbor_t2_3 = {
 		}
 
 		planet = {
-			name = "Tau Ceti IIIa"
+			name = "Tau Ceti IVa"
 			class = pc_ocean
 			orbit_distance = 10
 			orbit_angle = 60
@@ -1366,7 +1432,7 @@ sol_neighbor_t2_3 = {
 			entity = "ocean_planet_01_entity"
 			
 			init_effect = {
-				set_planet_flag = planet_tau_ceti_3a
+				set_planet_flag = planet_tau_ceti_4a
 			}
 			
 			init_effect = {
@@ -1375,7 +1441,7 @@ sol_neighbor_t2_3 = {
 		}
 
         planet = {
-			name = "Tau Ceti IIIb"
+			name = "Tau Ceti IVb"
 			class = "pc_continental"
 			size = 16
 			orbit_distance = 0
@@ -1384,7 +1450,7 @@ sol_neighbor_t2_3 = {
 			entity = "continental_planet_03_entity"
 		
 			init_effect = {
-				set_planet_flag = planet_tau_ceti_3b
+				set_planet_flag = planet_tau_ceti_4b
 			}
 		}
     }
@@ -1517,6 +1583,55 @@ sol_neighbor_t2_3 = {
 		orbit_angle = 60
 		size = 5
 		has_ring = no
+	}
+
+	# Small and Tiny HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# Medium, Large, and Huge HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# All other galaxy sizes HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_hd_34445_system_initializer"
 	}
 }
 
@@ -2094,6 +2209,47 @@ sol_neighbor_t2_third_colony = {
 		orbit_angle = 245
 		size = 12
 		has_ring = no
+	}
+
+	# Small and Tiny 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = tiny
+				galaxy_size = small
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# Medium, Large, and Huge 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = medium
+				galaxy_size = large
+				galaxy_size = huge
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# All other galaxy sizes 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = gigantic
+				galaxy_size = immense
+			}
+			num_ai_empires_setting > 1
+		}
+
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_70_virginis_system_initializer"
 	}
 }
 

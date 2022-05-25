@@ -1674,7 +1674,6 @@ star_names = {
 	"Epsilon Ceti"
 	"Epsilon Chi"
 	"Epsilon Delta"
-	"Epsilon Eridani"
 	"Epsilon Eta"
 	"Epsilon Gamma"
 	"Epsilon Icos"

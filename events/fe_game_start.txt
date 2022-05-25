@@ -55,14 +55,17 @@ event = {
 
             spawn_natural_wormhole = {
                 bypass_type = wormhole
-                random_pos = no
+                random_pos = yes
                 orbit_angle = 360
             }
                     
             random_system = {
+                limit = {
+                    has_natural_wormhole = no
+                }
                 spawn_natural_wormhole = {
                     bypass_type = wormhole
-                    random_pos = no
+                    random_pos = yes
                     orbit_angle = 360
                 }
                 link_wormholes = prev
@@ -407,7 +410,7 @@ event = {
 			# If there are no earth based factions
 			limit = {
                 and = {
-                    not = {
+                    NOT = {
                         any_country = {
                             has_country_flag = earth_faction
                         }
@@ -1478,7 +1481,7 @@ event = {
         if = {
             random_country = {
                 limit = {
-                    or = {
+                    OR = {
                         has_country_flag = human_1
                         has_country_flag = human_2
                     }
@@ -1486,7 +1489,7 @@ event = {
 
                 random_country = {
                     limit = {
-                        or = {
+                        OR = {
                             has_country_flag = human_1 
                             has_country_flag = human_2
                         }
@@ -1497,10 +1500,10 @@ event = {
                 random_galaxy_planet = {
                     limit = {
                         AND = {
-                            not = { any_country = { has_country_flag = custodian_faction } }
-                            not = { any_country = { has_country_flag = icarus_faction } }
+                            NOT = { any_country = { has_country_flag = custodian_faction } }
+                            NOT = { any_country = { has_country_flag = icarus_faction } }
                             any_country = {
-                                or = {
+                                OR = {
                                     has_country_flag = human_1 
                                     has_country_flag = human_2
                                 }
@@ -1608,9 +1611,9 @@ event = {
                 random_galaxy_planet = {
                     limit = {
                         AND = {
-                            not = { any_country = { has_country_flag = human_2 } }
-                            not = { any_country = { has_country_flag = custodian_faction } }
-                            not = { any_country = { has_country_flag = icarus_faction } }
+                            NOT = { any_country = { has_country_flag = human_2 } }
+                            NOT = { any_country = { has_country_flag = custodian_faction } }
+                            NOT = { any_country = { has_country_flag = icarus_faction } }
                             any_country = { has_country_flag = human_1 }
                             has_planet_flag = planet_aurora
                         }                
@@ -1848,7 +1851,7 @@ event = {
         if = {
             random_country = {
                 limit = {
-                    or = {
+                    OR = {
                         has_country_flag = icarus_faction
                         has_country_flag = custodian_faction
                     }
@@ -1963,7 +1966,7 @@ event = {
                 random_galaxy_planet = {
                     limit = {
                         AND = {
-                            not = { any_country = { has_country_flag = human_2 } }
+                            NOT = { any_country = { has_country_flag = human_2 } }
                             has_planet_flag = planet_aurora
                         }                
                     }
@@ -2174,7 +2177,7 @@ event = {
 
 	immediate = {
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
 
             limit = {
                 AND = {
@@ -2198,18 +2201,18 @@ event = {
             }
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
 
-            limit = { has_planet_flag = planet_tau_ceti_3a }
+            limit = { has_planet_flag = planet_tau_ceti_4a }
             add_modifier = {
                 modifier = "strong_magnetic_field"
                 days = -1
             }
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
 
-            limit = { has_planet_flag = planet_tau_ceti_3b }
+            limit = { has_planet_flag = planet_tau_ceti_4b }
             add_modifier = {
                 modifier = "lush_planet"
                 days = -1
@@ -2220,7 +2223,7 @@ event = {
             }
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_aurora }
             add_modifier = {
@@ -2229,7 +2232,7 @@ event = {
             }
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_tithonus }
             add_modifier = {
@@ -2250,7 +2253,7 @@ event = {
 
 	immediate = {
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2264,10 +2267,10 @@ event = {
                     has_planet_flag = planet_mercury
                 }                
             }
-            set_name = "Sol I"
+            set_name = "NAME_Sol_1"
         }
 
-        random_galaxy_planet ={
+        every_galaxy_planet ={
             limit = {
                 AND = {
                     NOT = {
@@ -2281,10 +2284,10 @@ event = {
                     has_planet_flag = planet_venus
                 }                
             }
-            set_name = "Sol II"
+            set_name = "NAME_Sol_2"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2298,10 +2301,10 @@ event = {
                     has_planet_flag = planet_earth
                 }                
             }
-            set_name = "Sol III"
+            set_name = "NAME_Sol_3"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2315,10 +2318,10 @@ event = {
                     has_planet_flag = planet_luna
                 }                
             }
-            set_name = "Sol IIIa"
+            set_name = "NAME_Sol_3a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2332,10 +2335,10 @@ event = {
                     has_planet_flag = planet_mars
                 }                
             }
-            set_name = "Sol IV"
+            set_name = "NAME_Sol_4"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2349,10 +2352,10 @@ event = {
                     has_planet_flag = planet_phobos
                 }                
             }
-            set_name = "Sol IVa"
+            set_name = "NAME_Sol_4a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2366,10 +2369,10 @@ event = {
                     has_planet_flag = planet_deimos
                 }                
             }
-            set_name = "Sol IVb"
+            set_name = "NAME_Sol_4b"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2386,7 +2389,7 @@ event = {
             set_name = "TXC-6735"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2403,7 +2406,7 @@ event = {
             set_name = "RTD-4377"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2420,7 +2423,7 @@ event = {
             set_name = "YKQ-9137"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2437,7 +2440,7 @@ event = {
             set_name = "PLM-4371"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2451,10 +2454,10 @@ event = {
                     has_planet_flag = planet_jupiter
                 }                
             }
-            set_name = "Sol V"
+            set_name = "NAME_Sol_5"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2468,10 +2471,10 @@ event = {
                     has_planet_flag = planet_io
                 }                
             }
-            set_name = "Sol Va"
+            set_name = "NAME_Sol_5a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2485,10 +2488,10 @@ event = {
                     has_planet_flag = planet_europa
                 }                
             }
-            set_name = "Sol Vb"
+            set_name = "NAME_Sol_5b"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2502,10 +2505,10 @@ event = {
                     has_planet_flag = planet_ganymede
                 }                
             }
-            set_name = "Sol Vc"
+            set_name = "NAME_Sol_5c"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2519,10 +2522,10 @@ event = {
                     has_planet_flag = planet_callisto
                 }                
             }
-            set_name = "Sol Vd"
+            set_name = "NAME_Sol_5d"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2536,10 +2539,10 @@ event = {
                     has_planet_flag = planet_saturn
                 }                
             }
-            set_name = "Sol VI"
+            set_name = "NAME_Sol_6"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2553,10 +2556,10 @@ event = {
                     has_planet_flag = planet_titan
                 }                
             }
-            set_name = "Sol VIb"
+            set_name = "NAME_Sol_6a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2570,10 +2573,10 @@ event = {
                     has_planet_flag = planet_uranus
                 }                
             }
-            set_name = "Sol VII"
+            set_name = "NAME_Sol_7"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2587,10 +2590,10 @@ event = {
                     has_planet_flag = planet_titania
                 }                
             }
-            set_name = "Sol VIIa"
+            set_name = "NAME_Sol_7a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2604,10 +2607,10 @@ event = {
                     has_planet_flag = planet_oberon
                 }                
             }
-            set_name = "Sol VIIb"
+            set_name = "NAME_Sol_7b"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2621,10 +2624,10 @@ event = {
                     has_planet_flag = planet_neptune
                 }                
             }
-            set_name = "Sol VIII"
+            set_name = "NAME_Sol_8"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2638,10 +2641,10 @@ event = {
                     has_planet_flag = planet_triton
                 }                
             }
-            set_name = "Sol VIIIa"
+            set_name = "NAME_Sol_8a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2658,7 +2661,7 @@ event = {
             set_name = "DIS-7865"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2675,7 +2678,7 @@ event = {
             set_name = "PUR-1436"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2692,7 +2695,7 @@ event = {
             set_name = "LHR-0978"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -2709,144 +2712,144 @@ event = {
             set_name = "WXY-7825"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_inferno
                 }                
             }
-            set_name = "Eta Cassiopeiae A I"
+            set_name = "NAME_Eta_Cassiopeiae_A_1"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_astraeus
                 }                
             }
-            set_name = "Eta Cassiopeiae A II"
+            set_name = "NAME_Eta_Cassiopeiae_A_2"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_notus
                 }                
             }
-            set_name = "Eta Cassiopeiae A IIa"
+            set_name = "NAME_Eta_Cassiopeiae_A_2a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_eurus
                 }                
             }
-            set_name = "Eta Cassiopeiae A IIb"
+            set_name = "NAME_Eta_Cassiopeiae_A_2b"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_aurora
                 }                
             }
-            set_name = "Eta Cassiopeiae A IIIa"
+            set_name = "NAME_Eta_Cassiopeiae_A_3a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_tithonus
                 }                
             }
-            set_name = "Eta Cassiopeiae A IIIb"
+            set_name = "NAME_Eta_Cassiopeiae_A_3b"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_anemoi
                 }                
             }
-            set_name = "Eta Cassiopeiae A IV"
+            set_name = "NAME_Eta_Cassiopeiae_A_4"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_boreas
                 }                
             }
-            set_name = "Eta Cassiopeiae A IVa"
+            set_name = "NAME_Eta_Cassiopeiae_A_4a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_zephyrus
                 }                
             }
-            set_name = "Eta Cassiopeiae A IVb"
+            set_name = "NAME_Eta_Cassiopeiae_A_4b"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_hyperion
                 }                
             }
-            set_name = "Eta Cassiopeiae A V"
+            set_name = "NAME_Eta_Cassiopeiae_A_5"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_selene
                 }                
             }
-            set_name = "Eta Cassiopeiae A Va"
+            set_name = "NAME_Eta_Cassiopeiae_A_5a"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_jackson_s_planet
                 }                
             }
-            set_name = "Eta Cassiopeiae B I"
+            set_name = "NAME_Eta_Cassiopeiae_B_1"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_olympus
                 }                
             }
-            set_name = "Eta Cassiopeiae B II"
+            set_name = "NAME_Eta_Cassiopeiae_B_2"
         }
 
-        random_galaxy_planet = {
+        every_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
                     has_planet_flag = planet_horae
                 }                
             }
-            set_name = "Eta Cassiopeiae B IIb"
+            set_name = "NAME_Eta_Cassiopeiae_B_2a"
         }
 
         if = {
@@ -2889,7 +2892,7 @@ event = {
         random_galaxy_planet = {
             limit = {
                 and = {
-                    has_planet_flag = planet_tau_ceti_3a  
+                    has_planet_flag = planet_tau_ceti_4a  
                     num_ai_empires_setting > 1
                 }           
             }
@@ -2905,6 +2908,920 @@ event = {
                     generate_late_primitives_on_planet = yes
                 }
             }
+        }
+    }
+}
+
+### fe.14 - Spawn potential federation members
+event = {
+	id = fe.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        random_list = {
+            99 = {
+                ### Spawn Gal Risians
+                random_galaxy_planet = {
+                    limit = {
+                        and = {
+                            num_ai_empires_setting > 1
+                            has_planet_flag = planet_70_viginis_2  
+                        }
+                    }
+
+                    create_species = {
+                        name = "NAME_Gal_Risian"
+                        plural = "NAME_Gal_Risians"
+                        class = HUM
+                        portrait = random
+                        homeworld = THIS
+                        traits = {
+                            trait = "trait_slow_breeders"
+                            trait = "trait_nonadaptive"
+                            trait = "trait_venerable"
+                            trait = "trait_traditional"
+                            trait = "trait_quick_learners"
+                        }
+                    }
+
+                    create_country = {
+                        name = random
+
+                        name_list = HUM2
+
+                        ship_prefix = "GSS"
+
+                        authority = "auth_democratic"
+
+                        day_zero_contact = no
+
+                        civics = {
+                            civic = civic_technocracy
+                            civic = civic_diplomatic_corps
+                        }
+
+                        species = last_created_species
+                        ethos = {
+                            ethic = "ethic_xenophobe"
+                            ethic = "ethic_fanatic_materialist"
+                        }
+
+                        origin = "origin_mechanists"
+
+                        flag = random
+                        type = default
+                        effect = {
+                            add_resource = {
+                                minerals = 200
+                                energy = 200
+                                food = 200
+                                alloys = 100
+                                consumer_goods = 100
+                                influence = 100
+                            }
+                        }
+                    }
+
+                    create_colony = {
+                        owner = last_created_country
+                        species = last_created_species
+                        ethos = {
+                            ethic = "ethic_xenophile"
+                            ethic = "ethic_fanatic_egalitarian"
+                        }
+                    }
+
+                    solar_system = {
+                        create_starbase = {
+                            size = starbase_starport
+                            module = shipyard
+                            building = crew_quarters
+                            owner = last_created_country
+                            effect = {
+                                set_starbase_module = {
+                                    slot = 1
+                                    module = trading_hub
+                                }
+                            }
+                        }
+                    }
+
+                    last_created_country = {
+                        set_graphical_culture = humanoid_01
+                        create_starting_leaders = yes
+                        set_country_flag = gal_risians
+                        capital_scope = { set_name = "NAME_Gal_Risia" }
+                        country_event = { id = game_start.9 }
+                        country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+                    }
+
+                    set_owner = last_created_country
+
+                    set_capital = yes
+                    generate_start_deposits_and_blockers = yes
+                    generate_start_buildings_and_districts = yes
+                    generate_start_pops = yes
+                    clear_blockers = yes
+
+                    log = "Gal Risians spawned..."
+                }
+            }
+            1 = { }
+        }
+
+        random_list = {
+            99 = {
+                ### Create Kahomas on Kahoa
+                random_galaxy_planet = {
+                    limit = {
+                        and = {
+                            num_ai_empires_setting > 1
+                            has_planet_flag = planet_HD_34445_4b  
+                        }
+                    }
+
+                    create_species = {
+                        name = "NAME_Kahoma"
+                        plural = "NAME_Kahomas"
+                        class = MAM
+                        portrait = random
+                        traits = {
+                            trait = "trait_pc_continental_preference"
+                            trait = "trait_unruly"
+                            trait = "trait_traditional"
+                            trait = "trait_strong"
+                            trait = "trait_communal"
+                            trait = "trait_talented"
+                        }
+                        effect = {
+                            set_species_flag = kahomas
+                            save_event_target_as = kahomas
+                        }
+                    }
+                }
+
+                ### Spawn the United Empire
+                random_galaxy_planet = {
+                    limit = {
+                        and = {
+                            num_ai_empires_setting > 1
+                            has_planet_flag = planet_HD_34445_4c  
+                        }
+                    }
+
+                    create_species = {
+                        name = "NAME_Myrk_Ri"
+                        plural = "NAME_Myrk_Rians"
+                        class = REP
+                        portrait = random
+                        homeworld = THIS
+                        traits = {
+                            trait = "trait_quarrelsome"
+                            trait = "trait_wasteful"
+                            trait = "trait_adaptive"
+                            trait = "trait_nomadic"
+                            trait = "trait_resilient"
+                        }
+                        effect = {
+                            save_event_target_as = myrkrians
+                        }
+                    }
+
+                    create_country = {
+                        name = "NAME_United_Empire_of_Myrk_Kahoa"
+
+                        name_list = REP4
+
+                        ship_prefix = "UIS"
+
+                        authority = "auth_democratic"
+
+                        day_zero_contact = no
+
+                        civics = {
+                            civic = civic_distinguished_admiralty
+                            civic = civic_efficient_bureaucracy
+                        }
+
+                        species = event_target:myrkrians
+                        ethos = {
+                            ethic = "ethic_fanatic_xenophile"
+                            ethic = "ethic_militarist"
+                        }
+
+                        origin = "origin_default"
+
+                        flag = random
+                        type = default
+                        effect = {
+                            add_resource = {
+                                minerals = 200
+                                energy = 200
+                                food = 200
+                                alloys = 100
+                                consumer_goods = 100
+                                influence = 100
+                            }
+                        }
+                    }
+
+                    create_colony = {
+                        owner = last_created_country
+                        species = event_target:myrkrians
+                        ethos = {
+                            ethic = "ethic_fanatic_xenophile"
+                            ethic = "ethic_militarist"
+                        }
+                    }
+
+                    solar_system = {
+                        create_starbase = {
+                            size = starbase_starport
+                            module = shipyard
+                            building = crew_quarters
+                            owner = last_created_country
+                            effect = {
+                                set_starbase_module = {
+                                    slot = 1
+                                    module = trading_hub
+                                }
+                            }
+                        }
+                    }
+
+                    last_created_country = {
+                        set_graphical_culture = reptilian_01
+                        create_starting_leaders = yes
+                        set_country_flag = united_empire
+                        capital_scope = { set_name = "NAME_Myrk" }
+                        country_event = { id = game_start.9 }
+                        country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+                    }
+
+                    set_owner = last_created_country
+
+                    set_capital = yes
+                    generate_start_deposits_and_blockers = yes
+                    generate_start_buildings_and_districts = yes
+                    while = {
+                        count = 2
+                        add_district_and_planet_size_if_needed_effect = {
+                            district = district_industrial
+                        }
+                    }
+                    #generate_start_pops = yes
+                    while = {
+                        limit = { num_pops < 28 }
+                        create_pop = {
+                            species = event_target:myrkrians
+                            ethos = random
+                        }
+                    }
+                    while = {
+                        limit = { num_pops < 32 }
+                        create_pop = {
+                            species = event_target:kahomas
+                            ethos = random
+                        }
+                    }
+                    clear_blockers = yes
+
+                    log = "Myrk-Rians spawned..."
+                }
+
+                ### Populate Kahoa
+                random_galaxy_planet = {
+                    limit = {
+                        and = {
+                            num_ai_empires_setting > 1
+                            has_planet_flag = planet_HD_34445_4b  
+                        }
+                    }
+
+                    random_galaxy_species = {
+                        limit = {
+                            has_species_flag = kahomas
+                        }
+                        set_species_homeworld = prev
+                    }
+
+                    create_colony = {
+                        owner = last_created_country
+                        species = event_target:myrkrians
+                        ethos = {
+                            ethic = "ethic_fanatic_xenophile"
+                            ethic = "ethic_militarist"
+                        }
+                    }
+
+                    set_name = "Kahoa"
+
+                    generate_start_deposits_and_blockers = yes
+                    generate_start_buildings_and_districts = yes
+                    #generate_start_pops = yes
+                    while = {
+                        limit = { num_pops < 24 }
+                        create_pop = {
+                            species = event_target:kahomas
+                            ethos = random
+                        }
+                    }
+                    while = {
+                        limit = { num_pops < 28 }
+                        create_pop = {
+                            species = event_target:myrkrians
+                            ethos = random
+                        }
+                    }
+
+                    log = "Kahoa spawned..."
+                }
+            }
+            1 = { }
+        }
+
+        random_list = {
+            99 = {
+                ### Spawn Great Parliament
+                if = {
+                    limit = {
+                        AND = {
+                            num_fallen_empires > 0
+                            num_ai_empires_setting > 1
+                        }
+                    }
+                
+                    random_country = {
+                        limit = {
+                            is_country_type = fallen_empire
+                        }
+                        owner_species = { save_event_target_as = fallen_species }
+                    }
+                    random_galaxy_planet = {
+                        limit = {
+                            and = {
+                                num_ai_empires_setting > 1
+                                has_planet_flag = planet_kepler_186_e  
+                            }
+                        }
+
+                        create_country = {
+                            name = random
+
+                            name_list = random
+
+                            ship_prefix = "GPS"
+
+                            authority = "auth_democratic"
+
+                            day_zero_contact = no
+
+                            civics = {
+                                civic = civic_byzantine_bureaucracy
+                                civic = civic_free_haven
+                            }
+
+                            species = event_target:fallen_species
+                            ethos = {
+                                ethic = "ethic_xenophile"
+                                ethic = "ethic_fanatic_pacifist"
+                            }
+
+                            origin = "origin_remnants"
+
+                            flag = random
+                            type = default
+                            effect = {
+                                add_resource = {
+                                    minerals = 200
+                                    energy = 200
+                                    food = 200
+                                    alloys = 100
+                                    consumer_goods = 100
+                                    influence = 100
+                                }
+                            }
+                        }
+
+                        create_colony = {
+                            owner = last_created_country
+                            species = event_target:fallen_species
+                            ethos = {
+                                ethic = "ethic_xenophile"
+                                ethic = "ethic_fanatic_egalitarian"
+                            }
+                        }
+
+                        solar_system = {
+                            create_starbase = {
+                                size = starbase_starport
+                                module = shipyard
+                                building = crew_quarters
+                                owner = last_created_country
+                                effect = {
+                                    set_starbase_module = {
+                                        slot = 1
+                                        module = trading_hub
+                                    }
+                                }
+                            }
+                        }
+
+                        last_created_country = {
+                            create_starting_leaders = yes
+                            capital_scope = { set_name = "NAME_Great_Parliament" }
+                            set_country_flag = great_parliament
+                            country_event = { id = game_start.9 }
+                            country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+                        }
+
+                        set_owner = last_created_country
+
+                        set_capital = yes
+                        generate_start_deposits_and_blockers = yes
+                        generate_start_buildings_and_districts = yes
+                        generate_start_pops = yes
+                        clear_blockers = yes
+
+                        log = "Great Parliament spawned..."
+                    }
+                }
+
+                ### Spawn Great Parliament Wormhole  
+                random_system = {
+                    limit = {
+                        has_star_flag = kepler_186_system             
+                    }
+
+                    spawn_natural_wormhole = {
+                        bypass_type = wormhole
+                        random_pos = yes
+                        orbit_angle = 360
+                    }
+                            
+                    random_system = {
+                        limit = {
+                            has_natural_wormhole = no
+                        }
+                        spawn_natural_wormhole = {
+                            bypass_type = wormhole
+                            random_pos = yes
+                            orbit_angle = 360
+                        }
+                        link_wormholes = prev
+                    }
+                }
+            }
+            1 = { }
+        }
+    }
+}
+
+### fe.15 - Revert potential federation system names to default names if unpopulated
+event = {
+	id = fe.15
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_1
+                }                       
+            }
+            set_name = "NAME_70_virginis_1"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_1a
+                }                       
+            }
+            set_name = "NAME_70_virginis_1a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_1b
+                }                       
+            }
+            set_name = "NAME_70_virginis_1b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_2
+                }                       
+            }
+            set_name = "NAME_70_virginis_2"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_2a
+                }                       
+            }
+            set_name = "NAME_70_virginis_2a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_2b
+                }                       
+            }
+            set_name = "NAME_70_virginis_2b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_3
+                }                       
+            }
+            set_name = "NAME_70_virginis_3"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_4
+                }                       
+            }
+            set_name = "NAME_70_virginis_4"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_4a
+                }                       
+            }
+            set_name = "NAME_70_virginis_4a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_4b
+                }                       
+            }
+            set_name = "NAME_70_virginis_4b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_5
+                }                       
+            }
+            set_name = "NAME_70_virginis_5"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_5a
+                }                       
+            }
+            set_name = "NAME_70_virginis_5a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_5b
+                }                       
+            }
+            set_name = "NAME_70_virginis_5b"
+        }
+
+        if = {
+            limit = {
+                NOT = {
+                    any_country = {
+                        has_country_flag = gal_risians
+                    }
+                }                 
+            }
+
+            log = "70 Virginis names set to default..."
+        }
+        else = {
+            log = "70 Virginis names untouched..."
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_1
+                }                       
+            }
+            set_name = "NAME_HD_34445_1"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_2
+                }                       
+            }
+            set_name = "NAME_HD_34445_2"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_3
+                }                       
+            }
+            set_name = "NAME_HD_34445_3"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_3a
+                }                       
+            }
+            set_name = "NAME_HD_34445_3a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_3b
+                }                       
+            }
+            set_name = "NAME_HD_34445_3b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_4
+                }                       
+            }
+            set_name = "NAME_HD_34445_4"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_4a
+                }                       
+            }
+            set_name = "NAME_HD_34445_4a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_4b
+                }                       
+            }
+            set_name = "NAME_HD_34445_4b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_4c
+                }                       
+            }
+            set_name = "NAME_HD_34445_4c"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_5
+                }                       
+            }
+            set_name = "NAME_HD_34445_5"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_5a
+                }                       
+            }
+            set_name = "NAME_HD_34445_5a"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_5b
+                }                       
+            }
+            set_name = "NAME_HD_34445_5b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_6
+                }                       
+            }
+            set_name = "NAME_HD_34445_6"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = united_empire
+                        }
+                    }
+                    has_planet_flag = planet_HD_34445_6a
+                }                       
+            }
+            set_name = "NAME_HD_34445_6a"
+        }
+
+        if = {
+            limit = {
+                NOT = {
+                    any_country = {
+                        has_country_flag = united_empire
+                    }
+                }                 
+            }
+
+            log = "HD 34445 names set to default..."
+        }
+        else = {
+            log = "HD 34445 names untouched..."
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = great_parliament
+                        }
+                    }
+                    has_planet_flag = planet_kepler_186_e
+                }                       
+            }
+            set_name = "NAME_Kepler_186_e"
+        }
+
+        if = {
+            limit = {
+                NOT = {
+                    any_country = {
+                        has_country_flag = great_parliament
+                    }
+                }                 
+            }
+
+            log = "Kepler-186e name set to default..."
+        }
+        else = {
+            log = "Great Parliament name untouched..."
         }
     }
 }
