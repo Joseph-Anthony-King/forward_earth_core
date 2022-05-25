@@ -1478,7 +1478,7 @@ event = {
                             name = "EMPIRE_DESIGN_icarus"
                             name_list = "MACHINE3"
 
-                            ship_prefix = "EMPIRE_DESIGN_icarus"
+                            ship_prefix = "ICARUS"
 
                             authority = "auth_machine_intelligence"
 
