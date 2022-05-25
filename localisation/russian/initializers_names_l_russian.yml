@@ -383,6 +383,8 @@
  NAME_Imperial_Origin_Empire_5:0 "[origin_imperial_species_5.GetAdj] League"
  
  NAME_Empty:0 ""
+ NAME_Autodrone:0 "Автодрон"
+ NAME_Autodrones:0 "Автодроны"
  NAME_Phobos:0 "Фобос"
  NAME_Deimos:0 "Деймос"
  NAME_Titania:0 "Титания"

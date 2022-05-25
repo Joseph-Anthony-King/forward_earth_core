@@ -383,6 +383,8 @@
  NAME_Imperial_Origin_Empire_5:0 "[origin_imperial_species_5.GetAdj]联盟"
 
  NAME_Empty:0 ""
+ NAME_Autodrone:0 "自动无人机"
+ NAME_Autodrones:0 "自发"
  NAME_Phobos:0 "火卫一"
  NAME_Deimos:0 "火卫二"
  NAME_Titania:0 "二氧化钛"

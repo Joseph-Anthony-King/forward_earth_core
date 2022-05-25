@@ -662,7 +662,7 @@ event = {
                         }
                     }
                     # Medieval Age
-                    9 = {
+                    8 = {
                         create_species = {
                             name = NAME_Human
                             plural = NAME_Humans
@@ -745,7 +745,7 @@ event = {
                         }
                     }
                     # Renaissance Age
-                    9 = {
+                    8 = {
                         create_species = {
                             name = NAME_Human
                             plural = NAME_Humans
@@ -1230,7 +1230,7 @@ event = {
                         }
                     }
                     # Early Space Age
-                    9 = {
+                    8 = {
                         create_species = {
                             name = NAME_Human
                             plural = NAME_Humans
@@ -1345,7 +1345,7 @@ event = {
                         }
                     }
                     # UNE
-                    9 = {
+                    8 = {
                         create_species = {
                             name = NAME_Human
                             plural = NAME_Humans
@@ -1457,8 +1457,126 @@ event = {
 
                         log = "UNE spawned as NPC..."
                     }
+                    # ICARUS
+                    8 = {
+                        create_species = {
+                            name = NAME_Autodrone
+                            plural = NAME_Autodrones
+                            class = "MACHINE"
+                            portrait = "sd_hum_robot"
+                            homeworld = THIS
+                            traits = {
+                                trait="trait_machine_unit"
+                                trait="trait_robot_logic_engines"
+                                trait="trait_robot_mass_produced"
+                                trait="trait_robot_luxurious"
+                            }
+                        }
+                        generate_empire_home_planet = yes
+
+                        create_country = {
+                            name = "EMPIRE_DESIGN_icarus"
+                            name_list = "MACHINE3"
+
+                            ship_prefix = "EMPIRE_DESIGN_icarus"
+
+                            authority = "auth_machine_intelligence"
+
+                            day_zero_contact = no
+
+                            civics = {
+                                civic = civic_machine_terminator
+                                civic = civic_machine_warbots
+                            }
+
+                            species = last_created_species
+                            ethos = {
+                                ethic = "ethic_gestalt_consciousness"
+                            }
+
+                            flag = {
+                                icon = {
+                                    category = "human"
+                                    file = "flag_human_nato.dds"
+                                }
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+                            }
+                            type = default
+                            effect = {
+                                save_event_target_as = icarus
+                                add_resource = {
+                                    minerals = 200
+                                    energy = 200
+                                    food = 200
+                                    alloys = 100
+                                    consumer_goods = 100
+                                    influence = 100
+                                }
+                            }
+                        }
+
+                        create_colony = {
+                            owner = event_target:icarus
+                            species = last_created_species
+                            ethic = "ethic_gestalt_consciousness"
+                        }
+
+                        solar_system = {
+                            create_starbase = {
+                                size = starbase_starport
+                                module = shipyard
+                                building = crew_quarters
+                                owner = event_target:icarus
+                                effect = {
+                                    set_starbase_module = {
+                                        slot = 1
+                                        module = trading_hub
+                                    }
+                                }
+                            }
+                        }
+
+                        last_created_country = {
+                            set_graphical_culture = mammalian_01
+                            capital_scope = { set_name = "NAME_Earth" }
+                            set_country_flag = icarus_faction
+                            set_country_flag = earth_faction
+                            set_country_flag = sol_starbase
+                            create_starting_leaders = yes
+                            save_global_event_target_as = icarus
+                            country_event = { id = game_start.9 }
+                            country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+                        }
+
+                        set_owner = last_created_country
+
+                        set_capital = yes
+                        generate_earth_deposits_and_blockers = yes
+                        generate_start_buildings_and_districts = yes
+                        generate_start_pops = yes
+                        clear_blockers = yes
+
+                        log = "ICARUS spawned as NPC..."
+
+                    }
+                    # Cockroaches of Earth
+                    1 = {
+                        change_pc = pc_nuked
+                        add_anomaly = {
+                            category = sol_wasteland_category
+                        }
+                    }
                     # No Humans
-                    8 = {				
+                    3 = {				
                     }
                 }
             }
@@ -1882,6 +2000,10 @@ event = {
                 }
 
                 random_galaxy_planet = {
+                    limit = {
+                        has_planet_flag = planet_40_eridani_a_two             
+                    }
+
                     create_country = {
                         name = "NAME_League_of_Human_Colonies"
                         name_list = HUMAN1              
@@ -1960,7 +2082,7 @@ event = {
                         set_graphical_culture = mammalian_01
                     }
 
-                    log = "LHC spawned for Earth Custodianship..."
+                    log = "LHC spawned for Earth Custodianship/ICARUS..."
                 }
                 
                 random_galaxy_planet = {
@@ -2128,7 +2250,7 @@ event = {
                                 type = "defense_army"	
                             }
 
-                            log = "CoA spawned for Earth Custodianship..."
+                            log = "CoA spawned for Earth Custodianship/ICARUS..."
                         }
                         10 = {}
                     }
