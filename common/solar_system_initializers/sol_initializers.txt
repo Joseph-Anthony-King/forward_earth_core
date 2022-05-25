@@ -1287,59 +1287,15 @@ sol_neighbor_t2_2 = {
 		}
 	}
 
-	# Small and Tiny Kepler-186 System Initializers
 	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "kepler_186_system_initializer"
-	}
-
-	# Medium, Large, and Huge Kepler-186 System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-					galaxy_size = huge
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "kepler_186_system_initializer"
-	}
-
-	# All other galaxy sizes Kepler-186 System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "kepler_186_system_initializer"
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t3_2"
 	}
 }
 
 # Sol Neighbor Tier 2.2 - Tau Ceti
 sol_neighbor_t2_3 = {
-	name = "Tau Ceti"
+	name = "NAME_Tau_Ceti"
 	class = sc_g
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1366,7 +1322,6 @@ sol_neighbor_t2_3 = {
 	}
 
 	planet = {
-		name = "Tau Ceti"
 		count = 1
 		class = pc_g_star
 		orbit_distance = 0
@@ -1376,7 +1331,6 @@ sol_neighbor_t2_3 = {
 	}
 
 	planet = {
-		name = "Tau Ceti I"
 		class = "pc_molten"
 		orbit_distance = 20
 		orbit_angle = 15
@@ -1385,7 +1339,6 @@ sol_neighbor_t2_3 = {
 	}
 
 	planet = {
-		name = "Tau Ceti II"
 		class = "pc_toxic"
 		orbit_distance = 20
 		orbit_angle = 125
@@ -1394,7 +1347,6 @@ sol_neighbor_t2_3 = {
 	}
 
 	planet = {
-		name = "Tau Ceti III"
 		class = "pc_toxic"
 		orbit_distance = 20
 		orbit_angle = 125
@@ -1411,7 +1363,6 @@ sol_neighbor_t2_3 = {
 	}
 
     planet = {
-		name = "Tau Ceti IV"
         class = "pc_asteroid"
 		orbit_distance = 25
 		orbit_angle = 60
@@ -1423,7 +1374,6 @@ sol_neighbor_t2_3 = {
 		}
 
 		planet = {
-			name = "Tau Ceti IVa"
 			class = pc_ocean
 			orbit_distance = 10
 			orbit_angle = 60
@@ -1441,7 +1391,6 @@ sol_neighbor_t2_3 = {
 		}
 
         planet = {
-			name = "Tau Ceti IVb"
 			class = "pc_continental"
 			size = 16
 			orbit_distance = 0
@@ -1456,7 +1405,6 @@ sol_neighbor_t2_3 = {
     }
 
 	planet = {
-		name = "Tau Ceti IV"
 		class = "pc_barren"
 		orbit_distance = 25
 		orbit_angle = 125
@@ -1465,7 +1413,6 @@ sol_neighbor_t2_3 = {
 	}
 
 	planet = {
-		name = "Tau Ceti V"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 170
@@ -1585,53 +1532,9 @@ sol_neighbor_t2_3 = {
 		has_ring = no
 	}
 
-	# Small and Tiny HD 34445 Initializers
 	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "npc_hd_34445_system_initializer"
-	}
-
-	# Medium, Large, and Huge HD 34445 Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-					galaxy_size = huge
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "npc_hd_34445_system_initializer"
-	}
-
-	# All other galaxy sizes HD 34445 Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_hd_34445_system_initializer"
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t3"
 	}
 }
 
@@ -2250,6 +2153,371 @@ sol_neighbor_t2_third_colony = {
 
 		hyperlane_jumps = { min = 8 max = 9 }
 		initializer = "npc_70_virginis_system_initializer"
+	}
+}
+
+# Sol Neighbor Tier 3 - Epsilon Indi
+sol_neighbor_t3 = {
+	name = "NAME_Epsilon_Indi"
+	class = "sc_k"
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 180
+	}
+	
+	planet = {
+		name = "NAME_Epsilon_Indi_A"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 22
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 22
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "chthonian_planet"
+				days = -1
+			}
+		}
+	}
+	
+	planet = {
+		class = random
+		orbit_distance = 30
+		orbit_angle = 90
+		size = 20
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "strong_magnetic_field"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			class = "pc_barren"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 6
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 190
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 12
+			orbit_angle = 210
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren"
+			size = 3
+			orbit_distance = 6
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 40
+		has_ring = yes
+
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 23
+			orbit_angle = 10
+			has_ring = no
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 5
+			orbit_angle = 80
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 100
+		orbit_angle = 125
+		size = 0
+		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		planet = {
+			name = "NAME_Epsilon_Indi_B"
+			class = "pc_t_star"
+			orbit_distance = 25
+			orbit_angle = -90
+			size = 40
+			has_ring = no
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+			
+		planet = {
+			name = "NAME_Epsilon_Indi_C"
+			class = "pc_t_star"
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 40
+			has_ring = no
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}		
+		}
+	}
+
+	# Small and Tiny HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 5 max = 6 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# Medium, Large, and Huge HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# All other galaxy sizes HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+}
+
+# Sol Neighbor Tier 3 - 23 Libre
+sol_neighbor_t3_2 = {
+	name = "NAME_23_Libre"
+
+	class = "sc_g"
+
+	planet = {
+		name = "NAME_23_Libre"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 32
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 120
+		size = 9
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 38
+		has_ring = no
+		change_orbit = 6
+
+		moon = {
+			class = "pc_molten"
+			size = { min = 6 max = 8}
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+		}
+		moon = {
+			class = random
+			size = { min = 8 max = 10}
+			orbit_distance = 2.5
+			orbit_angle = 87
+			has_ring = no
+		}
+		moon = {
+			class = random
+			size = { min = 8 max = 10}
+			orbit_distance = 2.5
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		change_orbit = 7
+
+		moon = {
+			class = "pc_barren"
+			size = { min = 8 max = 10}
+			orbit_distance = 12
+			orbit_angle = 220
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 220
+		size = 15
+		has_ring = yes
+		change_orbit = 7
+	}
+
+	# Small and Tiny Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 5 max = 6 }
+		initializer = "kepler_186_system_initializer"
+	}
+
+	# Medium, Large, and Huge Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "kepler_186_system_initializer"
+	}
+
+	# All other galaxy sizes Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "kepler_186_system_initializer"
 	}
 }
 
