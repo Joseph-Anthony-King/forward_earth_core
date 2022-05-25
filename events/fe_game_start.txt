@@ -1527,7 +1527,6 @@ event = {
                         create_colony = {
                             owner = event_target:icarus
                             species = last_created_species
-                            ethic = "ethic_gestalt_consciousness"
                         }
 
                         solar_system = {
