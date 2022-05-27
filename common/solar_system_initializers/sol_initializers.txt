@@ -238,12 +238,23 @@ sol_system_initializer = {
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
 		flags = { planet_saturn }
+		
+		moon = {
+			name = "NAME_Enceladus"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 90
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+			flags = { planet_enceladus }
+		}
 
 		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
+			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
@@ -396,7 +407,7 @@ sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -405,7 +416,7 @@ sol_neighbor_t1_first_colony = {
 		has_ring = no
 
     	planet = {
-    		name = "Alpha Centauri B I"
+    		name = "NAME_Alpha_Centauri_B_I"
     		class = "pc_molten"
     		orbit_distance = 25
     		orbit_angle = 125
@@ -414,7 +425,7 @@ sol_neighbor_t1_first_colony = {
     	}
 
     	planet = {
-    		name = "Alpha Centauri B II"
+    		name = "NAME_Alpha_Centauri_B_II"
     		orbit_distance = 25
     		orbit_angle = 120
     		class = "pc_continental"
@@ -422,7 +433,7 @@ sol_neighbor_t1_first_colony = {
     		has_ring = no
     		entity = "continental_planet_01_entity"
     		moon = {
-    			name = "Alpha Centauri B IIa"
+    			name = "NAME_Alpha_Centauri_B_IIa"
     			class = "pc_barren_cold"
     			size = 1
     			orbit_distance = 7
@@ -430,7 +441,7 @@ sol_neighbor_t1_first_colony = {
     		}
 
     		moon = {
-    			name = "Alpha Centauri B IIb"
+    			name = "NAME_Alpha_Centauri_B_IIb"
     			class = "pc_barren_cold"
     			size = 2
     			orbit_distance = 4
@@ -439,7 +450,6 @@ sol_neighbor_t1_first_colony = {
     	}
 
       	planet = {
-      		name = "ACB-100"
       		class = "pc_asteroid"
       		orbit_distance = 50
       		orbit_angle = -210
@@ -448,7 +458,6 @@ sol_neighbor_t1_first_colony = {
       	}
 
       	planet = {
-      		name = "ACB-200"
       		class = "pc_asteroid"
       		orbit_distance = 0
       		orbit_angle = -95
@@ -457,7 +466,6 @@ sol_neighbor_t1_first_colony = {
       	}
 
       	planet = {
-      		name = "ACB-300"
       		class = "pc_asteroid"
       		orbit_distance = 0
       		orbit_angle = 285
@@ -466,7 +474,6 @@ sol_neighbor_t1_first_colony = {
       	}
 
       	planet = {
-      		name = "ACB-400"
       		class = "pc_asteroid"
       		orbit_distance = 0
       		orbit_angle = -80
@@ -476,7 +483,7 @@ sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
@@ -484,7 +491,7 @@ sol_neighbor_t1_first_colony = {
 		has_ring = no
 
 		planet = {
-			name = "Alpha Centauri A I"
+			name = "NAME_Alpha_Centauri_A_I"
 			class = "pc_molten"
 			orbit_distance = 40
 			orbit_angle = 90
@@ -493,7 +500,7 @@ sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
+			name = "NAME_Alpha_Centauri_A_II"
 			class = "pc_toxic"
 			orbit_distance = 20
 			orbit_angle = 270
@@ -505,7 +512,7 @@ sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -514,7 +521,7 @@ sol_neighbor_t1_first_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
@@ -523,7 +530,7 @@ sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
+			name = "NAME_Proxima_Centauri_II"
 			class = "pc_tundra"
 			orbit_distance = 12
 			orbit_angle = 4
@@ -532,7 +539,7 @@ sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6
@@ -572,7 +579,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -581,7 +588,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		has_ring = no
 
     	planet = {
-    		name = "Alpha Centauri B I"
+    		name = "NAME_Alpha_Centauri_B_I"
     		class = "pc_molten"
     		orbit_distance = 25
     		orbit_angle = 125
@@ -590,7 +597,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
     	}
 
 		planet = {
-			name = "Alpha Centauri B II"
+			name = "NAME_Alpha_Centauri_B_II"
 			orbit_distance = 25
 			orbit_angle = 120
 			class = "pc_barren"
@@ -605,7 +612,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 				}
 			}
 			moon = {
-				name = "Alpha Centauri B IIa"
+				name = "NAME_Alpha_Centauri_B_IIa"
 				class = "pc_barren_cold"
 				size = 1
 				orbit_distance = 7
@@ -613,7 +620,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			}
 
 			moon = {
-				name = "Alpha Centauri B IIb"
+				name = "NAME_Alpha_Centauri_B_IIb"
 				class = "pc_barren_cold"
 				size = 2
 				orbit_distance = 4
@@ -622,7 +629,6 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
       	planet = {
-      		name = "ACB-100"
       		class = "pc_asteroid"
       		orbit_distance = 50
       		orbit_angle = -210
@@ -631,7 +637,6 @@ sol_neighbor_t1_no_guaranteed_colony = {
       	}
 
       	planet = {
-      		name = "ACB-200"
       		class = "pc_asteroid"
       		orbit_distance = 0
       		orbit_angle = -95
@@ -640,7 +645,6 @@ sol_neighbor_t1_no_guaranteed_colony = {
       	}
 
       	planet = {
-      		name = "ACB-300"
       		class = "pc_asteroid"
       		orbit_distance = 0
       		orbit_angle = 285
@@ -649,7 +653,6 @@ sol_neighbor_t1_no_guaranteed_colony = {
       	}
 
       	planet = {
-      		name = "ACB-400"
       		class = "pc_asteroid"
       		orbit_distance = 0
       		orbit_angle = -80
@@ -659,7 +662,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
@@ -667,7 +670,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		has_ring = no
 
 		planet = {
-			name = "Alpha Centauri A I"
+			name = "NAME_Alpha_Centauri_A_I"
 			class = "pc_molten"
 			orbit_distance = 40
 			orbit_angle = 90
@@ -676,7 +679,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
+			name = "NAME_Alpha_Centauri_A_II"
 			class = "pc_toxic"
 			orbit_distance = 20
 			orbit_angle = 270
@@ -688,7 +691,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -697,7 +700,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
@@ -706,7 +709,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
+			name = "NAME_Proxima_Centauri_II"
 			class = "pc_tundra"
 			orbit_distance = 12
 			orbit_angle = 4
@@ -715,7 +718,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6
@@ -789,11 +792,11 @@ sol_neighbor_t1 = {
 
 # Sol Neighbor Tier 1.2 - Wolf 359
 sol_neighbor_t1_2 = {
-	name = "Wolf 359"
+	name = "NAME_Wolf_359"
 	class = sc_m
 
 	planet = {
-		name = "Wolf 359"
+		name = "NAME_Wolf_359"
 		class = "pc_m_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -802,7 +805,6 @@ sol_neighbor_t1_2 = {
 	}
 	
 	planet = {
-		name = "Wolf 359 I"
 		class = "pc_barren_cold"
 		orbit_distance = 50
 		orbit_angle = 60
@@ -811,7 +813,6 @@ sol_neighbor_t1_2 = {
 	}
 	
 	planet = {
-		name = "Wolf 359 II"
 		class = "pc_frozen"
 		orbit_distance = 10
 		orbit_angle = 170
@@ -827,11 +828,11 @@ sol_neighbor_t1_2 = {
 
 # Sol Neighbor Tier 1.3 - Lalande 21185
 sol_neighbor_t1_3 = {
-	name = "Lalande 21185"
+	name = "NAME_Lalande_21185"
 	class = sc_m
 
 	planet = {
-		name = "Lalande 21185"
+		name = "NAME_Lalande_21185"
 		class = "pc_m_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -840,7 +841,6 @@ sol_neighbor_t1_3 = {
 	}
 	
 	planet = {
-		name = "Lalande 21185 I"
 		class = "pc_molten"
 		orbit_distance = 25
 		orbit_angle = 60
@@ -849,7 +849,6 @@ sol_neighbor_t1_3 = {
 	}
 	
 	planet = {
-		name = "Lalande 21185 II"
 		class = "pc_toxic"
 		orbit_distance = 30
 		orbit_angle = 170
@@ -857,7 +856,6 @@ sol_neighbor_t1_3 = {
 		has_ring = yes
 			
 		moon = {
-			name = "Lalande 21185 II A"
 			class = "pc_barren"
 			size = 5
 			orbit_distance = 16
@@ -889,7 +887,6 @@ sol_neighbor_t1_4 = {
 	}
 	
 	planet = {
-		name = "Sirius A I"
 		class = "pc_molten"
 		orbit_distance = 30
 		orbit_angle = 15
@@ -898,7 +895,6 @@ sol_neighbor_t1_4 = {
 	}
 	
 	planet = {
-		name = "Sirius A II"
 		class = "pc_molten"
 		orbit_distance = 30
 		orbit_angle = 170
@@ -907,7 +903,6 @@ sol_neighbor_t1_4 = {
 	}
 	
 	planet = {
-		name = "Sirius A III"
 		class = "pc_molten"
 		orbit_distance = 30
 		orbit_angle = 120
@@ -1173,7 +1168,6 @@ sol_neighbor_t2_2 = {
 	}
 	
 	planet = {
-		name = "Procyon A I"
 		class = "pc_molten"
 		orbit_distance = 30
 		orbit_angle = 15
@@ -1182,7 +1176,6 @@ sol_neighbor_t2_2 = {
 	}
 	
 	planet = {
-		name = "Procyon A II"
 		class = "pc_molten"
 		orbit_distance = 20
 		orbit_angle = 60
@@ -1190,7 +1183,6 @@ sol_neighbor_t2_2 = {
 		has_ring = yes
 		
 		moon = {
-			name = "Procyon A IIa"
 			class = "pc_broken"
 			size = 12
 			orbit_distance = 10
@@ -1200,7 +1192,6 @@ sol_neighbor_t2_2 = {
 	}
 	
 	planet = {
-		name = "Procyon A III"
 		class = "pc_toxic"
 		orbit_distance = 20
 		orbit_angle = 180
@@ -1208,7 +1199,6 @@ sol_neighbor_t2_2 = {
 		has_ring = no
 		
 		moon = {
-			name = "Procyon A IIIa"
 			class = "pc_barren_cold"
 			size = 1
 			orbit_distance = 8
@@ -1217,7 +1207,6 @@ sol_neighbor_t2_2 = {
 		}
 		
 		moon = {
-			name = "Procyon A IIIb"
 			class = "pc_barren_cold"
 			size = 1
 			orbit_distance = 3
@@ -1268,7 +1257,7 @@ sol_neighbor_t2_2 = {
 		has_ring = no
 
 		planet = {
-			name = "Procyon B I"
+			name = "NAME_Procyon_B_1"
 			class = pc_gas_giant
 			orbit_distance = 40
 			orbit_angle = 5
@@ -1276,7 +1265,6 @@ sol_neighbor_t2_2 = {
 			has_ring = no
 
 			moon = {
-				name = "Procyon B Ia"
 				class = pc_molten
 				orbit_distance = 16
 				orbit_angle = 340
@@ -1540,7 +1528,7 @@ sol_neighbor_t2_3 = {
 
 # Sol Neighbor Tier 2.3 - 40 Eridani: League of Human Colonies
 sol_neighbor_t2_4 = {
-	name = "40 Eridani"
+	name = "NAME_40_Eridani"
 	class = sc_trinary_4
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1559,7 +1547,7 @@ sol_neighbor_t2_4 = {
 	}
 
 	planet = {
-		name = "40 Eridani A"
+		name = "NAME_40_Eridani_A"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 0
@@ -1569,7 +1557,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A I"
 		class = "pc_molten"
 		orbit_distance = 30
 		orbit_angle = 60
@@ -1578,7 +1565,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A II"
 		class = "pc_continental"
 		orbit_distance = 35
 		orbit_angle = 200
@@ -1588,7 +1574,6 @@ sol_neighbor_t2_4 = {
 		flags = { planet_40_eridani_a_two }
 		
 		moon = {
-			name = "40 Eridani A IIa"
 			class = "pc_barren_cold"
 			size = 5
 			orbit_distance = 12
@@ -1598,7 +1583,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A III"
 		class = "pc_arctic"
 		orbit_distance = 25
 		orbit_angle = 30
@@ -1608,7 +1592,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A IV"
 		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = 15
@@ -1649,7 +1632,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A V"
 		class = "pc_gas_giant"
 		orbit_distance = 45
 		orbit_angle = 170
@@ -1657,7 +1639,6 @@ sol_neighbor_t2_4 = {
 		has_ring = yes
 		
 		moon = {
-			name = "40 Eridani A Va"
 			class = "pc_toxic"
 			size = 16
 			orbit_distance = 25
@@ -1667,7 +1648,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A VI"
 		class = "pc_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 200
@@ -1675,7 +1655,6 @@ sol_neighbor_t2_4 = {
 		has_ring = no
 		
 		moon = {
-			name = "40 Eridani A VIa"
 			class = "pc_barren_cold"
 			size = 10
 			orbit_distance = 15
@@ -1684,7 +1663,6 @@ sol_neighbor_t2_4 = {
 		}
 		
 		moon = {
-			name = "40 Eridani A VIb"
 			class = "pc_barren_cold"
 			size = 10
 			orbit_distance = 5
@@ -1694,7 +1672,6 @@ sol_neighbor_t2_4 = {
 	}
 	
 	planet = {
-		name = "40 Eridani A VII"
 		class = "pc_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 200
@@ -1702,7 +1679,6 @@ sol_neighbor_t2_4 = {
 		has_ring = no
 		
 		moon = {
-			name = "40 Eridani A VIIa"
 			class = "pc_frozen"
 			size = 10
 			orbit_distance = 15
@@ -1724,7 +1700,7 @@ sol_neighbor_t2_4 = {
 		}
 
 		planet = {
-			name = "40 Eridani B"
+			name = "NAME_40_Eridani_B"
 			count = 1
 			class = pc_f_star
 			orbit_distance = 30
@@ -1734,7 +1710,7 @@ sol_neighbor_t2_4 = {
 		}
 
 		planet = {
-			name = "40 Eridani C"
+			name = "NAME_40_Eridani_C"
 			count = 1
 			class = pc_m_star
 			orbit_distance = 0
@@ -1747,7 +1723,7 @@ sol_neighbor_t2_4 = {
 
 # Sol Neighbor Tier 2 Second Colony - 67 Cygni
 sol_neighbor_t2_second_colony = {
-	name = "67 Cygni"
+	name = "NAME_67_Cygni"
 	class = sc_binary_6
 
 	asteroid_belt = {
@@ -1765,7 +1741,7 @@ sol_neighbor_t2_second_colony = {
 	}
 
 	planet = {
-		name = "67 Cygni A"
+		name = "NAME_67_Cygni_A"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 0
@@ -1775,7 +1751,6 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		name = "67 Cygni A I"
 		class = "pc_barren"
 		orbit_distance = 40
 		orbit_angle = 15
@@ -1784,7 +1759,6 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		name = "67 Cygni A II"
 		class = "pc_continental"
 		orbit_distance = 15
 		orbit_angle = 90
@@ -1793,7 +1767,6 @@ sol_neighbor_t2_second_colony = {
     	entity = "continental_planet_04_entity"
 		
 		moon = {
-			name = "67 Cygni A IIa"
 			class = "pc_barren_cold"
 			size = 3
 			orbit_distance = 5
@@ -1803,7 +1776,6 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		name = "67 Cygni A III"
 		class = "pc_barren_cold"
 		orbit_distance = 20
 		orbit_angle = 180
@@ -1844,7 +1816,7 @@ sol_neighbor_t2_second_colony = {
 	}
 
 	planet = {
-		name = "67 Cygni B"
+		name = "NAME_67_Cygni_B"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 155
@@ -1853,7 +1825,7 @@ sol_neighbor_t2_second_colony = {
 		has_ring = no
 	
 		planet = {
-			name = "67 Cygni B I"
+			name = "NAME_67_Cygni_B_I"
 			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
@@ -1862,7 +1834,7 @@ sol_neighbor_t2_second_colony = {
 		}
 	
 		planet = {
-			name = "67 Cygni B II"
+			name = "NAME_67_Cygni_B_II"
 			class = "pc_arctic"
 			orbit_distance = 20
 			orbit_angle = 175
@@ -1871,7 +1843,7 @@ sol_neighbor_t2_second_colony = {
 		}
 	
 		planet = {
-			name = "67 Cygni B III"
+			name = "NAME_67_Cygni_B_III"
 			class = "pc_frozen"
 			orbit_distance = 20
 			orbit_angle = 15
@@ -1883,7 +1855,7 @@ sol_neighbor_t2_second_colony = {
 
 # Sol Neighbor Tier 2 No Guaranteed Colony - 67 Cygni
 sol_neighbor_t2_no_guaranteed_colony = {
-	name = "67 Cygni"
+	name = "NAME_67_Cygni"
 	class = sc_binary_6
 
 	asteroid_belt = {
@@ -1901,7 +1873,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "67 Cygni A"
+		name = "NAME_67_Cygni_A"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 0
@@ -1911,7 +1883,6 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 	
 	planet = {
-		name = "67 Cygni A I"
 		class = "pc_barren"
 		orbit_distance = 40
 		orbit_angle = 15
@@ -1920,7 +1891,6 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 	
 	planet = {
-		name = "67 Cygni A II"
 		class = "pc_barren"
 		orbit_distance = 15
 		orbit_angle = 90
@@ -1936,7 +1906,6 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		}
 		
 		moon = {
-			name = "67 Cygni A IIa"
 			class = "pc_barren_cold"
 			size = 3
 			orbit_distance = 5
@@ -1946,7 +1915,6 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 	
 	planet = {
-		name = "67 Cygni A III"
 		class = "pc_barren_cold"
 		orbit_distance = 20
 		orbit_angle = 180
@@ -1987,7 +1955,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "67 Cygni B"
+		name = "NAME_67_Cygni_B"
 		count = 1
 		class = pc_k_star
 		orbit_distance = 155
@@ -1996,7 +1964,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		has_ring = no
 	
 		planet = {
-			name = "67 Cygni B I"
+			name = "NAME_67_Cygni_B_I"
 			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
@@ -2005,7 +1973,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		}
 	
 		planet = {
-			name = "67 Cygni B II"
+			name = "NAME_67_Cygni_B_II"
 			class = "pc_barren_cold"
 			orbit_distance = 20
 			orbit_angle = 175
@@ -2014,7 +1982,7 @@ sol_neighbor_t2_no_guaranteed_colony = {
 		}
 	
 		planet = {
-			name = "67 Cygni B III"
+			name = "NAME_67_Cygni_B_III"
 			class = "pc_frozen"
 			orbit_distance = 20
 			orbit_angle = 15
@@ -2031,11 +1999,11 @@ sol_neighbor_t2_no_guaranteed_colony = {
 
 # Sol Neighbor Tier 2 Third Colony - Trappist-1
 sol_neighbor_t2_third_colony = {
-	name = "Trappist-1"
+	name = "NAME_Trappist_1"
 	class = sc_m
 
 	planet = {
-		name = "Trappist-1"
+		name = "NAME_Trappist_1"
 		count = 1
 		class = pc_m_star
 		orbit_distance = 0
@@ -2046,7 +2014,7 @@ sol_neighbor_t2_third_colony = {
 	
 	# Trappist-1b
 	planet = {
-		name = "Trappist-1 b"
+		name = "NAME_Trappist_1_b"
 		class = "pc_molten"
 		orbit_distance = 20
 		orbit_angle = 15
@@ -2056,7 +2024,7 @@ sol_neighbor_t2_third_colony = {
 	
 	# Trappist-1c
 	planet = {
-		name = "Trappist-1 c"
+		name = "NAME_Trappist_1_c"
 		class = "pc_barren"
 		orbit_distance = 16
 		orbit_angle = 85
@@ -2066,7 +2034,7 @@ sol_neighbor_t2_third_colony = {
 
 	# Trappist-1d
 	planet = {
-		name = "Trappist-1 d"
+		name = "NAME_Trappist_1_d"
 		class = "pc_toxic"
 		orbit_distance = 16
 		orbit_angle = 110
@@ -2076,7 +2044,7 @@ sol_neighbor_t2_third_colony = {
 
 	# Trappist-1e
 	planet = {
-		name = "Trappist-1 e"
+		name = "NAME_Trappist_1_e"
 		class = "pc_ocean"
 		orbit_distance = 16
 		orbit_angle = 125
@@ -2086,7 +2054,7 @@ sol_neighbor_t2_third_colony = {
 
 	# Trappist-1f
 	planet = {
-		name = "Trappist-1 f"
+		name = "NAME_Trappist_1_f"
 		class = "pc_toxic"
 		orbit_distance = 16
 		orbit_angle = 65
@@ -2096,7 +2064,7 @@ sol_neighbor_t2_third_colony = {
 
 	# Trappist-1g
 	planet = {
-		name = "Trappist-1 g"
+		name = "NAME_Trappist_1_g"
 		class = "pc_arctic"
 		orbit_distance = 16
 		orbit_angle = -130
@@ -2106,7 +2074,7 @@ sol_neighbor_t2_third_colony = {
 
 	# Trappist-1h
 	planet = {
-		name = "Trappist-1 h"
+		name = "NAME_Trappist_1_h"
 		class = "pc_frozen"
 		orbit_distance = 16
 		orbit_angle = 245
@@ -3124,12 +3092,23 @@ com_sol_system = {
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
 		flags = { planet_saturn }
+		
+		moon = {
+			name = "NAME_Enceladus"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 90
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+			flags = { planet_enceladus }
+		}
 
 		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
+			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
@@ -3864,12 +3843,23 @@ lost_colony_sol_system = {
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
 		flags = { planet_saturn }
+		
+		moon = {
+			name = "NAME_Enceladus"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 90
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+			flags = { planet_enceladus }
+		}
 
 		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
+			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"

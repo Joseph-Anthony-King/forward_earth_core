@@ -597,11 +597,20 @@ special_init_03 = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		
+		moon = {
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 90
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+		}
 
 		moon = {
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
+			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
@@ -921,11 +930,20 @@ special_init_04 = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		
+		moon = {
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 90
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+		}
 
 		moon = {
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
+			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
