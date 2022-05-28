@@ -28,7 +28,7 @@ eta_cassiopeiae_system_initializer = {
 		}
 		
 		generate_home_system_resources = yes
-		log = "eta_cassiopeiae_system_initializer loaded..."
+		###log = "eta_cassiopeiae_system_initializer loaded..."
 	}
 	
 	planet = {

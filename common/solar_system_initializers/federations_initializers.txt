@@ -2535,7 +2535,7 @@ sol_system_void_dweller_system = {
 		}
 		generate_home_system_resources = yes
 
-		log = "sol_system_void_dweller_system loaded..."
+		###log = "sol_system_void_dweller_system loaded..."
 	}
 
 	planet = {

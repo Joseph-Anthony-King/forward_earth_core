@@ -77,6 +77,9 @@ gov_constitutional_monarchy = {
 		OR = {
 			has_ethic = ethic_fanatic_xenophile
 			has_ethic = ethic_militarist
+			NOT = {
+				has_civic = civic_citizen_service
+			}
 		}
 	}
 
