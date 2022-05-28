@@ -1,0 +1,23 @@
+﻿l_russian:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+css_fedbuild:0 "Федерация Строителей"
+css_fedbuild_desc:1 "Щит и привратный корабль Федерации строителей."
+
+css_fedbuild_colours:0 "[Цвета] Федерация Строителей"
+css_fedbuild_colours_desc:1 "Щит и набор Gatekeeper's Federation Builder с динамическими цветами."
+ 
+css_dss_fedbuild:0 "Корабли уменьшенного масштаба: строители Федерации"
+css_dss_fedbuild_desc:1 "Набор кораблей Cheek and Gatekeeper's Federation Builder. Патч с уменьшенным масштабом кораблей."
+ 
+css_dss_fedbuild_colours:0 "Корабли уменьшенного масштаба: [Цвета] Federation Builders"
+css_dss_fedbuild_colours_desc:1 "Набор корабля Cheek and Gatekeeper's Federation Builder с динамичными цветами. Патч с уменьшенным масштабом кораблей."
+ 
+CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "Пикетный корабль класса Кабуто"
