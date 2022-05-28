@@ -27,7 +27,7 @@ event = {
             set_name = "NAME_Empty"
         }
 
-        log = "Binary planet barrycenters renamed..."
+        ###log = "Binary planet barrycenters renamed..."
     }
 }
 
@@ -72,7 +72,7 @@ event = {
             }
         }
 
-        log = "Sagittarius A* spawned..."
+        ###log = "Sagittarius A* spawned..."
     }
 }
 
@@ -162,7 +162,7 @@ event = {
                 add_extra_hyperlane_to_spawned_system_effect = yes
             }
 		}
-        log = "Trantor spawned..."
+        ###log = "Trantor spawned..."
     }
 }
 
@@ -252,7 +252,7 @@ event = {
                 add_extra_hyperlane_to_spawned_system_effect = yes
             }
 		}
-        log = "Terminus spawned..."
+        ###log = "Terminus spawned..."
     }
 }
 
@@ -385,7 +385,7 @@ event = {
                         generate_start_pops = yes
                         clear_blockers = yes
 
-                        log = "UNE spawned for CoA..."
+                        ###log = "UNE spawned for CoA..."
                     }
                     # ICARUS
                     10 = {
@@ -494,7 +494,7 @@ event = {
                         generate_start_pops = yes
                         clear_blockers = yes
 
-                        log = "ICARUS spawned as NPC..."
+                        ###log = "ICARUS spawned as NPC..."
 
                     }
                     # Cockroaches of Earth
@@ -505,7 +505,7 @@ event = {
                         }
                         set_planet_entity = { entity = "met_nuked" }
                         
-                        log = "Earth nuked for CoA faction..."
+                        ###log = "Earth nuked for CoA faction..."
                     }
                 }
             }
@@ -1570,7 +1570,7 @@ event = {
                         generate_start_pops = yes
                         clear_blockers = yes
 
-                        log = "UNE spawned as NPC..."
+                        ###log = "UNE spawned as NPC..."
                     }
                     # ICARUS
                     8 = {
@@ -1679,7 +1679,7 @@ event = {
                         generate_start_pops = yes
                         clear_blockers = yes
 
-                        log = "ICARUS spawned as NPC..."
+                        ###log = "ICARUS spawned as NPC..."
 
                     }
                     # Cockroaches of Earth
@@ -1696,10 +1696,10 @@ event = {
                 }
             }
 
-            log = "NPC Earth faction spawned..."
+            ###log = "NPC Earth faction spawned..."
 		}
         else = {
-            log = "Earth based factions spawned, skipping spawning of NPC Earth..."
+            ###log = "Earth based factions spawned, skipping spawning of NPC Earth..."
         }
     }
 }
@@ -1838,7 +1838,7 @@ event = {
                         set_graphical_culture = mammalian_01
                     }
 
-                    log = "LHC spawned for UNE..."
+                    ###log = "LHC spawned for UNE..."
                 }
                     
                 random_galaxy_planet = {
@@ -1992,18 +1992,18 @@ event = {
                                 type = "defense_army"	
                             }
 
-                            log = "CoA spawned for UNE..."
+                            ###log = "CoA spawned for UNE..."
                         }
                         5 = {
                             
-                            log = "CoA not spawned..."
+                            ###log = "CoA not spawned..."
                         }
                     }
                 }
             }
         }
         else = {
-            log = "UNE not spawned..."
+            ###log = "UNE not spawned..."
         }
     }
 }
@@ -2031,7 +2031,7 @@ event = {
 					set_species_homeworld = prevprev
 				}
 
-                log = "CoA homeworld reset..."
+                ###log = "CoA homeworld reset..."
             }
         }
 
@@ -2050,7 +2050,7 @@ event = {
 					set_species_homeworld = prevprev
 				}
 
-                log = "LHC homeworld reset..."
+                ###log = "LHC homeworld reset..."
             }
         }
     }
@@ -2077,7 +2077,7 @@ event = {
                 set_planet_entity = {
                     entity = "continental_planet_earth_entity"
                 }
-                log = "Reverted ICARUS Earth to continential type for human faction generation"
+                ###log = "Reverted ICARUS Earth to continential type for human faction generation"
             }
         }
 
@@ -2197,7 +2197,7 @@ event = {
                         set_graphical_culture = mammalian_01
                     }
 
-                    log = "LHC spawned for Earth Custodianship/ICARUS..."
+                    ###log = "LHC spawned for Earth Custodianship/ICARUS..."
                 }
                 
                 random_galaxy_planet = {
@@ -2365,7 +2365,7 @@ event = {
                                 type = "defense_army"	
                             }
 
-                            log = "CoA spawned for Earth Custodianship/ICARUS..."
+                            ###log = "CoA spawned for Earth Custodianship/ICARUS..."
                         }
                         10 = {}
                     }
@@ -2398,10 +2398,10 @@ event = {
                 set_planet_entity = { entity = "met_nuked" }
             }
             
-            log = "Earth nuked for ICARUS faction..."
+            ###log = "Earth nuked for ICARUS faction..."
         }
         else = {
-            log = "ICARUS faction is not seated..."
+            ###log = "ICARUS faction is not seated..."
         }
     }
 }
@@ -2486,7 +2486,27 @@ event = {
             set_planet_entity = { entity = "arid_planet_03_entity" }
         }
 
-        log = "Forward Earth planets modified..."
+        every_galaxy_planet = {
+
+            limit = { has_planet_flag = planet_gliese_581_g }
+
+            add_modifier = {
+                modifier = "high_gravity"
+                days = -1
+            }
+        }
+
+        every_galaxy_planet = {
+
+            limit = { has_planet_flag = planet_gliese_581_d }
+
+            add_modifier = {
+                modifier = "high_gravity"
+                days = -1
+            }
+        }
+
+        ###log = "Forward Earth planets modified..."
     }
 }
 
@@ -3124,10 +3144,10 @@ event = {
                 } 
             }
 
-            log = "Sol system names set to defaults..."
+            ###log = "Sol system names set to defaults..."
         }
         else = {
-            log = "human faction instantiated, Sol system names untouched..."
+            ###log = "human faction instantiated, Sol system names untouched..."
         }
 
         if = {
@@ -3135,10 +3155,10 @@ event = {
                 NOT = { any_country = { has_country_flag = human_2 } } 
             }
 
-            log = "Eta Cassiopeiae system names set to defaults..."
+            ###log = "Eta Cassiopeiae system names set to defaults..."
         }
         else = {
-            log = "human_2 faction instantiated, Eta Cassiopeiae system names untouched..."
+            ###log = "human_2 faction instantiated, Eta Cassiopeiae system names untouched..."
         }
     }
 }
@@ -3287,7 +3307,7 @@ event = {
                     generate_start_pops = yes
                     clear_blockers = yes
 
-                    log = "Gal Risians spawned..."
+                    ###log = "Gal Risians spawned..."
                 }
             }
             1 = { }
@@ -3311,11 +3331,11 @@ event = {
                         portrait = random
                         traits = {
                             trait = "trait_pc_continental_preference"
-                            trait = "trait_unruly"
-                            trait = "trait_traditional"
-                            trait = "trait_strong"
-                            trait = "trait_communal"
-                            trait = "trait_talented"
+                            trait ="trait_wasteful"
+                            trait ="trait_sedentary"
+                            trait ="trait_agrarian"
+                            trait ="trait_quick_learners"
+                            trait ="trait_traditional"
                         }
                         effect = {
                             set_species_flag = kahomas
@@ -3456,7 +3476,7 @@ event = {
                     }
                     clear_blockers = yes
 
-                    log = "Myrk-Rians spawned..."
+                    ###log = "Myrk-Rians spawned..."
                 }
 
                 ### Populate Kahoa
@@ -3510,7 +3530,7 @@ event = {
                         }
                     }
 
-                    log = "Kahoa spawned..."
+                    ###log = "Kahoa spawned..."
                 }
             }
             1 = { }
@@ -3619,7 +3639,7 @@ event = {
                         generate_start_pops = yes
                         clear_blockers = yes
 
-                        log = "Great Parliament spawned..."
+                        ###log = "Great Parliament spawned..."
                     }
                 }
 
@@ -3852,10 +3872,10 @@ event = {
                 }                 
             }
 
-            log = "70 Virginis names set to default..."
+            ###log = "70 Virginis names set to default..."
         }
         else = {
-            log = "70 Virginis names untouched..."
+            ###log = "70 Virginis names untouched..."
         }
 
         every_galaxy_planet = {
@@ -4063,10 +4083,10 @@ event = {
                 }                 
             }
 
-            log = "HD 34445 names set to default..."
+            ###log = "HD 34445 names set to default..."
         }
         else = {
-            log = "HD 34445 names untouched..."
+            ###log = "HD 34445 names untouched..."
         }
 
         every_galaxy_planet = {
@@ -4092,10 +4112,10 @@ event = {
                 }                 
             }
 
-            log = "Kepler-186e name set to default..."
+            ###log = "Kepler-186e name set to default..."
         }
         else = {
-            log = "Great Parliament name untouched..."
+            ###log = "Great Parliament name untouched..."
         }
     }
 }

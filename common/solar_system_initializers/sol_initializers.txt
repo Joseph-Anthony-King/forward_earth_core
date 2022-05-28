@@ -29,7 +29,7 @@ sol_system_initializer = {
 		}
 		generate_home_system_resources = yes
 		
-		log = "sol_system_initializer loaded..."
+		###log = "sol_system_initializer loaded..."
 	}
 
 	planet = {
@@ -2516,7 +2516,7 @@ sol_neighbor_t1_3_1 = {
 		
 		generate_home_system_resources = yes
 		
-		log = "sol_neighbor_t1_3_1 loaded..."
+		###log = "sol_neighbor_t1_3_1 loaded..."
 	}
 	
 	planet = {
@@ -2796,7 +2796,7 @@ com_sol_system = {
 
 	init_effect = {
 		
-		log = "com_sol_system loaded..."
+		###log = "com_sol_system loaded..."
 	}
 
 	planet = {
@@ -3562,7 +3562,7 @@ lost_colony_sol_system = {
 
 	init_effect = {
 		
-		log = "lost_colony_sol_system loaded..."
+		###log = "lost_colony_sol_system loaded..."
 	}
 
 	planet = {

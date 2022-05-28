@@ -119,7 +119,7 @@ special_init_03 = {
 
 	init_effect = {
 		
-		log = "special_init_03 loaded..."
+		###log = "special_init_03 loaded..."
 	}
 
 	planet = {
@@ -740,7 +740,7 @@ special_init_04 = {
 
 	init_effect = {
 		
-		log = "special_init_04 loaded..."
+		###log = "special_init_04 loaded..."
 	}
 
 	max_instances = 1

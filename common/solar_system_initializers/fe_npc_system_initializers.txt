@@ -45,7 +45,7 @@ npc_sol_system_initializer = {
 		}
 		generate_home_system_resources = yes
 		
-		log = "npc_sol_system_initializer loaded..."
+		###log = "npc_sol_system_initializer loaded..."
 	}
 
 	planet = {
@@ -431,7 +431,7 @@ npc_70_virginis_system_initializer = {
 		}
 		generate_home_system_resources = yes
 		
-		log = "npc_70_virginis_system_initializer loaded..."
+		###log = "npc_70_virginis_system_initializer loaded..."
 	}
 
 	planet = {
@@ -717,7 +717,7 @@ npc_hd_34445_system_initializer = {
 		}
 		generate_home_system_resources = yes
 		
-		log = "npc_hd_34445_system_initializer loaded..."
+		###log = "npc_hd_34445_system_initializer loaded..."
 	}
 
 	planet = {
@@ -948,7 +948,7 @@ kepler_186_system_initializer = {
 		}
 		generate_home_system_resources = yes
 		
-		log = "kepler_186_system_initializer loaded..."
+		###log = "kepler_186_system_initializer loaded..."
 	}
 
     planet = {
@@ -1154,7 +1154,7 @@ chiconaph_system_initializer = {
 		}
 		generate_home_system_resources = yes
 		
-		log = "chiconaph_system_initializer loaded..."
+		###log = "chiconaph_system_initializer loaded..."
 	}
 
 	planet = {

@@ -539,11 +539,7 @@ gliese_581_system_initializer = {
         orbit_angle = 321
         has_ring = no
         class = "pc_desert"
-
-        add_modifier = {
-            modifier = "high_gravity"
-            days = -1
-        }
+        flags = { planet_gliese_581_g }
     }
 
     planet = {
@@ -553,11 +549,7 @@ gliese_581_system_initializer = {
         orbit_angle = 80
         has_ring = no
         class = "pc_ocean"
-
-        add_modifier = {
-            modifier = "high_gravity"
-            days = -1
-        }
+        flags = { planet_gliese_581_d }
     }
 
     planet = {
