@@ -538,16 +538,26 @@ gliese_581_system_initializer = {
         orbit_distance = 20
         orbit_angle = 321
         has_ring = no
-        class = random
+        class = "pc_desert"
+
+        add_modifier = {
+            modifier = "high_gravity"
+            days = -1
+        }
     }
 
     planet = {
         name = "NAME_Gliese_581_d"
-        size = 24
+        size = 26
         orbit_distance = 15
         orbit_angle = 80
         has_ring = no
-        class = random
+        class = "pc_ocean"
+
+        add_modifier = {
+            modifier = "high_gravity"
+            days = -1
+        }
     }
 
     planet = {
@@ -623,7 +633,7 @@ gliese_667_system_initializer = {
         
         moon = {
             name = "NAME_Gliese_667_C_f"
-            class = rl_habitable_normal
+            class = "pc_tundra"
             orbit_distance = 6
             orbit_angle = 60
             size = 18
@@ -733,7 +743,7 @@ hd_10180_system_initializer = {
 			name = "HD 10180g b "
 			orbit_distance = 3
 			size = { min = 10 max = 12 }
-			class = rl_habitable_normal
+			class = "pc_arctic"
 		}
 
 		moon = {
@@ -826,7 +836,7 @@ hd_40307_system_initializer = {
         moon = {
             name = "HD 40307g a"
             size = { min = 9 max = 12 }
-            class = random
+            class = "pc_gas_giant"
             orbit_distance = 15
             orbit_angle = { min = 10 max = 100 }
         }
@@ -891,7 +901,7 @@ hd_219134_system_initializer = {
         orbit_distance = 20
         orbit_angle = 9
         has_ring = no
-        class = random
+        class = "pc_gas_giant"
     }
 
     planet = {
@@ -1420,7 +1430,7 @@ kepler_62_system_initializer = {
         orbit_distance = 35
         orbit_angle = 349
         has_ring = no
-        class = rl_habitable_normal
+        class = "pc_continental"
     }
     planet = {
         name = "NAME_Kepler_62_f"
@@ -1520,7 +1530,7 @@ kepler_84_system_initializer = {
     }
     planet = {
         name = "NAME_Kepler_84_d"
-        size = 18
+        size = 23
         orbit_distance = 20
         orbit_angle = 315
         has_ring = no
@@ -1532,7 +1542,7 @@ kepler_84_system_initializer = {
         orbit_distance = 15
         orbit_angle = 156
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_gas_giant"
     }
     planet = {
         name = "NAME_Kepler_84_c"
@@ -1540,7 +1550,7 @@ kepler_84_system_initializer = {
         orbit_distance = 15
         orbit_angle = 163
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_gas_giant"
     }
     planet = {
         name = "NAME_Kepler_84_e"
@@ -1548,7 +1558,7 @@ kepler_84_system_initializer = {
         orbit_distance = 30
         orbit_angle = 343
         has_ring = no
-        class = random
+        class = "pc_gas_giant"
     }
     planet = {
         name = "NAME_Kepler_84_f"
@@ -1556,7 +1566,7 @@ kepler_84_system_initializer = {
         orbit_distance = 25
         orbit_angle = 94
         has_ring = no
-        class = random
+        class = "pc_barren"
     }
 
 	change_orbit = 115
@@ -1995,37 +2005,37 @@ kepler_296_system_initializer = {
 		class = "pc_barren"
 	}
 	planet = {
-	        name = "NAME_Kepler_296_d"
-	       	size = 24
-	        orbit_distance = 15
-	       	orbit_angle = 246
-	        has_ring = no
-	        class = "pc_barren"
+        name = "NAME_Kepler_296_d"
+        size = 24
+        orbit_distance = 15
+        orbit_angle = 246
+        has_ring = no
+        class = "pc_barren"
 	}
 	planet = {
-	        name = "KNAME_Kepler_296_e"
-	        size = 18
-	        orbit_distance = 20
-	        orbit_angle = 82
-	        has_ring = no
-	        class = rl_habitable_normal
+        name = "NAME_Kepler_296_e"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 82
+        has_ring = no
+        class = "pc_continental"
 	}
 	planet = {
-	        name = "NAME_Kepler_296_f"
-	        size = 21
-	        orbit_distance = 20
-		orbit_angle = 279
-	        has_ring = no
-	        class = random
+        name = "NAME_Kepler_296_f"
+        size = 21
+        orbit_distance = 20
+        orbit_angle = 279
+        has_ring = no
+        class = "pc_tundra"
 	}
 
 	planet = {
-		name = "NAME_Kepler_296_B"
-	        class = "pc_m_star"
-	        size = 10
-	        orbit_distance = 180
-	        orbit_angle = 225
-	        has_ring = no
+        name = "NAME_Kepler_296_B"
+        class = "pc_m_star"
+        size = 10
+        orbit_distance = 180
+        orbit_angle = 225
+        has_ring = no
 	}
 }
 
@@ -2081,22 +2091,22 @@ kepler_444_system_initializer = {
         orbit_distance = 17
         orbit_angle = 78
         has_ring = no
-        class = random
+        class = "pc_arctic"
     }
     planet = {
-	orbit_distance = 100
-	name = "NAME_Kepler_444_B"
-	class = "pc_m_star"
-	size = 10
-	has_ring = no
+        orbit_distance = 100
+        name = "NAME_Kepler_444_B"
+        class = "pc_m_star"
+        size = 10
+        has_ring = no
 	
         moon = {
-                name = "NAME_Kepler_444_C"
-                class = "pc_m_star"
-                size = 10
-                orbit_distance = 10
-                orbit_angle = 180
-                has_ring = no
+            name = "NAME_Kepler_444_C"
+            class = "pc_m_star"
+            size = 10
+            orbit_distance = 10
+            orbit_angle = 180
+            has_ring = no
         }
     }
 }
@@ -2395,7 +2405,7 @@ mu_Arae_system_initializer = {
         size = 33
         orbit_distance = 100
         orbit_angle = 210
-        class = random
+        class = "pc_gas_giant"
     }
 }
 
