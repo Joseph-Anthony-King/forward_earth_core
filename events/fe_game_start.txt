@@ -3331,11 +3331,11 @@ event = {
                         portrait = random
                         traits = {
                             trait = "trait_pc_continental_preference"
-                            trait ="trait_wasteful"
-                            trait ="trait_sedentary"
-                            trait ="trait_agrarian"
-                            trait ="trait_quick_learners"
-                            trait ="trait_traditional"
+                            trait = "trait_sedentary"
+                            trait = "trait_wasteful"
+                            trait = "trait_agrarian"
+                            trait = "trait_quick_learners"
+                            trait = "trait_traditional"
                         }
                         effect = {
                             set_species_flag = kahomas
