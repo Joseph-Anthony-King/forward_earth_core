@@ -2078,11 +2078,6 @@ sol_neighbor_t2_no_guaranteed_colony = {
 			flags = { pd_ignore }
 		}
 	}
-
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1_4"
-	}
 }
 
 # Sol Neighbor Tier 2 Third Colony - Trappist-1
