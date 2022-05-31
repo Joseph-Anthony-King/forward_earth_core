@@ -999,6 +999,7 @@ kepler_186_system_initializer = {
         class = "pc_barren"
         flags = { planet_kepler_186_e }
     }
+
     planet = {
 		name = "NAME_Great_Parliament"
         size = 17
