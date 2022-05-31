@@ -2518,7 +2518,14 @@ event = {
 
         every_galaxy_planet = {
 
-            limit = { is_planet_class = pc_tidallylocked }
+            limit = {
+                AND = {
+                    is_planet_class = pc_tidallylocked
+                    NOT = {
+                        has_modifier = tidal_locked
+                    }
+                }
+            }
 
             add_modifier = {
                 modifier = "tidal_locked"
