@@ -177,7 +177,7 @@ betelgeuse_initializer = {
 	}
 	
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_hot_giant"
 		orbit_distance = 110
 		orbit_angle = 175
 		size = 40

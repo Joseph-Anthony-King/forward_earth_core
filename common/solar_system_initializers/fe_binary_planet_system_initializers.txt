@@ -1666,6 +1666,92 @@ fe_fifteen_binary_planet_system_initializer = {
 	}
 }
 
+### type sixteen binary planet system
+fe_sixteen_binary_planet_system_initializer = {
+	class = sc_g
+
+	usage = misc_system_init
+	usage_odds = 1
+    max_instances = @rare
+
+	planet = {
+		count = 1
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 28
+		has_ring = no
+	}
+
+	planet = {
+        count = { min = 0 max = 2}
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 8 max = 15 }
+		has_ring = no
+	}
+
+	planet = {
+        count = { min = 1 max = 2}
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 24 }
+		has_ring = no
+	}
+
+    planet = {
+        class = pc_asteroid
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 0
+        flags = { planetary_barrycenter pd_ignore }
+
+		planet = {
+			class = pc_ocean
+			orbit_distance = 10
+			orbit_angle = 60
+            size = { min = 18 max = 24 }
+			has_ring = no
+		}
+
+        planet = {
+			class = pc_continental
+            size = { min = 15 max = 17 }
+			orbit_distance = 0
+			orbit_angle = 180
+			has_ring = no
+		}
+    }
+
+	planet = {
+        count = { min = 1 max = 2}
+		orbit_distance = 25
+		orbit_angle = 125
+		size = { min = 22 max = 28 }
+		has_ring = no
+	}
+
+	planet = {
+        count = { min = 0 max = 3}
+		class = pc_gas_giant
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		change_orbit = 7
+
+        change_orbit = 12
+		
+		moon = {
+            count = { min = 0 max = 3}
+			size = { min = 5 max = 15 }
+			orbit_distance = 3
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+}
+
 ### random empire one binary planet system
 fe_random_empire_one_binary_planet_system_initializer = {
     

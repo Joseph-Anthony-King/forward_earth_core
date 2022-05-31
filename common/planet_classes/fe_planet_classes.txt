@@ -37,6 +37,7 @@ random_list = {
         "pc_med"
         "pc_tropical"
         "pc_desertislands"
+        "pc_supercon"
         "pc_desert"
         "pc_outback"
         "pc_aquatichot"
