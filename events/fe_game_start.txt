@@ -4124,10 +4124,10 @@ event = {
                             has_country_flag = great_parliament
                         }
                     }
-                    has_planet_flag = planet_kepler_186_e
+                    has_planet_flag = planet_kepler_186_f
                 }                       
             }
-            set_name = "NAME_Kepler_186_e"
+            set_name = "NAME_Kepler_186_f"
         }
 
         if = {

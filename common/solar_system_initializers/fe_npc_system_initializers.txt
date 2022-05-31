@@ -454,7 +454,7 @@ npc_70_virginis_system_initializer = {
 
 	planet = {
 		name = "HUM2_PLANET_ValkBellom"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 320
 		size = 17
@@ -463,7 +463,7 @@ npc_70_virginis_system_initializer = {
 
 		moon = {
 			name = "HUM2_PLANET_ValkMasted"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 3
 			orbit_distance = 6
 			orbit_angle = 135
@@ -731,7 +731,7 @@ npc_hd_34445_system_initializer = {
 
 	planet = {
 		name = "NAME_Vri_Ka"
-		class = "pc_gas_giant"
+		class = "pc_hot_giant"
 		orbit_distance = 30
 		orbit_angle = 75
 		size = 20
@@ -833,7 +833,7 @@ npc_hd_34445_system_initializer = {
 
 	planet = {
 		name = "NAME_Ek_Do"
-		class = "pc_gas_giant"
+		class = "pc_cold_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 135
 		size = 30
@@ -863,7 +863,7 @@ npc_hd_34445_system_initializer = {
 
 	planet = {
 		name = "NAME_Ka_Posh"
-		class = "pc_gas_giant"
+		class = "pc_cloudless_gas_giant"
 		orbit_distance = 70
 		orbit_angle = 135
 		size = 28
@@ -961,48 +961,51 @@ kepler_186_system_initializer = {
     }
 
     planet = {
+		name = "NAME_Kepler_186_b"
+        size = 16
+        orbit_distance = 15
+        orbit_angle = 253
+        has_ring = no
+        class = "pc_radiated"
+        flags = { planet_kepler_186_b }
+    }
+
+    planet = {
 		name = "NAME_Kepler_186_c"
         size = 17
         orbit_distance = 20
         orbit_angle = 310
         has_ring = no
-        class = "pc_molten"
+        class = "pc_volcanic"
         flags = { planet_kepler_186_c }
     }
+
     planet = {
 		name = "NAME_Kepler_186_d"
         size = 20
         orbit_distance = 15
         orbit_angle = 207
         has_ring = no
-        class = "pc_molten"
+        class = "pc_hothouse"
         flags = { planet_kepler_186_d }
     }
+
     planet = {
-		name = "NAME_Kepler_186_b"
-        size = 16
-        orbit_distance = 15
-        orbit_angle = 253
-        has_ring = no
-        class = "pc_toxic"
-        flags = { planet_kepler_186_b }
-    }
-    planet = {
-		name = "NAME_Great_Parliament"
+		name = "NAME_Kepler_186_e"
         size = 22
         orbit_distance = 25
         orbit_angle = 16
         has_ring = no
-        class = pc_relic
+        class = "pc_barren"
         flags = { planet_kepler_186_e }
     }
     planet = {
-		name = "NAME_Kepler_186_f"
+		name = "NAME_Great_Parliament"
         size = 17
-        orbit_distance = 40
+        orbit_distance = 45
         orbit_angle = 82
         has_ring = no
-        class = "pc_frozen"
+        class = "pc_relic"
         flags = { planet_kepler_186_f }
     }
 }
