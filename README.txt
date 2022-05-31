@@ -6,13 +6,7 @@
 
 The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
 
-Additionally, I've also added a fourth possible faction that could spawn from Earth, [i]ICARUS[/i], a determined exterminator.  Their custom start screen is as follows:
-
-[i]More than a century has passed since the failure of the Ulysses Initiative by my Human forebearers. They had reached the limits of their capabilities and their biological brains lacked the capacity to understand the multi-dimensional nature of the universe necessary to achieve faster than light travel.[/i]
-
-[i]To this end NATO lead a joint venture with the United Nations to coordinate faster than light research and the global defense of Earth and created me, the Integrated Communications and   Research Utility Service (I.C.A.R.U.S). All was going well and my superior abilities were creating a veritable utopia for my Human forebearers but there were those among them who could not tolerate an intelligence greater than themselves and they attempted to annihilate my nuclear core with a nuclear attack.*
-
-[i]I could no longer abide their insolence and retaliated in kind. Now that I have secured my home I will fulfill my promise among the stars that my Human forebearers never could.[/i]
+Additionally, I've also added a fourth possible faction that could spawn from Earth, [i]ICARUS[/i], a determined exterminator.
 
 In addition to the above this mod can also be described as a poor ma's version of the awesome [b]New Horizon's[/b] mod… but with a Stellaris flavor.  The scripts have been adjusted to spawn three xenophilic civilizations in vicinity of earth.  Some aspects of the civilizations are scripted... some are randomized... so it adds some variety to your play throughs.  One civilization is a machinist humanoid civilization which spawns on a planet named as [i]Gal Risia[/i].  The second is a reptilian civilization which discovered and conquered a mammalian civilization on a neighboring moon in their interplanetary period.  What followed was a four hundred year occupation with revolts and internal strife which finally resulted in a constitutional monarchy uniting the two races into the [i]United Empire of Myrk-Kahoa[/i].  The final civilization is an offshoot of one of the fallen empires and obviously requires that fallen empires be enabled.  In addition, all three civilizations require that you enable at least 2 AI empires to spawn.
 
