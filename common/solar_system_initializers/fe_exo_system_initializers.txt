@@ -540,6 +540,13 @@ gliese_581_system_initializer = {
         has_ring = no
         class = "pc_desert"
         flags = { planet_gliese_581_g }
+
+		init_effect = {
+			add_modifier = {
+				modifier = "tidal_locked"
+				days = -1
+			}
+		}
     }
 
     planet = {
@@ -601,7 +608,7 @@ gliese_667_system_initializer = {
 
         moon = {
             name = "NAME_Gliese_667_C_b"
-            class = "pc_molten"
+            class = "pc_gas_giant"
             orbit_distance = 15
             orbit_angle = 15
             size = 22
@@ -703,7 +710,7 @@ hd_10180_system_initializer = {
 		size = 30
 		orbit_distance = 20
 		orbit_angle = 196
-		class = "pc_gas_giant"
+		class = "pc_t_star"
 	}
 
 	planet = {
@@ -778,7 +785,7 @@ hd_40307_system_initializer = {
         orbit_distance = 15
         orbit_angle = 196
         has_ring = no
-        class = "pc_molten"
+        class = "pc_gas_giant"
     }
 
     planet = {
@@ -866,7 +873,16 @@ hd_219134_system_initializer = {
         orbit_distance = 15
         orbit_angle = 10
         has_ring = no
-        class = "pc_molten"
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "HD 219134 f"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = 9
+        has_ring = no
+        class = "pc_gas_giant"
     }
 
     planet = {
@@ -875,34 +891,24 @@ hd_219134_system_initializer = {
         orbit_distance = 20
         orbit_angle = 78
         has_ring = no
-        class = "pc_toxic"
-    }
-
-    planet = {
-        name = "HD 219134 e"
-        size = 29
-        orbit_distance = 25
-        orbit_angle = 181
-        has_ring = no
-        class = "pc_gas_giant"
-    }
-
-    planet = {
-        name = "HD 219134 f"
-        size = 25
-        orbit_distance = 20
-        orbit_angle = 9
-        has_ring = no
         class = "pc_gas_giant"
     }
 
     planet = {
         name = "HD 219134 g"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = 181
+        has_ring = no
+        class = "pc_ocean"
+    }
+
+    planet = {
+        name = "HD 219134 h"
         size = 32
         orbit_distance = 70
         orbit_angle = 71
         class = "pc_gas_giant"
-    }
 }
 
 hip_41378_system_initializer = {
@@ -968,7 +974,7 @@ hip_41378_system_initializer = {
         orbit_distance = 50
         orbit_angle = 9
         has_ring = no
-        class = "pc_barren"
+        class = "pc_gas_giant"
     }
 
 	change_orbit = 60
