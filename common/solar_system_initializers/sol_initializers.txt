@@ -771,6 +771,16 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			flags = { pd_ignore }
 		}
 	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t2_2"
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t2_3"
+	}
 }
 
 # Sol Neighbor Tier 1 - Barnard's Star
