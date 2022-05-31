@@ -1112,7 +1112,7 @@ kepler_11_system_initializer = {
         orbit_distance = 30
         orbit_angle = 34
         has_ring = no
-        class = "pc_barren"
+        class = "pc_toxic"
     }
 
 	change_orbit = 85
@@ -1167,7 +1167,7 @@ kepler_20_system_initializer = {
         orbit_distance = 25
         orbit_angle = 83
         has_ring = no
-        class = "pc_molten"
+        class = "pc_gas_giant"
     }
     planet = {
         name = "NAME_Kepler_20_f"
@@ -1183,7 +1183,7 @@ kepler_20_system_initializer = {
         orbit_distance = 43
         orbit_angle = 36
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_gas_giant"
     }
 	change_orbit = 80
 	planet = {
@@ -1394,7 +1394,7 @@ kepler_62_system_initializer = {
 
     planet = {
         name = "NAME_Kepler_62_b"
-        size = 12
+        size = 14
         orbit_distance = 18
         orbit_angle = 137
         has_ring = no
@@ -1410,19 +1410,19 @@ kepler_62_system_initializer = {
     }
     planet = {
         name = "NAME_Kepler_62_d"
-        size = 22
+        size = 26
         orbit_distance = 15
         orbit_angle = 190
         has_ring = no
-        class = "pc_molten"
+        class = "pc_toxic"
     }
     planet = {
         name = "NAME_Kepler_62_e"
-        size = 18
+        size = 24
         orbit_distance = 35
         orbit_angle = 349
         has_ring = no
-        class = "pc_continental"
+        class = "pc_ocean"
     }
     planet = {
         name = "NAME_Kepler_62_f"
@@ -1430,7 +1430,7 @@ kepler_62_system_initializer = {
         orbit_distance = 25
         orbit_angle = 309
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_savannah"
     }
 }
 
@@ -1454,7 +1454,7 @@ kepler_80_system_initializer = {
     }
     planet = {
         name = "NAME_Kepler_80_f"
-        size = 17
+        size = 21
         orbit_distance = 20
         orbit_angle = 230
         has_ring = no
@@ -1462,7 +1462,7 @@ kepler_80_system_initializer = {
     }
     planet = {
         name = "NAME_Kepler_80_d"
-        size = 20
+        size = 21
         orbit_distance = 20
         orbit_angle = 193
         has_ring = no
