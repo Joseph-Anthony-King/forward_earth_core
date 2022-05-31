@@ -142,13 +142,13 @@ special_init_03 = {
 	}
 
 	planet = {
-		class = "pc_hothouse"
+		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus pd_ignore }
+		flags = { planet_venus }
 	}
 
 	planet = {
@@ -782,13 +782,13 @@ special_init_04 = {
 	}
 
 	planet = {
-		class = "pc_hothouse"
+		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 20
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus pd_ignore }
+		flags = { planet_venus }
 	}
 
 	planet = {

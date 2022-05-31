@@ -54,13 +54,13 @@ sol_system_initializer = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hothouse"
+		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus pd_ignore }
+		flags = { planet_venus }
 	}
 
 	planet = {
@@ -2932,13 +2932,13 @@ com_sol_system = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hothouse"
+		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus pd_ignore }
+		flags = { planet_venus }
 	}
 
 	planet = {
@@ -3698,13 +3698,13 @@ lost_colony_sol_system = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hothouse"
+		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus pd_ignore }
+		flags = { planet_venus }
 	}
 
 	planet = {
