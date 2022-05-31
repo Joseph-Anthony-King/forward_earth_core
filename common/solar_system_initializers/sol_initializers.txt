@@ -2122,7 +2122,7 @@ sol_neighbor_t2_third_colony = {
 	# Trappist-1e
 	planet = {
 		name = "NAME_Trappist_1_e"
-		class = "pc_ocean"
+		class = "pc_coldaquatic"
 		orbit_distance = 16
 		orbit_angle = 125
 		size = 15
