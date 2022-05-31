@@ -2506,6 +2506,26 @@ event = {
             }
         }
 
+        every_galaxy_planet = {
+
+            limit = { is_planet_class = pc_waterworld }
+
+            add_modifier = {
+                modifier = "strong_magnetic_field"
+                days = -1
+            }
+        }
+
+        every_galaxy_planet = {
+
+            limit = { is_planet_class = pc_tidallylocked }
+
+            add_modifier = {
+                modifier = "tidal_locked"
+                days = -1
+            }
+        }
+
         ###log = "Forward Earth planets modified..."
     }
 }
