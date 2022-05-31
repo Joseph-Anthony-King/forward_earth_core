@@ -552,6 +552,13 @@ sol_neighbor_t1_first_colony = {
 			size = 15
 			has_ring = no
 			flags = { pd_ignore }
+
+			init_effect = {
+				add_modifier = {
+					modifier = "tidal_locked"
+					days = -1
+				}
+			}
 		}
 
 		planet = {
@@ -745,6 +752,13 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			size = 15
 			has_ring = no
 			flags = { pd_ignore }
+
+			init_effect = {
+				add_modifier = {
+					modifier = "tidal_locked"
+					days = -1
+				}
+			}
 		}
 
 		planet = {
@@ -2117,6 +2131,13 @@ sol_neighbor_t2_third_colony = {
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
+
+		init_effect = {
+			add_modifier = {
+				modifier = "tidal_locked"
+				days = -1
+			}
+		}
 	}
 
 	# Trappist-1e

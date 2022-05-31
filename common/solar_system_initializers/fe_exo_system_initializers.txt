@@ -543,6 +543,13 @@ gliese_581_system_initializer = {
         has_ring = no
         class = "pc_tidallylocked"
         flags = { planet_gliese_581_g pd_ignore }
+
+		init_effect = {
+			add_modifier = {
+				modifier = "tidal_locked"
+				days = -1
+			}
+		}
     }
 
     planet = {
