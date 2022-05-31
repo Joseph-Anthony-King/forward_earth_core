@@ -43,6 +43,7 @@ deneb_system = {
 		orbit_angle = 45
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -80,6 +81,7 @@ deneb_system = {
 		size = 40
 		has_ring = no
 		entity = "gas_giant_02_entity"
+		flags = { pd_ignore }
 
 		moon = {
 			name = "NAME_New_Luna"
@@ -88,6 +90,7 @@ deneb_system = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Unity"
@@ -100,6 +103,7 @@ deneb_system = {
 			entity = "continental_planet_01_entity"
 			deposit_blockers = none
 			modifiers = none
+			flags = { pd_ignore }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -118,6 +122,7 @@ deneb_system = {
 		orbit_angle = 325
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -128,6 +133,7 @@ deneb_system = {
 		size = 30
 		has_ring = no
 		entity = "gas_giant_05_entity"
+		flags = { pd_ignore }
 
 		moon = {
 			name = "NAME_Helios"
@@ -136,6 +142,7 @@ deneb_system = {
 			orbit_distance = 14
 			orbit_angle = 14
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -146,6 +153,7 @@ deneb_system = {
 		orbit_angle = 35
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -155,6 +163,7 @@ deneb_system = {
 		orbit_angle = 150
 		size = 20
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	neighbor_system = {

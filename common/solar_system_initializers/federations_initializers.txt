@@ -2549,23 +2549,24 @@ sol_system_void_dweller_system = {
 
 	planet = {
 		name = "NAME_Mercury"
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { pd_ignore }
 	}
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { planet_venus pd_ignore }
 	}
 
 	planet = {
@@ -2581,6 +2582,7 @@ sol_system_void_dweller_system = {
 			ignore_startup_effect
 			habitat_1_planet
 			has_megastructure
+			pd_ignore
 		}
 
 		init_effect = {
@@ -2598,6 +2600,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { pd_ignore }
 		}
 
 		moon = {
@@ -2628,6 +2631,7 @@ sol_system_void_dweller_system = {
 			habitat_2_planet
 			has_megastructure
 			planet_mars
+			pd_ignore
 		}
 		size = 13
 		has_ring = no
@@ -2640,24 +2644,24 @@ sol_system_void_dweller_system = {
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
+			class = "pc_orbiting_asteroid"
 			size = 1
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
+			class = "pc_orbiting_asteroid"
 			size = 1
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 
 		moon = {
@@ -2670,6 +2674,7 @@ sol_system_void_dweller_system = {
 				void_dweller_habitat_2
 				megastructure habitat
 				mining_habitat
+				pd_ignore
 			}
 			deposit_blockers = none
 		}
@@ -2720,6 +2725,7 @@ sol_system_void_dweller_system = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { pd_ignore }
 
 		moon = {
 			name = "NAME_Io"
@@ -2729,6 +2735,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -2738,6 +2745,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -2747,6 +2755,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -2756,6 +2765,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -2772,6 +2782,7 @@ sol_system_void_dweller_system = {
 			ignore_startup_effect
 			habitat_3_planet
 			has_megastructure
+			pd_ignore
 		}
 
 		init_effect = {
@@ -2782,12 +2793,13 @@ sol_system_void_dweller_system = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { pd_ignore }
 		}
 
 		moon = {
@@ -2813,6 +2825,7 @@ sol_system_void_dweller_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -2822,6 +2835,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -2831,6 +2845,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -2843,6 +2858,7 @@ sol_system_void_dweller_system = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { pd_ignore }
 
 		moon = {
 			name = "NAME_Triton"
@@ -2852,6 +2868,7 @@ sol_system_void_dweller_system = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
+			flags = { pd_ignore }
 		}
 	}
 

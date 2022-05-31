@@ -1,8 +1,8 @@
 [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 
-[h1]FORWARD EARTH[/h1]
+[h1]FORWARD EARTH - PLANETARY DIVERSITY[/h1]
 
-[b]Forward Earth[/b] is a galaxy generation mod that scripts the creation of [i]Human Space[/i] in the vicinity of Earth.  One of the biggest changes is the recasting of the [i]Commonwealth of Man[/i] as the [i]Commonwealth of Aurora[/i].  This is more than just a name change, the [i]Commonwealth of Aurora[/i] (CoA) now spawns in the Eta Cassiopeiae System, which is a binary system close to Sol.  The CoA a citizen stratocracy and is inspired by the Terran Federation as depicted in Robert Heinlein's novel [i]Starship Troopers[/i] and their symbol is now the Spaceship-and-Sun as inspired by Asimov's Galactic Empire.  This new emblem symbolizes the importance of the navy in their social structure.  The CoA is not a country with a navy, but a navy with a country.
+[b]Forward Earth - PLANETARY DIVERSITY[/b] is a galaxy generation mod that scripts the creation of [i]Human Space[/i] in the vicinity of Earth and incorporates the functionality of *Gatekeepers* [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] mod.  One of the biggest changes is the recasting of the [i]Commonwealth of Man[/i] as the [i]Commonwealth of Aurora[/i].  This is more than just a name change, the [i]Commonwealth of Aurora[/i] (CoA) now spawns in the Eta Cassiopeiae System, which is a binary system close to Sol.  The CoA a citizen stratocracy and is inspired by the Terran Federation as depicted in Robert Heinlein's novel [i]Starship Troopers[/i] and their symbol is now the Spaceship-and-Sun as inspired by Asimov's Galactic Empire.  This new emblem symbolizes the importance of the navy in their social structure.  The CoA is not a country with a navy, but a navy with a country.
 
 The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
 

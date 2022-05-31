@@ -48,7 +48,7 @@ eta_cassiopeiae_system_initializer = {
 		size = 8
 		has_ring = no
 		entity = "molten_planet_06_entity"
-		flags = { planet_inferno }
+		flags = { planet_inferno pd_ignore }
 	}
 	
 	planet = {
@@ -59,7 +59,7 @@ eta_cassiopeiae_system_initializer = {
 		size = 30
 		has_ring = no
 		entity = "gas_giant_05_entity"
-		flags = { planet_astraeus }
+		flags = { planet_astraeus pd_ignore }
 		
 		moon = {
 			name = "NAME_Notus"
@@ -68,7 +68,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
-			flags = { planet_notus }
+			flags = { planet_notus pd_ignore }
 		}
 		moon = {
 			name = "NAME_Eurus"
@@ -77,7 +77,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_angle = 340
 			size = 12
 			has_ring = no
-			flags = { planet_eurus }
+			flags = { planet_eurus pd_ignore }
 		}		
 	}
 
@@ -86,7 +86,7 @@ eta_cassiopeiae_system_initializer = {
 		orbit_distance = 20
 		orbit_angle = 120
 		size = 0
-		flags = { planetary_barrycenter }
+		flags = { planetary_barrycenter pd_ignore }
 	
 		init_effect = {
 			prevent_anomaly = yes
@@ -102,7 +102,7 @@ eta_cassiopeiae_system_initializer = {
 			modifiers = none
 			starting_planet = yes
 			entity = "continental_planet_01_entity"
-			flags = { planet_aurora }
+			flags = { planet_aurora pd_ignore }
 			
 			init_effect = {
 				prevent_anomaly = yes
@@ -118,7 +118,7 @@ eta_cassiopeiae_system_initializer = {
 			has_ring = no
 			modifiers = none
 			entity = "savannah_planet_11_entity"
-			flags = { planet_tithonus }
+			flags = { planet_tithonus pd_ignore }
 			
 			init_effect = {
 				prevent_anomaly = yes
@@ -134,7 +134,7 @@ eta_cassiopeiae_system_initializer = {
 		size = 35
 		has_ring = yes
 		entity = "gas_giant_11_entity"
-		flags = { planet_anemoi }
+		flags = { planet_anemoi pd_ignore }
 		
 		moon = {
 			name = "NAME_Boreas"
@@ -143,7 +143,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_distance = 25
 			orbit_angle = 100
 			has_ring = no
-			flags = { planet_boreas }
+			flags = { planet_boreas pd_ignore }
 		}
 		moon = {
 			name = "NAME_Zephyrus"
@@ -153,7 +153,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 12
 			has_ring = no
 			modifiers = none
-			flags = { planet_zephyrus }
+			flags = { planet_zephyrus pd_ignore }
 		}		
 	}
 	
@@ -192,7 +192,7 @@ eta_cassiopeiae_system_initializer = {
 		size = 25
 		has_ring = yes
 		entity = "gas_giant_07_entity"
-		flags = { planet_hyperion }
+		flags = { planet_hyperion pd_ignore }
 		
 		moon = {
 			name = "NAME_Selene"
@@ -201,7 +201,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 14
 			has_ring = no
-			flags = { planet_selene }
+			flags = { planet_selene pd_ignore }
 		}
 	}
 	
@@ -220,7 +220,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_angle = 312
 			size = 8
 			has_ring = no
-			flags = { planet_jackson_s_planet }
+			flags = { planet_jackson_s_planet pd_ignore }
 		}
 		planet = {
 			name = "NAME_Olympus"
@@ -230,7 +230,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 20
 			has_ring = yes
 			entity = "gas_giant_09_entity"
-			flags = { planet_olympus }
+			flags = { planet_olympus pd_ignore }
 
 			moon = {
 				name = "NAME_Horae"
@@ -241,7 +241,7 @@ eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				entity = "frozen_planet_04_entity"
 				modifiers = none
-				flags = { planet_horae }
+				flags = { planet_horae pd_ignore }
 			}
 		}
 	}

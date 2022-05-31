@@ -132,22 +132,23 @@ special_init_03 = {
 	}
 
 	planet = {
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { pd_ignore }
 	}
 
 	planet = {
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { planet_venus pd_ignore }
 	}
 
 	planet = {
@@ -159,7 +160,7 @@ special_init_03 = {
 		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_earth }
+		flags = { planet_earth pd_ignore }
 
 		init_effect = {
 			save_global_event_target_as = sol_system_earth
@@ -472,6 +473,7 @@ special_init_03 = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -489,28 +491,28 @@ special_init_03 = {
 			}
 		}
 		
-		flags = { planet_mars }
+		flags = { planet_mars pd_ignore }
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
+			class = "pc_orbiting_asteroid"
 			size = 1
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
+			class = "pc_orbiting_asteroid"
 			size = 1
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 
@@ -554,6 +556,7 @@ special_init_03 = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { pd_ignore }
 
 		moon = {
 			class = "pc_molten"
@@ -562,6 +565,7 @@ special_init_03 = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_frozen"
@@ -570,6 +574,7 @@ special_init_03 = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_frozen"
@@ -578,6 +583,7 @@ special_init_03 = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_frozen"
@@ -586,6 +592,7 @@ special_init_03 = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -597,6 +604,7 @@ special_init_03 = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -605,15 +613,17 @@ special_init_03 = {
 			orbit_angle = 90
 			has_ring = no
 			entity = "frozen_planet_04_entity"
+			flags = { pd_ignore }
 		}
 
 		moon = {
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -624,6 +634,7 @@ special_init_03 = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_barren_cold"
@@ -632,6 +643,7 @@ special_init_03 = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { pd_ignore }
 		}		
 		moon = {
 			class = "pc_barren_cold"
@@ -640,6 +652,7 @@ special_init_03 = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -651,6 +664,7 @@ special_init_03 = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { pd_ignore }
 
 		moon = {
 			class = "pc_frozen"
@@ -659,6 +673,7 @@ special_init_03 = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -757,22 +772,23 @@ special_init_04 = {
 	}
 
 	planet = {
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { pd_ignore }
 	}
 
 	planet = {
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 20
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { planet_venus pd_ignore }
 	}
 
 	planet = {
@@ -822,7 +838,7 @@ special_init_04 = {
 			}
 		}
 		
-		flags = { planet_mars }
+		flags = { planet_mars pd_ignore }
 		
 		moon = {
 			name = "NAME_Phobos"
@@ -832,7 +848,7 @@ special_init_04 = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
@@ -843,7 +859,7 @@ special_init_04 = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 
@@ -887,6 +903,7 @@ special_init_04 = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { pd_ignore }
 
 		moon = {
 			class = "pc_molten"
@@ -895,6 +912,7 @@ special_init_04 = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_frozen"
@@ -903,6 +921,7 @@ special_init_04 = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_frozen"
@@ -911,6 +930,7 @@ special_init_04 = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_frozen"
@@ -919,6 +939,7 @@ special_init_04 = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -930,6 +951,7 @@ special_init_04 = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { pd_ignore }}
 		
 		moon = {
 			class = "pc_frozen"
@@ -938,15 +960,17 @@ special_init_04 = {
 			orbit_angle = 90
 			has_ring = no
 			entity = "frozen_planet_04_entity"
+			flags = { pd_ignore }
 		}
 
 		moon = {
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -957,6 +981,7 @@ special_init_04 = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -970,11 +995,13 @@ special_init_04 = {
 		moon = {
 			name = "NAME_Oberon"
 			class = "pc_barren_cold"
+			flags = { pd_ignore }
 			size = 4
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -986,6 +1013,7 @@ special_init_04 = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { pd_ignore }
 
 		moon = {
 			class = "pc_frozen"
@@ -994,6 +1022,7 @@ special_init_04 = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
+			flags = { pd_ignore }
 		}
 	}
 

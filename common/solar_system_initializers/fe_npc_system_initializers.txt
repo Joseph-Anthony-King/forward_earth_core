@@ -59,24 +59,24 @@ npc_sol_system_initializer = {
 
 	planet = {
 		name = "NAME_Mercury"
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
-		flags = { planet_mercury }
+		flags = { planet_mercury pd_ignore }
 	}
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { planet_venus pd_ignore }
 	}
 
 	planet = {
@@ -90,7 +90,7 @@ npc_sol_system_initializer = {
 		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_earth }
+		flags = { planet_earth pd_ignore }
 
 		init_effect = {
 			save_global_event_target_as = sol_system_earth
@@ -106,7 +106,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
-			flags = { planet_luna }
+			flags = { planet_luna pd_ignore }
 		}
 	}
 
@@ -126,28 +126,28 @@ npc_sol_system_initializer = {
 			}
 		}
 		
-		flags = { planet_mars }
+		flags = { planet_mars pd_ignore }
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
+			class = "pc_orbiting_asteroid"
 			size = 1
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_phobos }
+			flags = { planet_phobos pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
+			class = "pc_orbiting_asteroid"
 			size = 1
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_deimos }
+			flags = { planet_deimos pd_ignore }
 		}
 	}
 
@@ -158,7 +158,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
-		flags = { planet_ceres }
+		flags = { planet_ceres pd_ignore }
 	}
 
 	planet = {
@@ -168,7 +168,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
-		flags = { planet_pallas }
+		flags = { planet_pallas pd_ignore }
 	}
 
 	planet = {
@@ -178,7 +178,7 @@ npc_sol_system_initializer = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
-		flags = { planet_juno }
+		flags = { planet_juno pd_ignore }
 	}
 
 	planet = {
@@ -188,7 +188,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
-		flags = { planet_vesta }
+		flags = { planet_vesta pd_ignore }
 	}
 
 	planet = {
@@ -200,7 +200,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-		flags = { planet_jupiter }
+		flags = { planet_jupiter pd_ignore }
 
 		moon = {
 			name = "NAME_Io"
@@ -210,7 +210,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
-			flags = { planet_io }
+			flags = { planet_io pd_ignore }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -220,7 +220,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
-			flags = { planet_europa }
+			flags = { planet_europa pd_ignore }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -230,7 +230,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
-			flags = { planet_ganymede }
+			flags = { planet_ganymede pd_ignore }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -240,7 +240,7 @@ npc_sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
-			flags = { planet_callisto }
+			flags = { planet_callisto pd_ignore }
 		}
 	}
 
@@ -253,7 +253,7 @@ npc_sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
-		flags = { planet_saturn }
+		flags = { planet_saturn pd_ignore }
 		
 		moon = {
 			name = "NAME_Enceladus"
@@ -263,18 +263,18 @@ npc_sol_system_initializer = {
 			orbit_angle = 90
 			has_ring = no
 			entity = "frozen_planet_04_entity"
-			flags = { planet_enceladus }
+			flags = { planet_enceladus pd_ignore }
 		}
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 
@@ -286,7 +286,7 @@ npc_sol_system_initializer = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
-		flags = { planet_uranus }
+		flags = { planet_uranus pd_ignore }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -296,7 +296,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
-			flags = { planet_titania }
+			flags = { planet_titania pd_ignore }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -306,7 +306,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
-			flags = { planet_oberon }
+			flags = { planet_oberon pd_ignore }
 		}
 	}
 
@@ -319,7 +319,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
-		flags = { planet_neptune }
+		flags = { planet_neptune pd_ignore }
 
 		moon = {
 			name = "NAME_Triton"
@@ -329,7 +329,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 115
 			has_ring = no
 			entity = "triton_entity"
-			flags = { planet_triton }
+			flags = { planet_triton pd_ignore }
 		}
 	}
 
@@ -340,7 +340,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -210
 		size = 5
 		has_ring = no
-		flags = { planet_pluto }
+		flags = { planet_pluto pd_ignore }
 	}
 
 	planet = {
@@ -350,7 +350,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
-		flags = { planet_makemake }
+		flags = { planet_makemake pd_ignore }
 	}
 
 	planet = {
@@ -360,7 +360,7 @@ npc_sol_system_initializer = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
-		flags = { planet_haumea }
+		flags = { planet_haumea pd_ignore }
 	}
 
 	planet = {
@@ -370,7 +370,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
-		flags = { planet_varuna }
+		flags = { planet_varuna pd_ignore }
 	}
 
 	neighbor_system = {
@@ -484,7 +484,7 @@ npc_70_virginis_system_initializer = {
 
 	planet = {
 		name = "NAME_Gal_Risia"
-		class = "pc_savannah"
+		class = "pc_retinal"
 		orbit_distance = 25
 		orbit_angle = 190
 		size = 18
@@ -1041,7 +1041,7 @@ neighbor_t1_70_virginis_first_colony = {
 	planet = {
 		count = 1
 		orbit_distance = 25
-		class = pc_savannah
+		class = fe_gal_risian_colony_target_planet_types
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
@@ -1227,7 +1227,7 @@ chiconaph_system_initializer = {
 }
 
 ### Neighbor Tier 1 Chinoor First Colony
-neighbor_t1_chinorr_first_colony = {	
+neighbor_t1_chinorr_first_colony = {
 	class = "rl_standard_stars"
 
 	init_effect = {
@@ -1261,6 +1261,160 @@ neighbor_t1_chinorr_first_colony = {
 		count = 1
 		orbit_distance = 25
 		class = pc_tropical
+		modifiers = none
+		anomaly = none
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 20 }
+		
+		moon = {			
+			count = { min = 0 max = 1 }
+			orbit_distance = { min = 5 max = 8}
+			size = { min = 3 max = 8 }
+		}
+	}
+	
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {			
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t2"
+	}
+}
+
+### Ladnah Vyg System
+ladnah_vyg_system_initializer = {
+	class = "rl_standard_stars"
+
+	flags = { empire_home_system }
+
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+		
+		###log = "ladnah_vyg_system_initializer loaded..."
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		count = { min = 4 max = 6 }
+		orbit_distance = 20
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_glebsig"
+		class = "pc_ammonia"
+		orbit_distance = 50
+		orbit_angle = 120
+		size = 20
+		starting_planet = yes
+		has_ring = no
+		modifiers = none
+		flags = { pd_ignore }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {			
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 6 max = 8}
+			size = { min = 3 max = 8 }
+		}
+	}
+	
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {			
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_ladnah_vyg_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_ladnah_vyg_first_colony"
+	}
+}
+
+### Neighbor Tier 1 Ladnah Vyg First Colony
+neighbor_t1_ladnah_vyg_first_colony = {
+	class = "rl_standard_stars"
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		count = { min = 4 max = 6 }
+		orbit_distance = 20
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+	
+	planet = {
+		count = 1
+		orbit_distance = 25
+		class = pc_ammonia
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }

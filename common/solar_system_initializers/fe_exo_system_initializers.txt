@@ -271,7 +271,7 @@ canopus_initializer = {
 	}
 	
 	planet = {
-		class = "pc_molten"
+		class = "pc_chthonian"
 		orbit_distance = 30
 		orbit_angle = 110
 		size = 18
@@ -512,7 +512,8 @@ gliese_581_system_initializer = {
         orbit_distance = 25
         orbit_angle = 265
         has_ring = no
-        class = "pc_molten"
+        class = "pc_radiated"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -520,7 +521,8 @@ gliese_581_system_initializer = {
         size = 26
         orbit_distance = 20
         orbit_angle = 9
-        class = "pc_gas_giant"
+        class = "pc_hot_giant"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -529,7 +531,8 @@ gliese_581_system_initializer = {
         orbit_distance = 15
         orbit_angle = 99
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -538,8 +541,8 @@ gliese_581_system_initializer = {
         orbit_distance = 20
         orbit_angle = 321
         has_ring = no
-        class = "pc_desert"
-        flags = { planet_gliese_581_g }
+        class = "pc_tidallylocked"
+        flags = { planet_gliese_581_g pd_ignore }
     }
 
     planet = {
@@ -548,8 +551,8 @@ gliese_581_system_initializer = {
         orbit_distance = 15
         orbit_angle = 80
         has_ring = no
-        class = "pc_ocean"
-        flags = { planet_gliese_581_d }
+        class = "pc_waterworld"
+        flags = { planet_gliese_581_d pd_ignore }
     }
 
     planet = {
@@ -558,7 +561,8 @@ gliese_581_system_initializer = {
         orbit_distance = 30
         orbit_angle = 243
         has_ring = no
-        class = "pc_gas_giant"
+        class = "pc_cloudless_gas_giant"
+        flags = { pd_ignore }
     }
 }
 
@@ -601,10 +605,11 @@ gliese_667_system_initializer = {
 
         moon = {
             name = "NAME_Gliese_667_C_b"
-            class = "pc_molten"
+            class = "pc_hot_giant"
             orbit_distance = 15
             orbit_angle = 15
             size = 22
+            flags = { pd_ignore }
         }
         
         moon = {
@@ -613,14 +618,16 @@ gliese_667_system_initializer = {
             orbit_distance = 6
             orbit_angle = 125
             size = 15
+            flags = { pd_ignore }
         }
         
         moon = {
             name = "NAME_Gliese_667_C_c"
-            class = "pc_barren"
+            class = "pc_irradiated_marginal"
             orbit_distance = 8
             orbit_angle = 120
             size = 20
+            flags = { pd_ignore }
         }
         
         moon = {
@@ -628,7 +635,8 @@ gliese_667_system_initializer = {
             class = "pc_tundra"
             orbit_distance = 6
             orbit_angle = 60
-            size = 18
+            size = 20
+            flags = { pd_ignore }
         }
         
         moon = {
@@ -637,6 +645,7 @@ gliese_667_system_initializer = {
             orbit_distance = 10
             orbit_angle = -160
             size = 18
+            flags = { pd_ignore }
         }
         
         moon = {
@@ -645,6 +654,7 @@ gliese_667_system_initializer = {
             orbit_distance = 15
             orbit_angle = 170
             size = 25
+            flags = { pd_ignore }
         }
         
         moon = {
@@ -653,6 +663,7 @@ gliese_667_system_initializer = {
             orbit_distance = 15
             orbit_angle = 125
             size = 24
+            flags = { pd_ignore }
         }
 	}
 }
@@ -679,23 +690,26 @@ hd_10180_system_initializer = {
 		orbit_distance = 20
 		orbit_angle = 181
 		has_ring = no
-		class = "pc_molten"
+		class = "pc_radiated"
+        flags = { pd_ignore }
 	}
 
 	planet = {
 		name = "HD 10180 c"
-		size = 28
+		size = 20
 		orbit_distance = 10
 		orbit_angle = 90
-		class = "pc_gas_giant"
+		class = "pc_hot_giant"
+        flags = { pd_ignore }
 	}
 
 	planet = {
 		name = "HD 10180 d"
-		size = 28
+		size = 27
 		orbit_distance = 15
 		orbit_angle = 233
-		class = "pc_gas_giant"
+		class = "pc_hot_giant"
+        flags = { pd_ignore }
 	}
 
 	planet = {
@@ -703,7 +717,8 @@ hd_10180_system_initializer = {
 		size = 30
 		orbit_distance = 20
 		orbit_angle = 196
-		class = "pc_gas_giant"
+		class = "pc_t_star"
+        flags = { pd_ignore }
 	}
 
 	planet = {
@@ -711,7 +726,8 @@ hd_10180_system_initializer = {
 		size = 33
 		orbit_distance = 20
 		orbit_angle = 212
-		class = "pc_gas_giant"
+		class = "pc_hot_giant"
+        flags = { pd_ignore }
 	}
 
 	planet = {
@@ -722,17 +738,18 @@ hd_10180_system_initializer = {
 		has_ring = no
 		class = "pc_gas_giant"
 		change_orbit = 10
+        flags = { pd_ignore }
 
 		moon = {
 			count = 1
-			name = "HD 10180g a "
+			name = "HD 10180g a"
 			orbit_distance = 3
 			size = { min = 5 max = 9 }
 		}
 
 		moon = {
 			count = 1
-			name = "HD 10180g b "
+			name = "HD 10180g b"
 			orbit_distance = 3
 			size = { min = 10 max = 12 }
 			class = "pc_arctic"
@@ -753,6 +770,7 @@ hd_10180_system_initializer = {
 		orbit_angle = 2
 		has_ring = yes
 		class = "pc_gas_giant"
+        flags = { pd_ignore }
 	}
 }
 
@@ -778,7 +796,8 @@ hd_40307_system_initializer = {
         orbit_distance = 15
         orbit_angle = 196
         has_ring = no
-        class = "pc_molten"
+        class = "pc_hot_giant"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -788,6 +807,7 @@ hd_40307_system_initializer = {
         orbit_angle = 79
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -797,6 +817,7 @@ hd_40307_system_initializer = {
         orbit_angle = 212
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -806,6 +827,7 @@ hd_40307_system_initializer = {
         orbit_angle = 291
         has_ring = no
         class = "pc_toxic"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -815,6 +837,7 @@ hd_40307_system_initializer = {
         orbit_angle = 2
         has_ring = no
         class = "pc_barren"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -824,6 +847,7 @@ hd_40307_system_initializer = {
         orbit_angle = 290
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
 
         moon = {
             name = "HD 40307g a"
@@ -857,16 +881,28 @@ hd_219134_system_initializer = {
         orbit_distance = 20
         orbit_angle = 151
         has_ring = no
-        class = "pc_molten"
+        class = "pc_radiated"
+        flags = { pd_ignore }
     }
 
     planet = {
         name = "HD 219134 c"
-        size = 19
+        size = 22
         orbit_distance = 15
         orbit_angle = 10
         has_ring = no
-        class = "pc_molten"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
+    }
+
+    planet = {
+        name = "HD 219134 f"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = 9
+        has_ring = no
+        class = "pc_cloudless_gas_giant"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -875,33 +911,27 @@ hd_219134_system_initializer = {
         orbit_distance = 20
         orbit_angle = 78
         has_ring = no
-        class = "pc_toxic"
-    }
-
-    planet = {
-        name = "HD 219134 e"
-        size = 29
-        orbit_distance = 25
-        orbit_angle = 181
-        has_ring = no
-        class = "pc_gas_giant"
-    }
-
-    planet = {
-        name = "HD 219134 f"
-        size = 25
-        orbit_distance = 20
-        orbit_angle = 9
-        has_ring = no
-        class = "pc_gas_giant"
+        class = "pc_cloudless_gas_giant"
+        flags = { pd_ignore }
     }
 
     planet = {
         name = "HD 219134 g"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = 181
+        has_ring = no
+        class = "pc_waterworld"
+        flags = { pd_ignore }
+    }
+
+    planet = {
+        name = "HD 219134 h"
         size = 32
         orbit_distance = 70
         orbit_angle = 71
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
 }
 
@@ -932,7 +962,7 @@ hip_41378_system_initializer = {
         orbit_distance = 25
         orbit_angle = 151
         has_ring = no
-        class = "pc_molten"
+        class = "pc_radiated"
     }
 
     planet = {
@@ -941,7 +971,7 @@ hip_41378_system_initializer = {
         orbit_distance = 15
         orbit_angle = 10
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
     }
 
     planet = {
@@ -967,19 +997,9 @@ hip_41378_system_initializer = {
         size = 28
         orbit_distance = 50
         orbit_angle = 9
-        has_ring = no
-        class = "pc_barren"
+        has_ring = yes
+        class = "pc_gas_giant"
     }
-
-	change_orbit = 60
-
-	planet = {
-		count = { min = 1 max = 3}
-		size = { min = 1 max = 5 }
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = random
-	}
 }
 
 lich_system_initializer = {
@@ -1068,6 +1088,7 @@ kepler_11_system_initializer = {
         orbit_angle = 122
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -1076,7 +1097,8 @@ kepler_11_system_initializer = {
         orbit_distance = 15
         orbit_angle = 55
         has_ring = no
-        class = "pc_molten"
+        class = "pc_radiated"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -1085,7 +1107,8 @@ kepler_11_system_initializer = {
         orbit_distance = 15
         orbit_angle = 344
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -1095,6 +1118,7 @@ kepler_11_system_initializer = {
         orbit_angle = 121
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -1103,7 +1127,8 @@ kepler_11_system_initializer = {
         orbit_distance = 15
         orbit_angle = 33
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
 
     planet = {
@@ -1112,7 +1137,8 @@ kepler_11_system_initializer = {
         orbit_distance = 30
         orbit_angle = 34
         has_ring = no
-        class = "pc_barren"
+        class = "pc_toxic"
+        flags = { pd_ignore }
     }
 
 	change_orbit = 85
@@ -1152,6 +1178,7 @@ kepler_20_system_initializer = {
         orbit_angle = 28
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_20_e"
@@ -1160,6 +1187,7 @@ kepler_20_system_initializer = {
         orbit_angle = 100
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_20_c"
@@ -1167,15 +1195,17 @@ kepler_20_system_initializer = {
         orbit_distance = 25
         orbit_angle = 83
         has_ring = no
-        class = "pc_molten"
+        class = "pc_hot_giant"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_20_f"
-        size = 16
+        size = 18
         orbit_distance = 35
         orbit_angle = 228
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_20_d"
@@ -1183,7 +1213,8 @@ kepler_20_system_initializer = {
         orbit_distance = 43
         orbit_angle = 36
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hot_giant"
+        flags = { pd_ignore }
     }
 	change_orbit = 80
 	planet = {
@@ -1217,6 +1248,7 @@ kepler_32_system_initializer = {
         orbit_angle = 113
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_32_e"
@@ -1225,6 +1257,7 @@ kepler_32_system_initializer = {
         orbit_angle = 315
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_32_b"
@@ -1233,6 +1266,7 @@ kepler_32_system_initializer = {
         orbit_angle = 96
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_32_c"
@@ -1240,14 +1274,16 @@ kepler_32_system_initializer = {
         orbit_distance = 20
         orbit_angle = 75
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_32_d"
         size = 25
         orbit_distance = 40
         orbit_angle = 339
-        class = "pc_gas_giant"
+        class = "pc_cloudless_gas_giant"
+        flags = { pd_ignore }
     }
 }
 
@@ -1264,14 +1300,16 @@ kepler_33_system_initializer = {
         orbit_distance = 0
         orbit_angle = 235
         has_ring = no
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_33_b"
-        size = 18
+        size = 23
         orbit_distance = 25
         orbit_angle = 142
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_33_c"
@@ -1280,6 +1318,7 @@ kepler_33_system_initializer = {
         orbit_angle = 329
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_33_d"
@@ -1287,7 +1326,8 @@ kepler_33_system_initializer = {
         orbit_distance = 20
         orbit_angle = 165
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_33_e"
@@ -1296,6 +1336,7 @@ kepler_33_system_initializer = {
         orbit_angle = 95
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_33_f"
@@ -1304,6 +1345,7 @@ kepler_33_system_initializer = {
         orbit_angle = 88
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
 }
 
@@ -1333,6 +1375,7 @@ kepler_55_system_initializer = {
         orbit_angle = 16
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_55_e"
@@ -1341,6 +1384,7 @@ kepler_55_system_initializer = {
         orbit_angle = 285
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_55_f"
@@ -1349,6 +1393,7 @@ kepler_55_system_initializer = {
         orbit_angle = 151
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_55_b"
@@ -1357,6 +1402,7 @@ kepler_55_system_initializer = {
         orbit_angle = 39
         has_ring = no
         class = "pc_toxic"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_55_c"
@@ -1365,6 +1411,7 @@ kepler_55_system_initializer = {
         orbit_angle = 225
         has_ring = no
         class = "pc_barren"
+        flags = { pd_ignore }
     }
 	change_orbit = 100
 	planet = {
@@ -1394,11 +1441,12 @@ kepler_62_system_initializer = {
 
     planet = {
         name = "NAME_Kepler_62_b"
-        size = 12
+        size = 14
         orbit_distance = 18
         orbit_angle = 137
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_62_c"
@@ -1406,31 +1454,35 @@ kepler_62_system_initializer = {
         orbit_distance = 13
         orbit_angle = 358
         has_ring = no
-        class = "pc_molten"
+        class = "pc_radiated"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_62_d"
-        size = 22
+        size = 26
         orbit_distance = 15
         orbit_angle = 190
         has_ring = no
-        class = "pc_molten"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_62_e"
-        size = 18
+        size = 24
         orbit_distance = 35
         orbit_angle = 349
         has_ring = no
-        class = "pc_continental"
+        class = "pc_waterworld"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_62_f"
-        size = 18
+        size = 22
         orbit_distance = 25
         orbit_angle = 309
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_savannah"
+        flags = { pd_ignore }
     }
 }
 
@@ -1454,19 +1506,21 @@ kepler_80_system_initializer = {
     }
     planet = {
         name = "NAME_Kepler_80_f"
-        size = 17
+        size = 21
         orbit_distance = 20
         orbit_angle = 230
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_80_d"
-        size = 20
+        size = 21
         orbit_distance = 20
         orbit_angle = 193
         has_ring = no
         class = "pc_molten"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_80_e"
@@ -1474,7 +1528,8 @@ kepler_80_system_initializer = {
         orbit_distance = 20
         orbit_angle = 96
         has_ring = no
-        class = "pc_toxic"
+        class = "pc_hothouse"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_80_b"
@@ -1483,6 +1538,7 @@ kepler_80_system_initializer = {
         orbit_angle = 259
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
     planet = {
         name = "NAME_Kepler_80_c"
@@ -1491,6 +1547,7 @@ kepler_80_system_initializer = {
         orbit_angle = 245
         has_ring = no
         class = "pc_gas_giant"
+        flags = { pd_ignore }
     }
 	change_orbit = 120
 	planet = {
@@ -1504,7 +1561,7 @@ kepler_80_system_initializer = {
 
 kepler_84_system_initializer = {
     name = "NAME_Kepler_84"
-    class = "sc_g"
+    class = "sc_f"
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
@@ -1514,7 +1571,7 @@ kepler_84_system_initializer = {
 	}
     planet = {
         name = "NAME_Kepler_84"
-        class = "pc_g_star"
+        class = "pc_f_star"
         size = 32
         orbit_distance = 0
         orbit_angle = 40
@@ -2144,6 +2201,7 @@ kobol_initializer = {
 		size = 10
 		has_ring = no
 		entity = "molten_planet_04_entity"
+        flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2153,6 +2211,7 @@ kobol_initializer = {
 		size = 26
 		has_ring = no
 		entity = "gas_giant_03_entity"
+        flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_arid"
@@ -2161,6 +2220,7 @@ kobol_initializer = {
 			orbit_angle = 60
 			has_ring = no
 			entity = "arid_planet_01_entity"
+            flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_savannah"
@@ -2169,6 +2229,7 @@ kobol_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "savannah_planet_04_entity"
+            flags = { pd_ignore }
 		}
 	}
 	
@@ -2179,6 +2240,7 @@ kobol_initializer = {
 		size = 26
 		has_ring = no
 		entity = "gas_giant_04_entity"
+        flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_ocean"
@@ -2187,6 +2249,7 @@ kobol_initializer = {
 			orbit_angle = 90
 			has_ring = no
 			entity = "ocean_planet_01_entity"
+            flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_continental"
@@ -2195,6 +2258,7 @@ kobol_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "continental_planet_01_entity"
+            flags = { pd_ignore }
 		}
 	}
 	
@@ -2205,6 +2269,7 @@ kobol_initializer = {
 		size = 24
 		has_ring = yes
 		entity = "gas_giant_06_entity"
+        flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_alpine"
@@ -2213,6 +2278,7 @@ kobol_initializer = {
 			orbit_angle = 120
 			has_ring = no
 			entity = "alpine_planet_03_entity"
+            flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_tundra"
@@ -2221,6 +2287,7 @@ kobol_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "tundra_planet_04_entity"
+            flags = { pd_ignore }
 		}
 	}
 
@@ -2263,6 +2330,7 @@ kobol_initializer = {
 		size = 13
 		has_ring = yes
 		entity = "frozen_planet_02_entity"
+        flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2281,6 +2349,7 @@ kobol_initializer = {
 			size = 8
 			has_ring = no
 			entity = "barren_planet_02_entity"
+            flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -2291,6 +2360,7 @@ kobol_initializer = {
 			size = 18
 			has_ring = no
 			entity = "desert_planet_02_entity"
+            flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -2301,6 +2371,7 @@ kobol_initializer = {
 			size = 19
 			has_ring = no
 			entity = "tropical_planet_02_entity"
+            flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -2311,6 +2382,7 @@ kobol_initializer = {
 			size = 12
 			has_ring = no
 			entity = "frozen_planet_02_entity"
+            flags = { pd_ignore }
 		}
 	}
 }
@@ -2431,6 +2503,7 @@ sagittarius_a_star_initializer = {
 		orbit_angle = 70
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2460,6 +2533,7 @@ sagittarius_a_star_initializer = {
 		orbit_angle = 95
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = pc_barren_cold
@@ -2467,15 +2541,17 @@ sagittarius_a_star_initializer = {
 			orbit_distance = 15
 			orbit_angle = 135
 			has_ring = no
+		    flags = { pd_ignore }
 		}
 	}
 
 	planet = {
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
 		orbit_distance = 50
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2527,6 +2603,7 @@ terminus_initializer = {
 		orbit_angle = 85
 		size = 19
 		has_ring = yes
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2586,6 +2663,7 @@ trantor_initializer = {
 		orbit_angle = 70
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2594,6 +2672,7 @@ trantor_initializer = {
 		orbit_angle = 85
 		size = 24
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_barren"
@@ -2601,6 +2680,7 @@ trantor_initializer = {
 			orbit_distance = 15
 			orbit_angle = 135
 			has_ring = no
+		    flags = { pd_ignore }
 		}
 	}
 	
@@ -2610,6 +2690,7 @@ trantor_initializer = {
 		orbit_angle = 200
 		size = 25
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_molten"
@@ -2617,6 +2698,7 @@ trantor_initializer = {
 			orbit_distance = 13
 			orbit_angle = 70
 			has_ring = no
+		    flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2625,6 +2707,7 @@ trantor_initializer = {
 			orbit_distance = 10
 			orbit_angle = 135
 			has_ring = no
+		    flags = { pd_ignore }
 		}
 	}
 	
@@ -2634,6 +2717,7 @@ trantor_initializer = {
 		orbit_angle = 200
 		size = 25
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2641,6 +2725,7 @@ trantor_initializer = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+		    flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2649,6 +2734,7 @@ trantor_initializer = {
 			orbit_distance = 8
 			orbit_angle = 135
 			has_ring = no
+		    flags = { pd_ignore }
 		}
 	}
 	
@@ -2802,6 +2888,7 @@ polaris_initializer = {
 		orbit_angle = 120
 		size = 20
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -3092,6 +3179,7 @@ vega_initializer = {
 			orbit_distance = 18
 			orbit_angle = 120
 			has_ring = no
+		    flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -3107,6 +3195,7 @@ vega_initializer = {
 			size = 20
 			starting_planet = yes
 			has_ring = no
+		    flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
